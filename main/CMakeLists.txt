@@ -56,7 +56,7 @@ idf_component_register(SRCS "src/app/main.cpp"
                        "include/sensors/sps30"
                        "include/sensors/TC74"
                        "include/unused_from_demo"
-                       "src/sensors/sps30/common" 
+                       #"src/sensors/sps30/common" 
                          REQUIRES 
                                 ${BOSCH_LIB}
                                 esp_timer
@@ -70,7 +70,7 @@ idf_component_register(SRCS "src/app/main.cpp"
                                 nvs_flash
                                 esp_pm
                                 mqtt
-                                i2cdev
+                                #i2cdev
                                 #bmv080
                                 #bsec
                        )

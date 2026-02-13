@@ -1,4 +1,0 @@
-Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\Mmiud\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DIDF_TARGET=esp32s3 -DCCACHE_ENABLE=1 C:\Users\Mmiud\Documents\International_Sensor_Development\polverine_setup
-ROOT CMakeLists: target='esp32s3', EXCLUDE_COMPONENTS='_bmv080;_bsec'
-IDF_TARGET is --------->> esp32s3
-BOSCH_LIB selsected -------->bsec;bmv080

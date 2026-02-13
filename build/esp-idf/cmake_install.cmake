@@ -574,16 +574,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Mmiud/Documents/International_Sensor_Development/polverine_setup/build/esp-idf/esp_idf_lib_helpers/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Users/Mmiud/Documents/International_Sensor_Development/polverine_setup/build/esp-idf/i2cdev/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("C:/Users/Mmiud/Documents/International_Sensor_Development/polverine_setup/build/esp-idf/main/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Mmiud/Documents/International_Sensor_Development/polverine_setup/build/esp-idf/esp_idf_lib_helpers/cmake_install.cmake")
 endif()
 

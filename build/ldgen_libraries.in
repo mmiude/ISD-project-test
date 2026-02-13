@@ -163,6 +163,4 @@ $<TARGET_FILE:idf::bsec>
 $<TARGET_FILE:__idf_main>
 $<TARGET_FILE:__idf_bsec>
 $<TARGET_FILE:__idf_mqtt>
-$<TARGET_FILE:__idf_i2cdev>
-$<TARGET_FILE:idf::i2cdev>
 $<TARGET_FILE:idf::main>
