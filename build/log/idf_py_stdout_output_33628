@@ -1,0 +1,1008 @@
+Command: C:\Users\Mmiud\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe c:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\Mmiud\Documents\International_Sensor_Development\polverine_setup\build\ISD_2026_METROPOLIA.elf C:\Users\Mmiud\Documents\International_Sensor_Development\polverine_setup\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Mmiud\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'c:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+[1;31mE (894) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42007206
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb 13 2026 17:52:53[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=11728h ( 71464) map[0m
+[0;32mI (99) esp_image: segment 1: paddr=00021750 vaddr=3fc95000 size=02c0ch ( 11276) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=00024364 vaddr=40374000 size=0bcb4h ( 48308) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=36638h (222776) map[0m
+[0;32mI (153) esp_image: segment 4: paddr=00066660 vaddr=4037fcb4 size=0529ch ( 21148) load[0m
+[0;32mI (158) esp_image: segment 5: paddr=0006b904 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (165) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (178) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) app_init: Application information:[0m
+[0;32mI (188) app_init: Project name:     ISD_2026_METROPOLIA[0m
+[0;32mI (192) app_init: App version:      1[0m
+[0;32mI (196) app_init: Compile time:     Feb 13 2026 17:51:18[0m
+[0;32mI (201) app_init: ELF file SHA256:  d6c571195...[0m
+[0;32mI (205) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (209) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (213) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (217) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (221) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (227) heap_init: At 3FC9E9B8 len 0004AD58 (299 KiB): RAM[0m
+[0;32mI (232) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (237) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (249) spi_flash: detected chip: gd[0m
+[0;32mI (251) spi_flash: flash io: dio[0m
+[0;33mW (254) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (266) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (272) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (279) main_task: Started on CPU0[0m
+[0;32mI (289) main_task: Calling app_main()[0m
+[0;32mI (289) app_main: Running on ESP32S3[0m
+[0;32mI (289) I2CManager: I2C bus created on port 0, SDA 14, SCL 21[0m
+[0;32mI (299) I2CManager: I2C bus created on port 1, SDA 8, SCL 9[0m
+[1;31mE (299) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (319) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (329) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (329) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (339) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (349) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (349) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (359) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (369) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (369) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (379) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (389) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (389) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (399) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (399) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (419) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (419) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (429) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (439) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (439) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (449) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (459) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (459) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (469) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (479) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (479) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (489) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (499) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (499) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (519) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (519) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (529) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (529) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (539) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (549) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (549) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (559) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (569) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (569) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (579) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (589) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (589) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (599) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (619) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (629) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (629) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (639) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (649) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (649) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (659) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (659) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (669) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (679) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (679) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (689) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (699) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (699) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (719) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (719) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (729) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (739) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (739) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (749) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (759) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (759) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (769) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (779) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (779) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (789) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (799) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (799) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (819) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (819) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (829) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (829) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (839) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (849) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (849) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (859) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (869) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (869) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (879) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (889) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (889) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (899) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (919) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (929) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (929) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (939) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (949) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (949) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (959) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (959) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (969) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (979) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (979) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (989) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (999) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (999) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1019) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1019) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1029) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1039) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1039) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1049) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1059) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1059) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1069) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1079) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1079) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1089) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1099) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1099) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1119) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1119) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1129) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1139) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1139) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1149) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1159) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1159) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1169) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1169) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1179) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1189) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1199) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1199) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1219) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1229) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1229) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1239) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1249) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1249) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1259) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1269) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1269) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1279) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1289) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1289) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1299) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1319) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1329) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1329) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1339) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1349) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1349) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1359) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1369) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1369) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1379) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1389) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1389) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1399) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1409) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1419) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1429) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1429) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1439) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1449) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1449) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1459) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1469) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1469) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1479) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1489) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1489) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1499) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1499) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1519) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1519) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1529) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1539) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1539) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1549) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1559) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1559) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1569) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1579) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1579) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1589) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1599) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1599) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1619) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1619) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1629) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1639) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1639) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1649) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1659) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1659) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1669) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1679) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1679) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1689) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1699) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1699) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1719) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1719) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1729) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1739) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1739) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1749) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1759) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1759) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1769) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1779) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1779) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1789) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1789) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1799) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1819) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1819) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1829) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1829) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1839) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1849) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1849) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1859) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1869) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1869) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1879) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1889) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1889) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1899) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1909) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1919) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1929) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1929) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1939) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1949) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1949) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1959) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1969) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1969) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1979) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1989) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (1989) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (1999) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2009) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2019) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2029) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2029) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2039) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2049) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2049) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2059) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2069) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2069) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2079) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2089) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2089) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2099) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2119) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2119) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2129) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2139) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2139) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2149) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2159) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2159) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2169) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2179) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2179) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2189) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2199) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2199) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2219) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2219) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2229) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2239) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2239) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2249) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2259) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2259) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2269) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2279) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2279) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2289) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2299) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2299) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2319) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2319) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2329) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2339) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2339) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2349) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2359) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2359) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2369) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2379) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2379) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2389) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2399) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2399) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2419) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2419) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2429) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2439) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2439) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2449) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2449) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2459) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2469) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2469) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2479) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2489) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2489) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2499) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2509) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2519) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2529) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2529) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2539) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2549) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2549) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2559) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2569) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2569) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2579) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2589) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2589) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2599) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2609) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2619) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2629) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2629) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2639) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2649) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2649) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2659) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2669) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2669) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2679) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2689) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2689) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2699) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2709) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2709) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2719) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2729) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2729) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2739) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2739) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2749) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2759) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2769) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2769) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2779) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2779) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2789) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2799) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2799) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2809) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2819) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2819) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2829) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2839) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2839) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2849) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2859) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2859) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2869) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2879) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2879) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2889) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2899) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2899) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2909) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2919) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2919) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2929) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2939) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2939) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2949) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2959) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2959) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2969) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2979) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2979) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2989) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (2999) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (2999) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3009) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3019) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3019) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3029) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3039) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3039) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3049) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3059) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3059) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3069) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3069) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3079) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3089) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3089) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3099) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3109) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3109) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3119) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3129) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3129) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3139) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3149) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3149) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3159) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3169) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3169) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3179) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3189) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3189) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3199) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3209) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3209) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3219) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3229) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3229) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3239) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3249) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3249) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3259) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3269) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3269) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3279) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3289) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3289) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3299) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3309) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3309) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3319) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3329) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3329) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3339) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3349) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3349) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3359) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3359) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3369) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3379) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3389) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3389) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3399) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3399) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3409) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3419) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3419) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3429) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3439) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3439) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3449) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3459) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3459) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3469) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3479) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3479) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3489) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3499) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3499) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3509) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3519) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3519) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3529) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3539) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3539) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3549) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3559) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3559) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3569) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3579) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3579) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3589) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3599) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3599) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3609) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[0;32mI (3619) I2CManager: Added I2C device 0x76[0m
+[0;32mI (3619) I2CManager: Added I2C device 0x69[0m
+[0;32mI (3619) I2CManager: Added I2C device 0x4a[0m
+[0;32mI (3929) DUMMY: Dummy task started - waiting for sensor data[0m
+[0;32mI (3929) sensirion_i2c_hal: Sensirion I2C initialized. Address: 0x69 Port: 0 SDA: 8 SCL: 9[0m
+BME690: Chip ID verified (0x61)
+[0;32mI (3929) TC74A2: Temperature: 23.0°C[0m
+[0;32mI (3929) SensorControl: Sensor control task started[0m
+[0;32mI (3929) sensirion_i2c_hal: sensirion_i2c_hal_sleep: 20000 usec[0m
+[0;32mI (3939) SensorControl: Received TC74A2 data[0m
+[0;32mI (3929) main_task: Returned from app_main()[0m
+POLVERINE BME690 OK
+BSEC Version : 3.1.0.0
+[0;32mI (3959) SPS30: SPS30 sensor initialized successfully[0m
+[1;31mE (3969) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed[0m
+[1;31mE (3969) i2c.master: i2c_master_receive(1268): I2C transaction failed[0m
+[1;31mE (3969) sensirion_i2c_hal: i2c_master_receive failed: 259[0m
+[0;33mW (3979) SPS30: Read failed[0m
+BMV080 sensor driver version: 24.2.0.b8c488edbf8.0
+BMV080 Default duty_cycling_period: 30 s
+BMV080 Customized duty_cycling_period: 30 s
+POLVERINE BMV080 OK
+[0;32mI (7549) SensorControl: Received BME690 data[0m
+[0;32mI (10549) SensorControl: Received BME690 data[0m
+[0;32mI (13649) SensorControl: Received BME690 data[0m
+[0;32mI (16649) SensorControl: Received BME690 data[0m
+[0;32mI (17249) SensorControl: Received BMV080 data[0m
+[0;32mI (19649) SensorControl: Received BME690 data[0m
+[0;32mI (22649) SensorControl: Received BME690 data[0m
+[0;32mI (25649) SensorControl: Received BME690 data[0m
+[0;32mI (28649) SensorControl: Received BME690 data[0m
+[0;32mI (31649) SensorControl: Received BME690 data[0m
+[0;32mI (34649) SensorControl: Received BME690 data[0m
+[0;32mI (37649) SensorControl: Received BME690 data[0m
+[0;32mI (40649) SensorControl: Received BME690 data[0m
+[0;32mI (43749) SensorControl: Received BME690 data[0m
+[0;32mI (46749) SensorControl: Received BME690 data[0m
+[0;32mI (48349) SensorControl: Received BMV080 data[0m
+[0;32mI (49749) SensorControl: Received BME690 data[0m
+[0;32mI (52749) SensorControl: Received BME690 data[0m
+[0;32mI (55749) SensorControl: Received BME690 data[0m
+[0;32mI (58749) SensorControl: Received BME690 data[0m
+[0;32mI (61749) SensorControl: Received BME690 data[0m
+[0;32mI (63929) TC74A2: Temperature: 24.0°C[0m
+[0;32mI (63949) SensorControl: Received TC74A2 data[0m
+[0;32mI (64049) SensorControl: Received SPS30 data[0m
+[0;32mI (64049) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (64049) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (64049) DUMMY: SPS30 Data:[0m
+[0;32mI (64049) DUMMY:   PM2.5: 1.71 µg/m³[0m
+[0;32mI (64059) DUMMY:   PM10: 1.89 µg/m³[0m
+[0;32mI (64059) DUMMY:   PM2.5: 11.85 particles/cm3[0m
+[0;32mI (64059) DUMMY:   PM10: 11.88 particles/cm3[0m
+[0;32mI (64069) DUMMY: =====================================[0m
+[0;32mI (64069) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (64079) DUMMY: BME690 Data:[0m
+[0;32mI (64079) DUMMY:   VOC: 0.50[0m
+[0;32mI (64079) DUMMY:   Pressure: 100395.02 Pa[0m
+[0;32mI (64089) DUMMY:   Humidity: 23.06 %[0m
+[0;32mI (64089) DUMMY: =====================================[0m
+[0;32mI (64089) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (64099) DUMMY: Temperature Data:[0m
+[0;32mI (64099) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (64109) DUMMY: =====================================[0m
+[0;32mI (64109) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (64109) DUMMY: BMV080 Data:[0m
+[0;32mI (64119) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (64119) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (64119) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (64129) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (64129) DUMMY: =====================================[0m
+[0;32mI (64749) SensorControl: Received BME690 data[0m
+[0;32mI (67749) SensorControl: Received BME690 data[0m
+[0;32mI (70749) SensorControl: Received BME690 data[0m
+[0;32mI (73849) SensorControl: Received BME690 data[0m
+[0;32mI (76849) SensorControl: Received BME690 data[0m
+[0;32mI (79449) SensorControl: Received BMV080 data[0m
+[0;32mI (79849) SensorControl: Received BME690 data[0m
+[0;32mI (82849) SensorControl: Received BME690 data[0m
+[0;32mI (85849) SensorControl: Received BME690 data[0m
+[0;32mI (88849) SensorControl: Received BME690 data[0m
+[0;32mI (91849) SensorControl: Received BME690 data[0m
+[0;32mI (94849) SensorControl: Received BME690 data[0m
+[0;32mI (97849) SensorControl: Received BME690 data[0m
+[0;32mI (100849) SensorControl: Received BME690 data[0m
+[0;32mI (103949) SensorControl: Received BME690 data[0m
+[0;32mI (106949) SensorControl: Received BME690 data[0m
+[0;32mI (109949) SensorControl: Received BME690 data[0m
+[0;32mI (110549) SensorControl: Received BMV080 data[0m
+[0;32mI (112949) SensorControl: Received BME690 data[0m
+[0;32mI (115949) SensorControl: Received BME690 data[0m
+[0;32mI (118949) SensorControl: Received BME690 data[0m
+[0;32mI (121949) SensorControl: Received BME690 data[0m
+[0;32mI (123929) TC74A2: Temperature: 24.0°C[0m
+[0;32mI (123949) SensorControl: Received TC74A2 data[0m
+[0;32mI (124049) SensorControl: Received SPS30 data[0m
+[0;32mI (124049) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (124049) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (124049) DUMMY: SPS30 Data:[0m
+[0;32mI (124049) DUMMY:   PM2.5: 1.52 µg/m³[0m
+[0;32mI (124059) DUMMY:   PM10: 1.65 µg/m³[0m
+[0;32mI (124059) DUMMY:   PM2.5: 10.60 particles/cm3[0m
+[0;32mI (124059) DUMMY:   PM10: 10.62 particles/cm3[0m
+[0;32mI (124069) DUMMY: =====================================[0m
+[0;32mI (124069) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (124079) DUMMY: BME690 Data:[0m
+[0;32mI (124079) DUMMY:   VOC: 0.50[0m
+[0;32mI (124079) DUMMY:   Pressure: 100398.11 Pa[0m
+[0;32mI (124089) DUMMY:   Humidity: 21.25 %[0m
+[0;32mI (124089) DUMMY: =====================================[0m
+[0;32mI (124099) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (124099) DUMMY: Temperature Data:[0m
+[0;32mI (124099) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (124109) DUMMY: =====================================[0m
+[0;32mI (124109) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (124119) DUMMY: BMV080 Data:[0m
+[0;32mI (124119) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (124119) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (124129) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (124129) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (124139) DUMMY: =====================================[0m
+[0;32mI (124949) SensorControl: Received BME690 data[0m
+[0;32mI (127949) SensorControl: Received BME690 data[0m
+[0;32mI (130949) SensorControl: Received BME690 data[0m
+[0;32mI (134049) SensorControl: Received BME690 data[0m
+[0;32mI (137049) SensorControl: Received BME690 data[0m
+[0;32mI (140049) SensorControl: Received BME690 data[0m
+[0;32mI (141649) SensorControl: Received BMV080 data[0m
+[0;32mI (143049) SensorControl: Received BME690 data[0m
+[0;32mI (146049) SensorControl: Received BME690 data[0m
+[0;32mI (149049) SensorControl: Received BME690 data[0m
+[0;32mI (152049) SensorControl: Received BME690 data[0m
+[0;32mI (155049) SensorControl: Received BME690 data[0m
+[0;32mI (158049) SensorControl: Received BME690 data[0m
+[0;32mI (161049) SensorControl: Received BME690 data[0m
+[0;32mI (164149) SensorControl: Received BME690 data[0m
+[0;32mI (167149) SensorControl: Received BME690 data[0m
+[0;32mI (170149) SensorControl: Received BME690 data[0m
+[0;32mI (172649) SensorControl: Received BMV080 data[0m
+[0;32mI (173149) SensorControl: Received BME690 data[0m
+[0;32mI (176149) SensorControl: Received BME690 data[0m
+[0;32mI (179149) SensorControl: Received BME690 data[0m
+[0;32mI (182149) SensorControl: Received BME690 data[0m
+[0;32mI (183929) TC74A2: Temperature: 24.0°C[0m
+[0;32mI (183949) SensorControl: Received TC74A2 data[0m
+[0;32mI (184049) SensorControl: Received SPS30 data[0m
+[0;32mI (184049) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (184049) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (184049) DUMMY: SPS30 Data:[0m
+[0;32mI (184049) DUMMY:   PM2.5: 1.38 µg/m³[0m
+[0;32mI (184059) DUMMY:   PM10: 1.47 µg/m³[0m
+[0;32mI (184059) DUMMY:   PM2.5: 9.82 particles/cm3[0m
+[0;32mI (184059) DUMMY:   PM10: 9.84 particles/cm3[0m
+[0;32mI (184069) DUMMY: =====================================[0m
+[0;32mI (184069) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (184079) DUMMY: BME690 Data:[0m
+[0;32mI (184079) DUMMY:   VOC: 0.50[0m
+[0;32mI (184079) DUMMY:   Pressure: 100396.60 Pa[0m
+[0;32mI (184089) DUMMY:   Humidity: 20.85 %[0m
+[0;32mI (184089) DUMMY: =====================================[0m
+[0;32mI (184099) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (184099) DUMMY: Temperature Data:[0m
+[0;32mI (184099) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (184109) DUMMY: =====================================[0m
+[0;32mI (184109) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (184119) DUMMY: BMV080 Data:[0m
+[0;32mI (184119) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (184119) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (184129) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (184129) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (184139) DUMMY: =====================================[0m
+[0;32mI (185149) SensorControl: Received BME690 data[0m
+[0;32mI (188149) SensorControl: Received BME690 data[0m
+[0;32mI (191149) SensorControl: Received BME690 data[0m
+[0;32mI (194249) SensorControl: Received BME690 data[0m
+[0;32mI (197249) SensorControl: Received BME690 data[0m
+[0;32mI (200249) SensorControl: Received BME690 data[0m
+[0;32mI (203249) SensorControl: Received BME690 data[0m
+[0;32mI (203749) SensorControl: Received BMV080 data[0m
+[0;32mI (206249) SensorControl: Received BME690 data[0m
+[0;32mI (209249) SensorControl: Received BME690 data[0m
+[0;32mI (212249) SensorControl: Received BME690 data[0m
+[0;32mI (215249) SensorControl: Received BME690 data[0m
+[0;32mI (218249) SensorControl: Received BME690 data[0m
+[0;32mI (221249) SensorControl: Received BME690 data[0m
+[0;32mI (224349) SensorControl: Received BME690 data[0m
+[0;32mI (227349) SensorControl: Received BME690 data[0m
+[0;32mI (230349) SensorControl: Received BME690 data[0m
+[0;32mI (233349) SensorControl: Received BME690 data[0m
+[0;32mI (234849) SensorControl: Received BMV080 data[0m
+[0;32mI (236349) SensorControl: Received BME690 data[0m
+[0;32mI (239349) SensorControl: Received BME690 data[0m
+[0;32mI (242349) SensorControl: Received BME690 data[0m
+[0;32mI (243929) TC74A2: Temperature: 24.0°C[0m
+[0;32mI (243949) SensorControl: Received TC74A2 data[0m
+[0;32mI (244049) SensorControl: Received SPS30 data[0m
+[0;32mI (244049) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (244049) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (244049) DUMMY: SPS30 Data:[0m
+[0;32mI (244049) DUMMY:   PM2.5: 1.52 µg/m³[0m
+[0;32mI (244059) DUMMY:   PM10: 1.61 µg/m³[0m
+[0;32mI (244059) DUMMY:   PM2.5: 10.89 particles/cm3[0m
+[0;32mI (244059) DUMMY:   PM10: 10.90 particles/cm3[0m
+[0;32mI (244069) DUMMY: =====================================[0m
+[0;32mI (244069) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (244079) DUMMY: BME690 Data:[0m
+[0;32mI (244079) DUMMY:   VOC: 0.55[0m
+[0;32mI (244079) DUMMY:   Pressure: 100396.16 Pa[0m
+[0;32mI (244089) DUMMY:   Humidity: 18.80 %[0m
+[0;32mI (244089) DUMMY: =====================================[0m
+[0;32mI (244099) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (244099) DUMMY: Temperature Data:[0m
+[0;32mI (244099) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (244109) DUMMY: =====================================[0m
+[0;32mI (244109) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (244119) DUMMY: BMV080 Data:[0m
+[0;32mI (244119) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (244119) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (244129) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (244129) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (244139) DUMMY: =====================================[0m
+[0;32mI (245349) SensorControl: Received BME690 data[0m
+[0;32mI (248349) SensorControl: Received BME690 data[0m
+[0;32mI (251349) SensorControl: Received BME690 data[0m
+[0;32mI (254449) SensorControl: Received BME690 data[0m
+[0;32mI (257449) SensorControl: Received BME690 data[0m
+[0;32mI (260449) SensorControl: Received BME690 data[0m
+[0;32mI (263449) SensorControl: Received BME690 data[0m
+[0;32mI (265849) SensorControl: Received BMV080 data[0m
+[0;32mI (266449) SensorControl: Received BME690 data[0m
+[0;32mI (269449) SensorControl: Received BME690 data[0m
+[0;32mI (272449) SensorControl: Received BME690 data[0m
+[0;32mI (275449) SensorControl: Received BME690 data[0m
+[0;32mI (278449) SensorControl: Received BME690 data[0m
+[0;32mI (281449) SensorControl: Received BME690 data[0m
+[0;32mI (284549) SensorControl: Received BME690 data[0m
+[0;32mI (287549) SensorControl: Received BME690 data[0m
+[0;32mI (290549) SensorControl: Received BME690 data[0m
+[0;32mI (293549) SensorControl: Received BME690 data[0m
+[0;32mI (296549) SensorControl: Received BME690 data[0m
+[0;32mI (297049) SensorControl: Received BMV080 data[0m
+[0;32mI (299549) SensorControl: Received BME690 data[0m
+[0;32mI (302549) SensorControl: Received BME690 data[0m
+[0;32mI (303929) TC74A2: Temperature: 24.0°C[0m
+[0;32mI (303949) SensorControl: Received TC74A2 data[0m
+[0;32mI (304049) SensorControl: Received SPS30 data[0m
+[0;32mI (304049) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (304049) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (304049) DUMMY: SPS30 Data:[0m
+[0;32mI (304049) DUMMY:   PM2.5: 1.47 µg/m³[0m
+[0;32mI (304059) DUMMY:   PM10: 1.55 µg/m³[0m
+[0;32mI (304059) DUMMY:   PM2.5: 10.66 particles/cm3[0m
+[0;32mI (304059) DUMMY:   PM10: 10.67 particles/cm3[0m
+[0;32mI (304069) DUMMY: =====================================[0m
+[0;32mI (304069) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (304079) DUMMY: BME690 Data:[0m
+[0;32mI (304079) DUMMY:   VOC: 0.72[0m
+[0;32mI (304079) DUMMY:   Pressure: 100394.95 Pa[0m
+[0;32mI (304089) DUMMY:   Humidity: 18.14 %[0m
+[0;32mI (304089) DUMMY: =====================================[0m
+[0;32mI (304099) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (304099) DUMMY: Temperature Data:[0m
+[0;32mI (304099) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (304109) DUMMY: =====================================[0m
+[0;32mI (304109) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (304119) DUMMY: BMV080 Data:[0m
+[0;32mI (304119) DUMMY: PM2.5_mass: 3.00 µg/m3[0m
+[0;32mI (304119) DUMMY: PM10_mass: 4.00 µg/m3[0m
+[0;32mI (304129) DUMMY: PM2.5_number: 24.00 particles/cm3[0m
+[0;32mI (304129) DUMMY: PM10_number: 24.00 particles/cm3[0m
+[0;32mI (304139) DUMMY: =====================================[0m
+[0;32mI (305549) SensorControl: Received BME690 data[0m
+[0;32mI (308549) SensorControl: Received BME690 data[0m
+[0;32mI (311549) SensorControl: Received BME690 data[0m
+[0;32mI (314649) SensorControl: Received BME690 data[0m
+[0;32mI (317649) SensorControl: Received BME690 data[0m
+[0;32mI (320649) SensorControl: Received BME690 data[0m
+[0;32mI (323649) SensorControl: Received BME690 data[0m
+[0;32mI (326649) SensorControl: Received BME690 data[0m
+[0;32mI (328049) SensorControl: Received BMV080 data[0m
+[0;32mI (329649) SensorControl: Received BME690 data[0m
+[0;32mI (332649) SensorControl: Received BME690 data[0m
+[0;32mI (335649) SensorControl: Received BME690 data[0m
+[0;32mI (338649) SensorControl: Received BME690 data[0m
+[0;32mI (341649) SensorControl: Received BME690 data[0m
+[0;32mI (344749) SensorControl: Received BME690 data[0m
+[0;32mI (347749) SensorControl: Received BME690 data[0m
+[0;32mI (350749) SensorControl: Received BME690 data[0m
+[0;32mI (353749) SensorControl: Received BME690 data[0m
+[0;32mI (356749) SensorControl: Received BME690 data[0m
+[0;32mI (359249) SensorControl: Received BMV080 data[0m
+[0;32mI (359749) SensorControl: Received BME690 data[0m
+[0;32mI (362749) SensorControl: Received BME690 data[0m
+[0;32mI (363929) TC74A2: Temperature: 24.0°C[0m
+[0;32mI (363949) SensorControl: Received TC74A2 data[0m
+[0;32mI (364049) SensorControl: Received SPS30 data[0m
+[0;32mI (364049) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (364049) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (364049) DUMMY: SPS30 Data:[0m
+[0;32mI (364049) DUMMY:   PM2.5: 1.33 µg/m³[0m
+[0;32mI (364059) DUMMY:   PM10: 1.38 µg/m³[0m
+[0;32mI (364059) DUMMY:   PM2.5: 9.68 particles/cm3[0m
+[0;32mI (364059) DUMMY:   PM10: 9.69 particles/cm3[0m
+[0;32mI (364069) DUMMY: =====================================[0m
+[0;32mI (364069) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (364079) DUMMY: BME690 Data:[0m
+[0;32mI (364079) DUMMY:   VOC: 1.16[0m
+[0;32mI (364079) DUMMY:   Pressure: 100396.68 Pa[0m
+[0;32mI (364089) DUMMY:   Humidity: 17.41 %[0m
+[0;32mI (364089) DUMMY: =====================================[0m
+[0;32mI (364099) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (364099) DUMMY: Temperature Data:[0m
+[0;32mI (364099) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (364109) DUMMY: =====================================[0m
+[0;32mI (364109) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (364119) DUMMY: BMV080 Data:[0m
+[0;32mI (364119) DUMMY: PM2.5_mass: 4.00 µg/m3[0m
+[0;32mI (364119) DUMMY: PM10_mass: 5.00 µg/m3[0m
+[0;32mI (364129) DUMMY: PM2.5_number: 33.00 particles/cm3[0m
+[0;32mI (364129) DUMMY: PM10_number: 33.00 particles/cm3[0m
+[0;32mI (364139) DUMMY: =====================================[0m
+[0;32mI (365749) SensorControl: Received BME690 data[0m
+[0;32mI (368749) SensorControl: Received BME690 data[0m
+[0;32mI (371749) SensorControl: Received BME690 data[0m
+[0;32mI (374849) SensorControl: Received BME690 data[0m
+[0;32mI (377849) SensorControl: Received BME690 data[0m
+[0;32mI (380849) SensorControl: Received BME690 data[0m
+[0;32mI (383849) SensorControl: Received BME690 data[0m
+[0;32mI (386849) SensorControl: Received BME690 data[0m
+[0;32mI (389849) SensorControl: Received BME690 data[0m
+[0;32mI (390249) SensorControl: Received BMV080 data[0m
+[0;32mI (392849) SensorControl: Received BME690 data[0m
+[0;32mI (395849) SensorControl: Received BME690 data[0m
+[0;32mI (398849) SensorControl: Received BME690 data[0m
+[0;32mI (401849) SensorControl: Received BME690 data[0m
+[0;32mI (404949) SensorControl: Received BME690 data[0m
+[0;32mI (407949) SensorControl: Received BME690 data[0m
+[0;32mI (410949) SensorControl: Received BME690 data[0m
+[0;32mI (413949) SensorControl: Received BME690 data[0m
+[0;32mI (416949) SensorControl: Received BME690 data[0m
+[0;32mI (419949) SensorControl: Received BME690 data[0m
+[0;32mI (421449) SensorControl: Received BMV080 data[0m
+[0;32mI (422949) SensorControl: Received BME690 data[0m
+[0;32mI (423929) TC74A2: Temperature: 24.0°C[0m
+[0;32mI (423949) SensorControl: Received TC74A2 data[0m
+[0;32mI (424049) SensorControl: Received SPS30 data[0m
+[0;32mI (424049) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (424049) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (424049) DUMMY: SPS30 Data:[0m
+[0;32mI (424049) DUMMY:   PM2.5: 1.46 µg/m³[0m
+[0;32mI (424059) DUMMY:   PM10: 1.52 µg/m³[0m
+[0;32mI (424059) DUMMY:   PM2.5: 10.70 particles/cm3[0m
+[0;32mI (424059) DUMMY:   PM10: 10.71 particles/cm3[0m
+[0;32mI (424069) DUMMY: =====================================[0m
+[0;32mI (424069) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (424079) DUMMY: BME690 Data:[0m
+[0;32mI (424079) DUMMY:   VOC: 1.03[0m
+[0;32mI (424079) DUMMY:   Pressure: 100397.19 Pa[0m
+[0;32mI (424089) DUMMY:   Humidity: 18.77 %[0m
+[0;32mI (424089) DUMMY: =====================================[0m
+[0;32mI (424099) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (424099) DUMMY: Temperature Data:[0m
+[0;32mI (424099) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (424109) DUMMY: =====================================[0m
+[0;32mI (424109) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (424119) DUMMY: BMV080 Data:[0m
+[0;32mI (424119) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (424119) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (424129) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (424129) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (424139) DUMMY: =====================================[0m
+[0;32mI (425949) SensorControl: Received BME690 data[0m
+[0;32mI (428949) SensorControl: Received BME690 data[0m
+[0;32mI (431949) SensorControl: Received BME690 data[0m
+[0;32mI (435049) SensorControl: Received BME690 data[0m
+[0;32mI (438049) SensorControl: Received BME690 data[0m
+[0;32mI (441049) SensorControl: Received BME690 data[0m
+[0;32mI (444049) SensorControl: Received BME690 data[0m
+[0;32mI (447049) SensorControl: Received BME690 data[0m
+[0;32mI (450049) SensorControl: Received BME690 data[0m
+[0;32mI (452549) SensorControl: Received BMV080 data[0m
+[0;32mI (453049) SensorControl: Received BME690 data[0m
+[0;32mI (456049) SensorControl: Received BME690 data[0m
+[0;32mI (459049) SensorControl: Received BME690 data[0m
+[0;32mI (462049) SensorControl: Received BME690 data[0m
+[0;32mI (465149) SensorControl: Received BME690 data[0m
+[0;32mI (468149) SensorControl: Received BME690 data[0m
+[0;32mI (471149) SensorControl: Received BME690 data[0m
+[0;32mI (474149) SensorControl: Received BME690 data[0m
+[0;32mI (477149) SensorControl: Received BME690 data[0m
+[0;32mI (480149) SensorControl: Received BME690 data[0m
+[0;32mI (483149) SensorControl: Received BME690 data[0m
+[0;32mI (483549) SensorControl: Received BMV080 data[0m
+[0;32mI (483929) TC74A2: Temperature: 24.0°C[0m
+[0;32mI (483949) SensorControl: Received TC74A2 data[0m
+[0;32mI (484049) SensorControl: Received SPS30 data[0m
+[0;32mI (484049) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (484049) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (484049) DUMMY: SPS30 Data:[0m
+[0;32mI (484049) DUMMY:   PM2.5: 1.32 µg/m³[0m
+[0;32mI (484059) DUMMY:   PM10: 1.37 µg/m³[0m
+[0;32mI (484059) DUMMY:   PM2.5: 9.72 particles/cm3[0m
+[0;32mI (484059) DUMMY:   PM10: 9.73 particles/cm3[0m
+[0;32mI (484069) DUMMY: =====================================[0m
+[0;32mI (484069) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (484079) DUMMY: BME690 Data:[0m
+[0;32mI (484079) DUMMY:   VOC: 1.36[0m
+[0;32mI (484079) DUMMY:   Pressure: 100398.62 Pa[0m
+[0;32mI (484089) DUMMY:   Humidity: 16.79 %[0m
+[0;32mI (484089) DUMMY: =====================================[0m
+[0;32mI (484099) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (484099) DUMMY: Temperature Data:[0m
+[0;32mI (484099) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (484109) DUMMY: =====================================[0m
+[0;32mI (484109) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (484119) DUMMY: BMV080 Data:[0m
+[0;32mI (484119) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (484119) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (484129) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (484129) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (484139) DUMMY: =====================================[0m
+[0;32mI (486149) SensorControl: Received BME690 data[0m
+[0;32mI (489149) SensorControl: Received BME690 data[0m
+[0;32mI (492149) SensorControl: Received BME690 data[0m
+[0;32mI (495249) SensorControl: Received BME690 data[0m
+[0;32mI (498249) SensorControl: Received BME690 data[0m
+[0;32mI (501249) SensorControl: Received BME690 data[0m
+[0;32mI (504249) SensorControl: Received BME690 data[0m
+[0;32mI (507249) SensorControl: Received BME690 data[0m
+[0;32mI (510249) SensorControl: Received BME690 data[0m
+[0;32mI (513249) SensorControl: Received BME690 data[0m
+[0;32mI (514649) SensorControl: Received BMV080 data[0m
+[0;32mI (516249) SensorControl: Received BME690 data[0m
+[0;32mI (519249) SensorControl: Received BME690 data[0m
+[0;32mI (522249) SensorControl: Received BME690 data[0m
+[0;32mI (525349) SensorControl: Received BME690 data[0m
+[0;32mI (528349) SensorControl: Received BME690 data[0m
+[0;32mI (531349) SensorControl: Received BME690 data[0m
+[0;32mI (534349) SensorControl: Received BME690 data[0m
+[0;32mI (537349) SensorControl: Received BME690 data[0m
+[0;32mI (540349) SensorControl: Received BME690 data[0m
+[0;32mI (543349) Sen

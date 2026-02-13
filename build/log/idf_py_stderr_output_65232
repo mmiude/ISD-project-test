@@ -1,0 +1,4 @@
+Command: ninja all
+ROOT CMakeLists: target='esp32s3', EXCLUDE_COMPONENTS='_bmv080;_bsec'
+IDF_TARGET is --------->> esp32s3
+BOSCH_LIB selsected -------->bsec;bmv080
