@@ -1,0 +1,3234 @@
+Command: C:\Users\Mmiud\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe c:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM8 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\Mmiud\Documents\International_Sensor_Development\polverine_setup\build\ISD_2026_METROPOLIA.elf C:\Users\Mmiud\Documents\International_Sensor_Development\polverine_setup\build\bootloader\bootloader.elf --force-color -m 'C:\Users\Mmiud\.espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'c:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+[0;32mI (102) esp_image: segment 2: paddr=0002479c vaddr=40374000 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40379052
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Feb 13 2026 19:57:41[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=11b60h ( 72544) map[0m
+[0;32mI (99) esp_image: segment 1: paddr=00021b88 vaddr=3fc95000 size=02c0ch ( 11276) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=0002479c vaddr=40374000 size=0b87ch ( 47228) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3784ch (227404) map[0m
+[0;32mI (154) esp_image: segment 4: paddr=00067874 vaddr=4037f87c size=05724h ( 22308) load[0m
+[0;32mI (159) esp_image: segment 5: paddr=0006cfa0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (188) cpu_start: Pro cpu start user code[0m
+[0;32mI (188) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (188) app_init: Application information:[0m
+[0;32mI (188) app_init: Project name:     ISD_2026_METROPOLIA[0m
+[0;32mI (193) app_init: App version:      82233ce-dirty[0m
+[0;32mI (198) app_init: Compile time:     Feb 13 2026 19:56:18[0m
+[0;32mI (203) app_init: ELF file SHA256:  b0abb2fbd...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (215) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FC9E988 len 0004AD88 (299 KiB): RAM[0m
+[0;32mI (234) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (250) spi_flash: detected chip: gd[0m
+[0;32mI (253) spi_flash: flash io: dio[0m
+[0;33mW (256) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (268) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (274) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (281) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+[0;32mI (291) app_main: Running on ESP32S3[0m
+[0;32mI (291) I2CManager: I2C bus created on port 0, SDA 14, SCL 21[0m
+[0;32mI (301) I2CManager: I2C bus created on port 1, SDA 8, SCL 9[0m
+[0;32mI (301) I2CManager: Added I2C device 0x76[0m
+[0;32mI (301) I2CManager: Added I2C device 0x69[0m
+[0;32mI (2311) I2CManager: Added I2C device 0x4a[0m
+[0;32mI (2611) DUMMY: Dummy task started - waiting for sensor data[0m
+BME690: Chip ID verified (0x61)
+WRITE OK!
+[0;32mI (2611) SensorControl: Sensor control task started[0m
+[0;32mI (2611) main_task: Returned from app_main()[0m
+POLVERINE BME690 OK
+BSEC Version : 3.1.0.0
+READ OK
+[0;32mI (2661) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2711) SensorControl: Received TC74A2 data[0m
+BMV080 sensor driver version: 24.2.0.b8c488edbf8.0
+BMV080 Default duty_cycling_period: 30 s
+BMV080 Customized duty_cycling_period: 30 s
+POLVERINE BMV080 OK
+[0;32mI (6211) SensorControl: Received BME690 data[0m
+[0;32mI (9311) SensorControl: Received BME690 data[0m
+[0;32mI (12311) SensorControl: Received BME690 data[0m
+[0;32mI (14161) SPS30: SPS30 initialized[0m
+[0;32mI (14211) SPS30: SPS30 connected and new data available[0m
+[0;32mI (14311) SensorControl: Received SPS30 data[0m
+[0;32mI (15311) SensorControl: Received BME690 data[0m
+[0;32mI (16011) SensorControl: Received BMV080 data[0m
+[0;32mI (16011) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (16011) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (16011) DUMMY: SPS30 Data:[0m
+[0;32mI (16011) DUMMY:   PM2.5: 1.71 µg/m³[0m
+[0;32mI (16021) DUMMY:   PM10: 1.71 µg/m³[0m
+[0;32mI (16021) DUMMY:   PM2.5: 12.84 particles/cm3[0m
+[0;32mI (16021) DUMMY:   PM10: 12.85 particles/cm3[0m
+[0;32mI (16031) DUMMY: =====================================[0m
+[0;32mI (16031) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (16041) DUMMY: BME690 Data:[0m
+[0;32mI (16041) DUMMY:   VOC: 0.50[0m
+[0;32mI (16041) DUMMY:   Pressure: 100479.84 Pa[0m
+[0;32mI (16051) DUMMY:   Humidity: 16.15 %[0m
+[0;32mI (16051) DUMMY: =====================================[0m
+[0;32mI (16051) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (16061) DUMMY: Temperature Data:[0m
+[0;32mI (16061) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (16071) DUMMY: =====================================[0m
+[0;32mI (16071) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (16071) DUMMY: BMV080 Data:[0m
+[0;32mI (16081) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (16081) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (16081) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (16091) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (16091) DUMMY: =====================================[0m
+[0;32mI (18311) SensorControl: Received BME690 data[0m
+[0;32mI (21311) SensorControl: Received BME690 data[0m
+[0;32mI (24311) SensorControl: Received BME690 data[0m
+[0;32mI (27311) SensorControl: Received BME690 data[0m
+[0;32mI (30311) SensorControl: Received BME690 data[0m
+[0;32mI (33311) SensorControl: Received BME690 data[0m
+[0;32mI (36311) SensorControl: Received BME690 data[0m
+[0;32mI (39411) SensorControl: Received BME690 data[0m
+[0;32mI (42411) SensorControl: Received BME690 data[0m
+[0;32mI (45411) SensorControl: Received BME690 data[0m
+[0;32mI (47111) SensorControl: Received BMV080 data[0m
+[0;32mI (48411) SensorControl: Received BME690 data[0m
+[0;32mI (51411) SensorControl: Received BME690 data[0m
+[0;32mI (54411) SensorControl: Received BME690 data[0m
+[0;32mI (57411) SensorControl: Received BME690 data[0m
+[0;32mI (60411) SensorControl: Received BME690 data[0m
+[0;32mI (62711) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (62811) SensorControl: Received TC74A2 data[0m
+[0;32mI (63411) SensorControl: Received BME690 data[0m
+[0;32mI (66411) SensorControl: Received BME690 data[0m
+[0;32mI (69511) SensorControl: Received BME690 data[0m
+[0;32mI (72511) SensorControl: Received BME690 data[0m
+[0;32mI (74311) SPS30: SPS30 connected and new data available[0m
+[0;32mI (74411) SensorControl: Received SPS30 data[0m
+[0;32mI (74411) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (74411) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (74411) DUMMY: SPS30 Data:[0m
+[0;32mI (74411) DUMMY:   PM2.5: 1.73 µg/m³[0m
+[0;32mI (74421) DUMMY:   PM10: 1.75 µg/m³[0m
+[0;32mI (74421) DUMMY:   PM2.5: 12.96 particles/cm3[0m
+[0;32mI (74421) DUMMY:   PM10: 12.97 particles/cm3[0m
+[0;32mI (74431) DUMMY: =====================================[0m
+[0;32mI (74431) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (74441) DUMMY: BME690 Data:[0m
+[0;32mI (74441) DUMMY:   VOC: 0.50[0m
+[0;32mI (74441) DUMMY:   Pressure: 100481.41 Pa[0m
+[0;32mI (74451) DUMMY:   Humidity: 16.22 %[0m
+[0;32mI (74451) DUMMY: =====================================[0m
+[0;32mI (74451) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (74461) DUMMY: Temperature Data:[0m
+[0;32mI (74461) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (74471) DUMMY: =====================================[0m
+[0;32mI (74471) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (74471) DUMMY: BMV080 Data:[0m
+[0;32mI (74481) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (74481) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (74481) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (74491) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (74491) DUMMY: =====================================[0m
+[0;32mI (75511) SensorControl: Received BME690 data[0m
+[0;32mI (78111) SensorControl: Received BMV080 data[0m
+[0;32mI (78511) SensorControl: Received BME690 data[0m
+[0;32mI (81511) SensorControl: Received BME690 data[0m
+[0;32mI (84511) SensorControl: Received BME690 data[0m
+[0;32mI (87511) SensorControl: Received BME690 data[0m
+[0;32mI (90511) SensorControl: Received BME690 data[0m
+[0;32mI (93511) SensorControl: Received BME690 data[0m
+[0;32mI (96511) SensorControl: Received BME690 data[0m
+[0;32mI (99611) SensorControl: Received BME690 data[0m
+[0;32mI (102611) SensorControl: Received BME690 data[0m
+[0;32mI (105611) SensorControl: Received BME690 data[0m
+[0;32mI (108611) SensorControl: Received BME690 data[0m
+[0;32mI (109211) SensorControl: Received BMV080 data[0m
+[0;32mI (111611) SensorControl: Received BME690 data[0m
+[0;32mI (114611) SensorControl: Received BME690 data[0m
+[0;32mI (117611) SensorControl: Received BME690 data[0m
+[0;32mI (120611) SensorControl: Received BME690 data[0m
+[0;32mI (122761) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (122811) SensorControl: Received TC74A2 data[0m
+[0;32mI (123611) SensorControl: Received BME690 data[0m
+[0;32mI (126611) SensorControl: Received BME690 data[0m
+[0;32mI (129711) SensorControl: Received BME690 data[0m
+[0;32mI (132711) SensorControl: Received BME690 data[0m
+[0;32mI (134411) SPS30: SPS30 connected and new data available[0m
+[0;32mI (134511) SensorControl: Received SPS30 data[0m
+[0;32mI (134511) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (134511) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (134511) DUMMY: SPS30 Data:[0m
+[0;32mI (134511) DUMMY:   PM2.5: 1.75 µg/m³[0m
+[0;32mI (134521) DUMMY:   PM10: 1.77 µg/m³[0m
+[0;32mI (134521) DUMMY:   PM2.5: 13.09 particles/cm3[0m
+[0;32mI (134521) DUMMY:   PM10: 13.10 particles/cm3[0m
+[0;32mI (134531) DUMMY: =====================================[0m
+[0;32mI (134531) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (134541) DUMMY: BME690 Data:[0m
+[0;32mI (134541) DUMMY:   VOC: 0.50[0m
+[0;32mI (134541) DUMMY:   Pressure: 100483.67 Pa[0m
+[0;32mI (134551) DUMMY:   Humidity: 16.63 %[0m
+[0;32mI (134551) DUMMY: =====================================[0m
+[0;32mI (134561) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (134561) DUMMY: Temperature Data:[0m
+[0;32mI (134561) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (134571) DUMMY: =====================================[0m
+[0;32mI (134571) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (134581) DUMMY: BMV080 Data:[0m
+[0;32mI (134581) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (134581) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (134591) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (134591) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (134601) DUMMY: =====================================[0m
+[0;32mI (135711) SensorControl: Received BME690 data[0m
+[0;32mI (138711) SensorControl: Received BME690 data[0m
+[0;32mI (140311) SensorControl: Received BMV080 data[0m
+[0;32mI (141711) SensorControl: Received BME690 data[0m
+[0;32mI (144711) SensorControl: Received BME690 data[0m
+[0;32mI (147711) SensorControl: Received BME690 data[0m
+[0;32mI (150711) SensorControl: Received BME690 data[0m
+[0;32mI (153711) SensorControl: Received BME690 data[0m
+[0;32mI (156711) SensorControl: Received BME690 data[0m
+[0;32mI (159811) SensorControl: Received BME690 data[0m
+[0;32mI (162811) SensorControl: Received BME690 data[0m
+[0;32mI (165811) SensorControl: Received BME690 data[0m
+[0;32mI (168811) SensorControl: Received BME690 data[0m
+[0;32mI (171411) SensorControl: Received BMV080 data[0m
+[0;32mI (171811) SensorControl: Received BME690 data[0m
+[0;32mI (174811) SensorControl: Received BME690 data[0m
+[0;32mI (177811) SensorControl: Received BME690 data[0m
+[0;32mI (180811) SensorControl: Received BME690 data[0m
+[0;32mI (182811) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (182911) SensorControl: Received TC74A2 data[0m
+[0;32mI (183811) SensorControl: Received BME690 data[0m
+[0;32mI (186811) SensorControl: Received BME690 data[0m
+[0;32mI (189911) SensorControl: Received BME690 data[0m
+[0;32mI (192911) SensorControl: Received BME690 data[0m
+[0;32mI (194511) SPS30: SPS30 connected and new data available[0m
+[0;32mI (194611) SensorControl: Received SPS30 data[0m
+[0;32mI (194611) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (194611) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (194611) DUMMY: SPS30 Data:[0m
+[0;32mI (194611) DUMMY:   PM2.5: 2.05 µg/m³[0m
+[0;32mI (194621) DUMMY:   PM10: 2.07 µg/m³[0m
+[0;32mI (194621) DUMMY:   PM2.5: 15.35 particles/cm3[0m
+[0;32mI (194621) DUMMY:   PM10: 15.35 particles/cm3[0m
+[0;32mI (194631) DUMMY: =====================================[0m
+[0;32mI (194631) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (194641) DUMMY: BME690 Data:[0m
+[0;32mI (194641) DUMMY:   VOC: 0.21[0m
+[0;32mI (194641) DUMMY:   Pressure: 100484.68 Pa[0m
+[0;32mI (194651) DUMMY:   Humidity: 16.33 %[0m
+[0;32mI (194651) DUMMY: =====================================[0m
+[0;32mI (194661) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (194661) DUMMY: Temperature Data:[0m
+[0;32mI (194661) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (194671) DUMMY: =====================================[0m
+[0;32mI (194671) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (194681) DUMMY: BMV080 Data:[0m
+[0;32mI (194681) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (194681) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (194691) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (194691) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (194701) DUMMY: =====================================[0m
+[0;32mI (195911) SensorControl: Received BME690 data[0m
+[0;32mI (198911) SensorControl: Received BME690 data[0m
+[0;32mI (201911) SensorControl: Received BME690 data[0m
+[0;32mI (202511) SensorControl: Received BMV080 data[0m
+[0;32mI (204911) SensorControl: Received BME690 data[0m
+[0;32mI (207911) SensorControl: Received BME690 data[0m
+[0;32mI (210911) SensorControl: Received BME690 data[0m
+[0;32mI (213911) SensorControl: Received BME690 data[0m
+[0;32mI (216911) SensorControl: Received BME690 data[0m
+[0;32mI (220011) SensorControl: Received BME690 data[0m
+[0;32mI (223011) SensorControl: Received BME690 data[0m
+[0;32mI (226011) SensorControl: Received BME690 data[0m
+[0;32mI (229011) SensorControl: Received BME690 data[0m
+[0;32mI (232011) SensorControl: Received BME690 data[0m
+[0;32mI (233611) SensorControl: Received BMV080 data[0m
+[0;32mI (235011) SensorControl: Received BME690 data[0m
+[0;32mI (238011) SensorControl: Received BME690 data[0m
+[0;32mI (241011) SensorControl: Received BME690 data[0m
+[0;32mI (242861) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (242911) SensorControl: Received TC74A2 data[0m
+[0;32mI (244011) SensorControl: Received BME690 data[0m
+[0;32mI (247011) SensorControl: Received BME690 data[0m
+[0;32mI (250111) SensorControl: Received BME690 data[0m
+[0;32mI (253111) SensorControl: Received BME690 data[0m
+[0;32mI (254611) SPS30: SPS30 connected and new data available[0m
+[0;32mI (254711) SensorControl: Received SPS30 data[0m
+[0;32mI (254711) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (254711) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (254711) DUMMY: SPS30 Data:[0m
+[0;32mI (254711) DUMMY:   PM2.5: 2.12 µg/m³[0m
+[0;32mI (254721) DUMMY:   PM10: 2.13 µg/m³[0m
+[0;32mI (254721) DUMMY:   PM2.5: 15.91 particles/cm3[0m
+[0;32mI (254721) DUMMY:   PM10: 15.92 particles/cm3[0m
+[0;32mI (254731) DUMMY: =====================================[0m
+[0;32mI (254731) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (254741) DUMMY: BME690 Data:[0m
+[0;32mI (254741) DUMMY:   VOC: 0.16[0m
+[0;32mI (254741) DUMMY:   Pressure: 100488.89 Pa[0m
+[0;32mI (254751) DUMMY:   Humidity: 16.71 %[0m
+[0;32mI (254751) DUMMY: =====================================[0m
+[0;32mI (254761) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (254761) DUMMY: Temperature Data:[0m
+[0;32mI (254761) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (254771) DUMMY: =====================================[0m
+[0;32mI (254771) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (254781) DUMMY: BMV080 Data:[0m
+[0;32mI (254781) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (254781) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (254791) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (254791) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (254801) DUMMY: =====================================[0m
+[0;32mI (256111) SensorControl: Received BME690 data[0m
+[0;32mI (259111) SensorControl: Received BME690 data[0m
+[0;32mI (262111) SensorControl: Received BME690 data[0m
+[0;32mI (264611) SensorControl: Received BMV080 data[0m
+[0;32mI (265111) SensorControl: Received BME690 data[0m
+[0;32mI (268111) SensorControl: Received BME690 data[0m
+[0;32mI (271111) SensorControl: Received BME690 data[0m
+[0;32mI (274111) SensorControl: Received BME690 data[0m
+[0;32mI (277111) SensorControl: Received BME690 data[0m
+[0;32mI (280211) SensorControl: Received BME690 data[0m
+[0;32mI (283211) SensorControl: Received BME690 data[0m
+[0;32mI (286211) SensorControl: Received BME690 data[0m
+[0;32mI (289211) SensorControl: Received BME690 data[0m
+[0;32mI (292211) SensorControl: Received BME690 data[0m
+[0;32mI (295211) SensorControl: Received BME690 data[0m
+[0;32mI (295711) SensorControl: Received BMV080 data[0m
+[0;32mI (298211) SensorControl: Received BME690 data[0m
+[0;32mI (301211) SensorControl: Received BME690 data[0m
+[0;32mI (302911) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (303011) SensorControl: Received TC74A2 data[0m
+[0;32mI (304211) SensorControl: Received BME690 data[0m
+[0;32mI (307211) SensorControl: Received BME690 data[0m
+[0;32mI (310311) SensorControl: Received BME690 data[0m
+[0;32mI (313311) SensorControl: Received BME690 data[0m
+[0;32mI (314711) SPS30: SPS30 connected and new data available[0m
+[0;32mI (314811) SensorControl: Received SPS30 data[0m
+[0;32mI (314811) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (314811) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (314811) DUMMY: SPS30 Data:[0m
+[0;32mI (314811) DUMMY:   PM2.5: 1.95 µg/m³[0m
+[0;32mI (314821) DUMMY:   PM10: 1.96 µg/m³[0m
+[0;32mI (314821) DUMMY:   PM2.5: 14.69 particles/cm3[0m
+[0;32mI (314821) DUMMY:   PM10: 14.70 particles/cm3[0m
+[0;32mI (314831) DUMMY: =====================================[0m
+[0;32mI (314831) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (314841) DUMMY: BME690 Data:[0m
+[0;32mI (314841) DUMMY:   VOC: 0.16[0m
+[0;32mI (314841) DUMMY:   Pressure: 100485.88 Pa[0m
+[0;32mI (314851) DUMMY:   Humidity: 20.62 %[0m
+[0;32mI (314851) DUMMY: =====================================[0m
+[0;32mI (314861) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (314861) DUMMY: Temperature Data:[0m
+[0;32mI (314861) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (314871) DUMMY: =====================================[0m
+[0;32mI (314871) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (314881) DUMMY: BMV080 Data:[0m
+[0;32mI (314881) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (314881) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (314891) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (314891) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (314901) DUMMY: =====================================[0m
+[0;32mI (316311) SensorControl: Received BME690 data[0m
+[0;32mI (319311) SensorControl: Received BME690 data[0m
+[0;32mI (322311) SensorControl: Received BME690 data[0m
+[0;32mI (325311) SensorControl: Received BME690 data[0m
+[0;32mI (326811) SensorControl: Received BMV080 data[0m
+[0;32mI (328311) SensorControl: Received BME690 data[0m
+[0;32mI (331311) SensorControl: Received BME690 data[0m
+[0;32mI (334311) SensorControl: Received BME690 data[0m
+[0;32mI (337311) SensorControl: Received BME690 data[0m
+[0;32mI (340411) SensorControl: Received BME690 data[0m
+[0;32mI (343411) SensorControl: Received BME690 data[0m
+[0;32mI (346411) SensorControl: Received BME690 data[0m
+[0;32mI (349411) SensorControl: Received BME690 data[0m
+[0;32mI (352411) SensorControl: Received BME690 data[0m
+[0;32mI (355411) SensorControl: Received BME690 data[0m
+[0;32mI (357911) SensorControl: Received BMV080 data[0m
+[0;32mI (358411) SensorControl: Received BME690 data[0m
+[0;32mI (361411) SensorControl: Received BME690 data[0m
+[0;32mI (362961) TC74: Temperature: 26.0°C[0m
+
+[0;32mI (363011) SensorControl: Received TC74A2 data[0m
+[0;32mI (364411) SensorControl: Received BME690 data[0m
+[0;32mI (367411) SensorControl: Received BME690 data[0m
+[0;32mI (370511) SensorControl: Received BME690 data[0m
+[0;32mI (373511) SensorControl: Received BME690 data[0m
+[0;32mI (374811) SPS30: SPS30 connected and new data available[0m
+[0;32mI (374911) SensorControl: Received SPS30 data[0m
+[0;32mI (374911) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (374911) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (374911) DUMMY: SPS30 Data:[0m
+[0;32mI (374911) DUMMY:   PM2.5: 1.72 µg/m³[0m
+[0;32mI (374921) DUMMY:   PM10: 1.73 µg/m³[0m
+[0;32mI (374921) DUMMY:   PM2.5: 12.95 particles/cm3[0m
+[0;32mI (374921) DUMMY:   PM10: 12.95 particles/cm3[0m
+[0;32mI (374931) DUMMY: =====================================[0m
+[0;32mI (374931) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (374941) DUMMY: BME690 Data:[0m
+[0;32mI (374941) DUMMY:   VOC: 0.16[0m
+[0;32mI (374941) DUMMY:   Pressure: 100487.01 Pa[0m
+[0;32mI (374951) DUMMY:   Humidity: 17.32 %[0m
+[0;32mI (374951) DUMMY: =====================================[0m
+[0;32mI (374961) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (374961) DUMMY: Temperature Data:[0m
+[0;32mI (374961) DUMMY:   Temperature: 26.00 °C[0m
+[0;32mI (374971) DUMMY: =====================================[0m
+[0;32mI (374971) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (374981) DUMMY: BMV080 Data:[0m
+[0;32mI (374981) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (374981) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (374991) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (374991) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (375001) DUMMY: =====================================[0m
+[0;32mI (376511) SensorControl: Received BME690 data[0m
+[0;32mI (379511) SensorControl: Received BME690 data[0m
+[0;32mI (382511) SensorControl: Received BME690 data[0m
+[0;32mI (385511) SensorControl: Received BME690 data[0m
+[0;32mI (388511) SensorControl: Received BME690 data[0m
+[0;32mI (389011) SensorControl: Received BMV080 data[0m
+[0;32mI (391511) SensorControl: Received BME690 data[0m
+[0;32mI (394511) SensorControl: Received BME690 data[0m
+[0;32mI (397511) SensorControl: Received BME690 data[0m
+[0;32mI (400611) SensorControl: Received BME690 data[0m
+[0;32mI (403611) SensorControl: Received BME690 data[0m
+[0;32mI (406611) SensorControl: Received BME690 data[0m
+[0;32mI (409611) SensorControl: Received BME690 data[0m
+[0;32mI (412611) SensorControl: Received BME690 data[0m
+[0;32mI (415611) SensorControl: Received BME690 data[0m
+[0;32mI (418611) SensorControl: Received BME690 data[0m
+[0;32mI (420111) SensorControl: Received BMV080 data[0m
+[0;32mI (421611) SensorControl: Received BME690 data[0m
+[0;32mI (423011) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (423111) SensorControl: Received TC74A2 data[0m
+[0;32mI (424611) SensorControl: Received BME690 data[0m
+[0;32mI (427611) SensorControl: Received BME690 data[0m
+[0;32mI (430711) SensorControl: Received BME690 data[0m
+[0;32mI (433711) SensorControl: Received BME690 data[0m
+[0;32mI (434911) SPS30: SPS30 connected and new data available[0m
+[0;32mI (435011) SensorControl: Received SPS30 data[0m
+[0;32mI (435011) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (435011) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (435011) DUMMY: SPS30 Data:[0m
+[0;32mI (435011) DUMMY:   PM2.5: 1.97 µg/m³[0m
+[0;32mI (435021) DUMMY:   PM10: 1.99 µg/m³[0m
+[0;32mI (435021) DUMMY:   PM2.5: 14.79 particles/cm3[0m
+[0;32mI (435021) DUMMY:   PM10: 14.80 particles/cm3[0m
+[0;32mI (435031) DUMMY: =====================================[0m
+[0;32mI (435031) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (435041) DUMMY: BME690 Data:[0m
+[0;32mI (435041) DUMMY:   VOC: 0.16[0m
+[0;32mI (435041) DUMMY:   Pressure: 100484.52 Pa[0m
+[0;32mI (435051) DUMMY:   Humidity: 17.89 %[0m
+[0;32mI (435051) DUMMY: =====================================[0m
+[0;32mI (435061) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (435061) DUMMY: Temperature Data:[0m
+[0;32mI (435061) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (435071) DUMMY: =====================================[0m
+[0;32mI (435071) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (435081) DUMMY: BMV080 Data:[0m
+[0;32mI (435081) DUMMY: PM2.5_mass: 4.00 µg/m3[0m
+[0;32mI (435081) DUMMY: PM10_mass: 5.00 µg/m3[0m
+[0;32mI (435091) DUMMY: PM2.5_number: 33.00 particles/cm3[0m
+[0;32mI (435091) DUMMY: PM10_number: 33.00 particles/cm3[0m
+[0;32mI (435101) DUMMY: =====================================[0m
+[0;32mI (436711) SensorControl: Received BME690 data[0m
+[0;32mI (439711) SensorControl: Received BME690 data[0m
+[0;32mI (442711) SensorControl: Received BME690 data[0m
+[0;32mI (445711) SensorControl: Received BME690 data[0m
+[0;32mI (448711) SensorControl: Received BME690 data[0m
+[0;32mI (451211) SensorControl: Received BMV080 data[0m
+[0;32mI (451711) SensorControl: Received BME690 data[0m
+[0;32mI (454711) SensorControl: Received BME690 data[0m
+[0;32mI (457711) SensorControl: Received BME690 data[0m
+[0;32mI (460811) SensorControl: Received BME690 data[0m
+[0;32mI (463811) SensorControl: Received BME690 data[0m
+[0;32mI (466811) SensorControl: Received BME690 data[0m
+[0;32mI (469811) SensorControl: Received BME690 data[0m
+[0;32mI (472811) SensorControl: Received BME690 data[0m
+[0;32mI (475811) SensorControl: Received BME690 data[0m
+[0;32mI (478811) SensorControl: Received BME690 data[0m
+[0;32mI (481811) SensorControl: Received BME690 data[0m
+[0;32mI (482311) SensorControl: Received BMV080 data[0m
+[0;32mI (483061) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (483111) SensorControl: Received TC74A2 data[0m
+[0;32mI (484811) SensorControl: Received BME690 data[0m
+[0;32mI (487811) SensorControl: Received BME690 data[0m
+[0;32mI (490911) SensorControl: Received BME690 data[0m
+[0;32mI (493911) SensorControl: Received BME690 data[0m
+[0;32mI (495011) SPS30: SPS30 connected and new data available[0m
+[0;32mI (495111) SensorControl: Received SPS30 data[0m
+[0;32mI (495111) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (495111) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (495111) DUMMY: SPS30 Data:[0m
+[0;32mI (495111) DUMMY:   PM2.5: 2.23 µg/m³[0m
+[0;32mI (495121) DUMMY:   PM10: 2.25 µg/m³[0m
+[0;32mI (495121) DUMMY:   PM2.5: 16.73 particles/cm3[0m
+[0;32mI (495121) DUMMY:   PM10: 16.74 particles/cm3[0m
+[0;32mI (495131) DUMMY: =====================================[0m
+[0;32mI (495131) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (495141) DUMMY: BME690 Data:[0m
+[0;32mI (495141) DUMMY:   VOC: 0.16[0m
+[0;32mI (495141) DUMMY:   Pressure: 100487.28 Pa[0m
+[0;32mI (495151) DUMMY:   Humidity: 20.13 %[0m
+[0;32mI (495151) DUMMY: =====================================[0m
+[0;32mI (495161) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (495161) DUMMY: Temperature Data:[0m
+[0;32mI (495161) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (495171) DUMMY: =====================================[0m
+[0;32mI (495171) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (495181) DUMMY: BMV080 Data:[0m
+[0;32mI (495181) DUMMY: PM2.5_mass: 4.00 µg/m3[0m
+[0;32mI (495181) DUMMY: PM10_mass: 5.00 µg/m3[0m
+[0;32mI (495191) DUMMY: PM2.5_number: 33.00 particles/cm3[0m
+[0;32mI (495191) DUMMY: PM10_number: 33.00 particles/cm3[0m
+[0;32mI (495201) DUMMY: =====================================[0m
+[0;32mI (496911) SensorControl: Received BME690 data[0m
+[0;32mI (499911) SensorControl: Received BME690 data[0m
+[0;32mI (502911) SensorControl: Received BME690 data[0m
+[0;32mI (505911) SensorControl: Received BME690 data[0m
+[0;32mI (508911) SensorControl: Received BME690 data[0m
+[0;32mI (511911) SensorControl: Received BME690 data[0m
+[0;32mI (513411) SensorControl: Received BMV080 data[0m
+[0;32mI (514911) SensorControl: Received BME690 data[0m
+[0;32mI (518011) SensorControl: Received BME690 data[0m
+[0;32mI (521011) SensorControl: Received BME690 data[0m
+[0;32mI (524011) SensorControl: Received BME690 data[0m
+[0;32mI (527011) SensorControl: Received BME690 data[0m
+[0;32mI (530011) SensorControl: Received BME690 data[0m
+[0;32mI (533011) SensorControl: Received BME690 data[0m
+[0;32mI (536011) SensorControl: Received BME690 data[0m
+[0;32mI (539011) SensorControl: Received BME690 data[0m
+[0;32mI (542011) SensorControl: Received BME690 data[0m
+[0;32mI (543111) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (543211) SensorControl: Received TC74A2 data[0m
+[0;32mI (544511) SensorControl: Received BMV080 data[0m
+[0;32mI (545011) SensorControl: Received BME690 data[0m
+[0;32mI (548111) SensorControl: Received BME690 data[0m
+[0;32mI (551111) SensorControl: Received BME690 data[0m
+[0;32mI (554111) SensorControl: Received BME690 data[0m
+[0;32mI (555111) SPS30: SPS30 connected and new data available[0m
+[0;32mI (555211) SensorControl: Received SPS30 data[0m
+[0;32mI (555211) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (555211) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (555211) DUMMY: SPS30 Data:[0m
+[0;32mI (555211) DUMMY:   PM2.5: 1.88 µg/m³[0m
+[0;32mI (555221) DUMMY:   PM10: 1.90 µg/m³[0m
+[0;32mI (555221) DUMMY:   PM2.5: 14.03 particles/cm3[0m
+[0;32mI (555221) DUMMY:   PM10: 14.04 particles/cm3[0m
+[0;32mI (555231) DUMMY: =====================================[0m
+[0;32mI (555231) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (555241) DUMMY: BME690 Data:[0m
+[0;32mI (555241) DUMMY:   VOC: 0.16[0m
+[0;32mI (555241) DUMMY:   Pressure: 100484.42 Pa[0m
+[0;32mI (555251) DUMMY:   Humidity: 17.01 %[0m
+[0;32mI (555251) DUMMY: =====================================[0m
+[0;32mI (555261) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (555261) DUMMY: Temperature Data:[0m
+[0;32mI (555261) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (555271) DUMMY: =====================================[0m
+[0;32mI (555271) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (555281) DUMMY: BMV080 Data:[0m
+[0;32mI (555281) DUMMY: PM2.5_mass: 3.00 µg/m3[0m
+[0;32mI (555281) DUMMY: PM10_mass: 4.00 µg/m3[0m
+[0;32mI (555291) DUMMY: PM2.5_number: 24.00 particles/cm3[0m
+[0;32mI (555291) DUMMY: PM10_number: 24.00 particles/cm3[0m
+[0;32mI (555301) DUMMY: =====================================[0m
+[0;32mI (557111) SensorControl: Received BME690 data[0m
+[0;32mI (560111) SensorControl: Received BME690 data[0m
+[0;32mI (563111) SensorControl: Received BME690 data[0m
+[0;32mI (566111) SensorControl: Received BME690 data[0m
+[0;32mI (569111) SensorControl: Received BME690 data[0m
+[0;32mI (572211) SensorControl: Received BME690 data[0m
+[0;32mI (575211) SensorControl: Received BME690 data[0m
+[0;32mI (575711) SensorControl: Received BMV080 data[0m
+[0;32mI (578211) SensorControl: Received BME690 data[0m
+[0;32mI (581211) SensorControl: Received BME690 data[0m
+[0;32mI (584211) SensorControl: Received BME690 data[0m
+[0;32mI (587211) SensorControl: Received BME690 data[0m
+[0;32mI (590211) SensorControl: Received BME690 data[0m
+[0;32mI (593211) SensorControl: Received BME690 data[0m
+[0;32mI (596211) SensorControl: Received BME690 data[0m
+[0;32mI (599311) SensorControl: Received BME690 data[0m
+[0;32mI (602311) SensorControl: Received BME690 data[0m
+[0;32mI (603161) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (603211) SensorControl: Received TC74A2 data[0m
+[0;32mI (605311) SensorControl: Received BME690 data[0m
+[0;32mI (606811) SensorControl: Received BMV080 data[0m
+[0;32mI (608311) SensorControl: Received BME690 data[0m
+[0;32mI (611311) SensorControl: Received BME690 data[0m
+[0;32mI (614311) SensorControl: Received BME690 data[0m
+[0;32mI (615211) SPS30: SPS30 connected and new data available[0m
+[0;32mI (615311) SensorControl: Received SPS30 data[0m
+[0;32mI (615311) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (615311) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (615311) DUMMY: SPS30 Data:[0m
+[0;32mI (615311) DUMMY:   PM2.5: 2.01 µg/m³[0m
+[0;32mI (615321) DUMMY:   PM10: 2.04 µg/m³[0m
+[0;32mI (615321) DUMMY:   PM2.5: 15.00 particles/cm3[0m
+[0;32mI (615321) DUMMY:   PM10: 15.01 particles/cm3[0m
+[0;32mI (615331) DUMMY: =====================================[0m
+[0;32mI (615331) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (615341) DUMMY: BME690 Data:[0m
+[0;32mI (615341) DUMMY:   VOC: 0.20[0m
+[0;32mI (615341) DUMMY:   Pressure: 100486.55 Pa[0m
+[0;32mI (615351) DUMMY:   Humidity: 16.40 %[0m
+[0;32mI (615351) DUMMY: =====================================[0m
+[0;32mI (615361) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (615361) DUMMY: Temperature Data:[0m
+[0;32mI (615361) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (615371) DUMMY: =====================================[0m
+[0;32mI (615371) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (615381) DUMMY: BMV080 Data:[0m
+[0;32mI (615381) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (615381) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (615391) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (615391) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (615401) DUMMY: =====================================[0m
+[0;32mI (617311) SensorControl: Received BME690 data[0m
+[0;32mI (620311) SensorControl: Received BME690 data[0m
+[0;32mI (623411) SensorControl: Received BME690 data[0m
+[0;32mI (626411) SensorControl: Received BME690 data[0m
+[0;32mI (629411) SensorControl: Received BME690 data[0m
+[0;32mI (632411) SensorControl: Received BME690 data[0m
+[0;32mI (635411) SensorControl: Received BME690 data[0m
+[0;32mI (637911) SensorControl: Received BMV080 data[0m
+[0;32mI (638411) SensorControl: Received BME690 data[0m
+[0;32mI (641411) SensorControl: Received BME690 data[0m
+[0;32mI (644411) SensorControl: Received BME690 data[0m
+[0;32mI (647411) SensorControl: Received BME690 data[0m
+[0;32mI (650411) SensorControl: Received BME690 data[0m
+[0;32mI (653511) SensorControl: Received BME690 data[0m
+[0;32mI (656511) SensorControl: Received BME690 data[0m
+[0;32mI (659511) SensorControl: Received BME690 data[0m
+[0;32mI (662511) SensorControl: Received BME690 data[0m
+[0;32mI (663211) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (663311) SensorControl: Received TC74A2 data[0m
+[0;32mI (665511) SensorControl: Received BME690 data[0m
+[0;32mI (668511) SensorControl: Received BME690 data[0m
+[0;32mI (669011) SensorControl: Received BMV080 data[0m
+[0;32mI (671511) SensorControl: Received BME690 data[0m
+[0;32mI (674511) SensorControl: Received BME690 data[0m
+[0;32mI (675311) SPS30: SPS30 connected and new data available[0m
+[0;32mI (675411) SensorControl: Received SPS30 data[0m
+[0;32mI (675411) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (675411) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (675411) DUMMY: SPS30 Data:[0m
+[0;32mI (675411) DUMMY:   PM2.5: 1.94 µg/m³[0m
+[0;32mI (675421) DUMMY:   PM10: 1.97 µg/m³[0m
+[0;32mI (675421) DUMMY:   PM2.5: 14.47 particles/cm3[0m
+[0;32mI (675421) DUMMY:   PM10: 14.48 particles/cm3[0m
+[0;32mI (675431) DUMMY: =====================================[0m
+[0;32mI (675431) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (675441) DUMMY: BME690 Data:[0m
+[0;32mI (675441) DUMMY:   VOC: 0.38[0m
+[0;32mI (675441) DUMMY:   Pressure: 100483.38 Pa[0m
+[0;32mI (675451) DUMMY:   Humidity: 16.21 %[0m
+[0;32mI (675451) DUMMY: =====================================[0m
+[0;32mI (675461) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (675461) DUMMY: Temperature Data:[0m
+[0;32mI (675461) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (675471) DUMMY: =====================================[0m
+[0;32mI (675471) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (675481) DUMMY: BMV080 Data:[0m
+[0;32mI (675481) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (675481) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (675491) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (675491) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (675501) DUMMY: =====================================[0m
+[0;32mI (677511) SensorControl: Received BME690 data[0m
+[0;32mI (680511) SensorControl: Received BME690 data[0m
+[0;32mI (683611) SensorControl: Received BME690 data[0m
+[0;32mI (686611) SensorControl: Received BME690 data[0m
+[0;32mI (689611) SensorControl: Received BME690 data[0m
+[0;32mI (692611) SensorControl: Received BME690 data[0m
+[0;32mI (695611) SensorControl: Received BME690 data[0m
+[0;32mI (698611) SensorControl: Received BME690 data[0m
+[0;32mI (700011) SensorControl: Received BMV080 data[0m
+[0;32mI (701611) SensorControl: Received BME690 data[0m
+[0;32mI (704611) SensorControl: Received BME690 data[0m
+[0;32mI (707611) SensorControl: Received BME690 data[0m
+[0;32mI (710611) SensorControl: Received BME690 data[0m
+[0;32mI (713711) SensorControl: Received BME690 data[0m
+[0;32mI (716711) SensorControl: Received BME690 data[0m
+[0;32mI (719711) SensorControl: Received BME690 data[0m
+[0;32mI (722711) SensorControl: Received BME690 data[0m
+[0;32mI (723261) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (723311) SensorControl: Received TC74A2 data[0m
+[0;32mI (725711) SensorControl: Received BME690 data[0m
+[0;32mI (728711) SensorControl: Received BME690 data[0m
+[0;32mI (731111) SensorControl: Received BMV080 data[0m
+[0;32mI (731711) SensorControl: Received BME690 data[0m
+[0;32mI (734711) SensorControl: Received BME690 data[0m
+[0;32mI (735411) SPS30: SPS30 connected and new data available[0m
+[0;32mI (735511) SensorControl: Received SPS30 data[0m
+[0;32mI (735511) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (735511) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (735511) DUMMY: SPS30 Data:[0m
+[0;32mI (735511) DUMMY:   PM2.5: 2.05 µg/m³[0m
+[0;32mI (735521) DUMMY:   PM10: 2.08 µg/m³[0m
+[0;32mI (735521) DUMMY:   PM2.5: 15.30 particles/cm3[0m
+[0;32mI (735521) DUMMY:   PM10: 15.31 particles/cm3[0m
+[0;32mI (735531) DUMMY: =====================================[0m
+[0;32mI (735531) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (735541) DUMMY: BME690 Data:[0m
+[0;32mI (735541) DUMMY:   VOC: 0.53[0m
+[0;32mI (735541) DUMMY:   Pressure: 100485.13 Pa[0m
+[0;32mI (735551) DUMMY:   Humidity: 16.39 %[0m
+[0;32mI (735551) DUMMY: =====================================[0m
+[0;32mI (735561) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (735561) DUMMY: Temperature Data:[0m
+[0;32mI (735561) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (735571) DUMMY: =====================================[0m
+[0;32mI (735571) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (735581) DUMMY: BMV080 Data:[0m
+[0;32mI (735581) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (735581) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (735591) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (735591) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (735601) DUMMY: =====================================[0m
+[0;32mI (737711) SensorControl: Received BME690 data[0m
+[0;32mI (740711) SensorControl: Received BME690 data[0m
+[0;32mI (743811) SensorControl: Received BME690 data[0m
+[0;32mI (746811) SensorControl: Received BME690 data[0m
+[0;32mI (749811) SensorControl: Received BME690 data[0m
+[0;32mI (752811) SensorControl: Received BME690 data[0m
+[0;32mI (755811) SensorControl: Received BME690 data[0m
+[0;32mI (758811) SensorControl: Received BME690 data[0m
+[0;32mI (761811) SensorControl: Received BME690 data[0m
+[0;32mI (762211) SensorControl: Received BMV080 data[0m
+[0;32mI (764811) SensorControl: Received BME690 data[0m
+[0;32mI (767811) SensorControl: Received BME690 data[0m
+[0;32mI (770811) SensorControl: Received BME690 data[0m
+[0;32mI (773911) SensorControl: Received BME690 data[0m
+[0;32mI (776911) SensorControl: Received BME690 data[0m
+[0;32mI (779911) SensorControl: Received BME690 data[0m
+[0;32mI (782911) SensorControl: Received BME690 data[0m
+[0;32mI (783311) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (783411) SensorControl: Received TC74A2 data[0m
+[0;32mI (785911) SensorControl: Received BME690 data[0m
+[0;32mI (788911) SensorControl: Received BME690 data[0m
+[0;32mI (791911) SensorControl: Received BME690 data[0m
+[0;32mI (793311) SensorControl: Received BMV080 data[0m
+[0;32mI (794911) SensorControl: Received BME690 data[0m
+[0;32mI (795511) SPS30: SPS30 connected and new data available[0m
+[0;32mI (795611) SensorControl: Received SPS30 data[0m
+[0;32mI (795611) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (795611) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (795611) DUMMY: SPS30 Data:[0m
+[0;32mI (795611) DUMMY:   PM2.5: 1.77 µg/m³[0m
+[0;32mI (795621) DUMMY:   PM10: 1.79 µg/m³[0m
+[0;32mI (795621) DUMMY:   PM2.5: 13.29 particles/cm3[0m
+[0;32mI (795621) DUMMY:   PM10: 13.30 particles/cm3[0m
+[0;32mI (795631) DUMMY: =====================================[0m
+[0;32mI (795631) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (795641) DUMMY: BME690 Data:[0m
+[0;32mI (795641) DUMMY:   VOC: 0.64[0m
+[0;32mI (795641) DUMMY:   Pressure: 100484.86 Pa[0m
+[0;32mI (795651) DUMMY:   Humidity: 16.21 %[0m
+[0;32mI (795651) DUMMY: =====================================[0m
+[0;32mI (795661) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (795661) DUMMY: Temperature Data:[0m
+[0;32mI (795661) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (795671) DUMMY: =====================================[0m
+[0;32mI (795671) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (795681) DUMMY: BMV080 Data:[0m
+[0;32mI (795681) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (795681) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (795691) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (795691) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (795701) DUMMY: =====================================[0m
+[0;32mI (797911) SensorControl: Received BME690 data[0m
+[0;32mI (800911) SensorControl: Received BME690 data[0m
+[0;32mI (804011) SensorControl: Received BME690 data[0m
+[0;32mI (807011) SensorControl: Received BME690 data[0m
+[0;32mI (810011) SensorControl: Received BME690 data[0m
+[0;32mI (813011) SensorControl: Received BME690 data[0m
+[0;32mI (816011) SensorControl: Received BME690 data[0m
+[0;32mI (819011) SensorControl: Received BME690 data[0m
+[0;32mI (822011) SensorControl: Received BME690 data[0m
+[0;32mI (824311) SensorControl: Received BMV080 data[0m
+[0;32mI (825011) SensorControl: Received BME690 data[0m
+[0;32mI (828011) SensorControl: Received BME690 data[0m
+[0;32mI (831011) SensorControl: Received BME690 data[0m
+[0;32mI (834111) SensorControl: Received BME690 data[0m
+[0;32mI (837111) SensorControl: Received BME690 data[0m
+[0;32mI (840111) SensorControl: Received BME690 data[0m
+[0;32mI (843111) SensorControl: Received BME690 data[0m
+[0;32mI (843361) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (843411) SensorControl: Received TC74A2 data[0m
+[0;32mI (846111) SensorControl: Received BME690 data[0m
+[0;32mI (849111) SensorControl: Received BME690 data[0m
+[0;32mI (852111) SensorControl: Received BME690 data[0m
+[0;32mI (855111) SensorControl: Received BME690 data[0m
+[0;32mI (855411) SensorControl: Received BMV080 data[0m
+[0;32mI (855611) SPS30: SPS30 connected and new data available[0m
+[0;32mI (855711) SensorControl: Received SPS30 data[0m
+[0;32mI (855711) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (855711) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (855711) DUMMY: SPS30 Data:[0m
+[0;32mI (855711) DUMMY:   PM2.5: 1.88 µg/m³[0m
+[0;32mI (855721) DUMMY:   PM10: 1.89 µg/m³[0m
+[0;32mI (855721) DUMMY:   PM2.5: 14.07 particles/cm3[0m
+[0;32mI (855721) DUMMY:   PM10: 14.08 particles/cm3[0m
+[0;32mI (855731) DUMMY: =====================================[0m
+[0;32mI (855731) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (855741) DUMMY: BME690 Data:[0m
+[0;32mI (855741) DUMMY:   VOC: 0.73[0m
+[0;32mI (855741) DUMMY:   Pressure: 100485.38 Pa[0m
+[0;32mI (855751) DUMMY:   Humidity: 16.00 %[0m
+[0;32mI (855751) DUMMY: =====================================[0m
+[0;32mI (855761) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (855761) DUMMY: Temperature Data:[0m
+[0;32mI (855761) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (855771) DUMMY: =====================================[0m
+[0;32mI (855771) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (855781) DUMMY: BMV080 Data:[0m
+[0;32mI (855781) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (855781) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (855791) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (855791) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (855801) DUMMY: =====================================[0m
+[0;32mI (858111) SensorControl: Received BME690 data[0m
+[0;32mI (861111) SensorControl: Received BME690 data[0m
+[0;32mI (864211) SensorControl: Received BME690 data[0m
+[0;32mI (867211) SensorControl: Received BME690 data[0m
+[0;32mI (870211) SensorControl: Received BME690 data[0m
+[0;32mI (873211) SensorControl: Received BME690 data[0m
+[0;32mI (876211) SensorControl: Received BME690 data[0m
+[0;32mI (879211) SensorControl: Received BME690 data[0m
+[0;32mI (882211) SensorControl: Received BME690 data[0m
+[0;32mI (885211) SensorControl: Received BME690 data[0m
+[0;32mI (886511) SensorControl: Received BMV080 data[0m
+[0;32mI (888211) SensorControl: Received BME690 data[0m
+[0;32mI (891211) SensorControl: Received BME690 data[0m
+[0;32mI (894311) SensorControl: Received BME690 data[0m
+[0;32mI (897311) SensorControl: Received BME690 data[0m
+[0;32mI (900311) SensorControl: Received BME690 data[0m
+[0;32mI (903311) SensorControl: Received BME690 data[0m
+[0;32mI (903411) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (903511) SensorControl: Received TC74A2 data[0m
+[0;32mI (906311) SensorControl: Received BME690 data[0m
+[0;32mI (909311) SensorControl: Received BME690 data[0m
+[0;32mI (912311) SensorControl: Received BME690 data[0m
+[0;32mI (915311) SensorControl: Received BME690 data[0m
+[0;32mI (915711) SPS30: SPS30 connected and new data available[0m
+[0;32mI (915811) SensorControl: Received SPS30 data[0m
+[0;32mI (915811) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (915811) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (915811) DUMMY: SPS30 Data:[0m
+[0;32mI (915811) DUMMY:   PM2.5: 1.63 µg/m³[0m
+[0;32mI (915821) DUMMY:   PM10: 1.64 µg/m³[0m
+[0;32mI (915821) DUMMY:   PM2.5: 12.26 particles/cm3[0m
+[0;32mI (915821) DUMMY:   PM10: 12.27 particles/cm3[0m
+[0;32mI (915831) DUMMY: =====================================[0m
+[0;32mI (915831) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (915841) DUMMY: BME690 Data:[0m
+[0;32mI (915841) DUMMY:   VOC: 0.76[0m
+[0;32mI (915841) DUMMY:   Pressure: 100488.75 Pa[0m
+[0;32mI (915851) DUMMY:   Humidity: 16.01 %[0m
+[0;32mI (915851) DUMMY: =====================================[0m
+[0;32mI (915861) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (915861) DUMMY: Temperature Data:[0m
+[0;32mI (915861) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (915871) DUMMY: =====================================[0m
+[0;32mI (915871) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (915881) DUMMY: BMV080 Data:[0m
+[0;32mI (915881) DUMMY: PM2.5_mass: 5.00 µg/m3[0m
+[0;32mI (915881) DUMMY: PM10_mass: 7.00 µg/m3[0m
+[0;32mI (915891) DUMMY: PM2.5_number: 41.00 particles/cm3[0m
+[0;32mI (915891) DUMMY: PM10_number: 41.00 particles/cm3[0m
+[0;32mI (915901) DUMMY: =====================================[0m
+[0;32mI (917711) SensorControl: Received BMV080 data[0m
+[0;32mI (918311) SensorControl: Received BME690 data[0m
+[0;32mI (921311) SensorControl: Received BME690 data[0m
+[0;32mI (924411) SensorControl: Received BME690 data[0m
+[0;32mI (927411) SensorControl: Received BME690 data[0m
+[0;32mI (930411) SensorControl: Received BME690 data[0m
+[0;32mI (933411) SensorControl: Received BME690 data[0m
+[0;32mI (936411) SensorControl: Received BME690 data[0m
+[0;32mI (939411) SensorControl: Received BME690 data[0m
+[0;32mI (942411) SensorControl: Received BME690 data[0m
+[0;32mI (945411) SensorControl: Received BME690 data[0m
+[0;32mI (948411) SensorControl: Received BME690 data[0m
+[0;32mI (948811) SensorControl: Received BMV080 data[0m
+[0;32mI (951411) SensorControl: Received BME690 data[0m
+[0;32mI (954511) SensorControl: Received BME690 data[0m
+[0;32mI (957511) SensorControl: Received BME690 data[0m
+[0;32mI (960511) SensorControl: Received BME690 data[0m
+[0;32mI (963461) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (963511) SensorControl: Received BME690 data[0m
+[0;32mI (963511) SensorControl: Received TC74A2 data[0m
+[0;32mI (966511) SensorControl: Received BME690 data[0m
+[0;32mI (969511) SensorControl: Received BME690 data[0m
+[0;32mI (972511) SensorControl: Received BME690 data[0m
+[0;32mI (975511) SensorControl: Received BME690 data[0m
+[0;32mI (975811) SPS30: SPS30 connected and new data available[0m
+[0;32mI (975911) SensorControl: Received SPS30 data[0m
+[0;32mI (975911) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (975911) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (975911) DUMMY: SPS30 Data:[0m
+[0;32mI (975911) DUMMY:   PM2.5: 1.77 µg/m³[0m
+[0;32mI (975921) DUMMY:   PM10: 1.77 µg/m³[0m
+[0;32mI (975921) DUMMY:   PM2.5: 13.28 particles/cm3[0m
+[0;32mI (975921) DUMMY:   PM10: 13.29 particles/cm3[0m
+[0;32mI (975931) DUMMY: =====================================[0m
+[0;32mI (975931) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (975941) DUMMY: BME690 Data:[0m
+[0;32mI (975941) DUMMY:   VOC: 0.88[0m
+[0;32mI (975941) DUMMY:   Pressure: 100491.38 Pa[0m
+[0;32mI (975951) DUMMY:   Humidity: 15.90 %[0m
+[0;32mI (975951) DUMMY: =====================================[0m
+[0;32mI (975961) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (975961) DUMMY: Temperature Data:[0m
+[0;32mI (975961) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (975971) DUMMY: =====================================[0m
+[0;32mI (975971) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (975981) DUMMY: BMV080 Data:[0m
+[0;32mI (975981) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (975981) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (975991) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (975991) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (976001) DUMMY: =====================================[0m
+[0;32mI (978511) SensorControl: Received BME690 data[0m
+[0;32mI (979911) SensorControl: Received BMV080 data[0m
+[0;32mI (981511) SensorControl: Received BME690 data[0m
+[0;32mI (984611) SensorControl: Received BME690 data[0m
+[0;32mI (987611) SensorControl: Received BME690 data[0m
+[0;32mI (990611) SensorControl: Received BME690 data[0m
+[0;32mI (993611) SensorControl: Received BME690 data[0m
+[0;32mI (996611) SensorControl: Received BME690 data[0m
+[0;32mI (999611) SensorControl: Received BME690 data[0m
+[0;32mI (1002611) SensorControl: Received BME690 data[0m
+[0;32mI (1005611) SensorControl: Received BME690 data[0m
+[0;32mI (1008611) SensorControl: Received BME690 data[0m
+[0;32mI (1011011) SensorControl: Received BMV080 data[0m
+[0;32mI (1011611) SensorControl: Received BME690 data[0m
+[0;32mI (1014711) SensorControl: Received BME690 data[0m
+[0;32mI (1017711) SensorControl: Received BME690 data[0m
+[0;32mI (1020711) SensorControl: Received BME690 data[0m
+[0;32mI (1023511) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1023611) SensorControl: Received TC74A2 data[0m
+[0;32mI (1023711) SensorControl: Received BME690 data[0m
+[0;32mI (1026711) SensorControl: Received BME690 data[0m
+[0;32mI (1029711) SensorControl: Received BME690 data[0m
+[0;32mI (1032711) SensorControl: Received BME690 data[0m
+[0;32mI (1035711) SensorControl: Received BME690 data[0m
+[0;32mI (1035911) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1036011) SensorControl: Received SPS30 data[0m
+[0;32mI (1036011) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1036011) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1036011) DUMMY: SPS30 Data:[0m
+[0;32mI (1036011) DUMMY:   PM2.5: 1.89 µg/m³[0m
+[0;32mI (1036021) DUMMY:   PM10: 1.89 µg/m³[0m
+[0;32mI (1036021) DUMMY:   PM2.5: 14.30 particles/cm3[0m
+[0;32mI (1036031) DUMMY:   PM10: 14.31 particles/cm3[0m
+[0;32mI (1036031) DUMMY: =====================================[0m
+[0;32mI (1036031) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1036041) DUMMY: BME690 Data:[0m
+[0;32mI (1036041) DUMMY:   VOC: 0.88[0m
+[0;32mI (1036041) DUMMY:   Pressure: 100486.81 Pa[0m
+[0;32mI (1036051) DUMMY:   Humidity: 15.91 %[0m
+[0;32mI (1036051) DUMMY: =====================================[0m
+[0;32mI (1036061) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1036061) DUMMY: Temperature Data:[0m
+[0;32mI (1036061) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1036071) DUMMY: =====================================[0m
+[0;32mI (1036071) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1036081) DUMMY: BMV080 Data:[0m
+[0;32mI (1036081) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (1036081) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (1036091) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (1036091) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (1036101) DUMMY: =====================================[0m
+[0;32mI (1038711) SensorControl: Received BME690 data[0m
+[0;32mI (1041711) SensorControl: Received BME690 data[0m
+[0;32mI (1042111) SensorControl: Received BMV080 data[0m
+[0;32mI (1044811) SensorControl: Received BME690 data[0m
+[0;32mI (1047811) SensorControl: Received BME690 data[0m
+[0;32mI (1050811) SensorControl: Received BME690 data[0m
+[0;32mI (1053811) SensorControl: Received BME690 data[0m
+[0;32mI (1056811) SensorControl: Received BME690 data[0m
+[0;32mI (1059811) SensorControl: Received BME690 data[0m
+[0;32mI (1062811) SensorControl: Received BME690 data[0m
+[0;32mI (1065811) SensorControl: Received BME690 data[0m
+[0;32mI (1068811) SensorControl: Received BME690 data[0m
+[0;32mI (1071811) SensorControl: Received BME690 data[0m
+[0;32mI (1073211) SensorControl: Received BMV080 data[0m
+[0;32mI (1074911) SensorControl: Received BME690 data[0m
+[0;32mI (1077911) SensorControl: Received BME690 data[0m
+[0;32mI (1080911) SensorControl: Received BME690 data[0m
+[0;32mI (1083561) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1083611) SensorControl: Received TC74A2 data[0m
+[0;32mI (1083911) SensorControl: Received BME690 data[0m
+[0;32mI (1086911) SensorControl: Received BME690 data[0m
+[0;32mI (1089911) SensorControl: Received BME690 data[0m
+[0;32mI (1092911) SensorControl: Received BME690 data[0m
+[0;32mI (1095911) SensorControl: Received BME690 data[0m
+[0;32mI (1096011) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1096111) SensorControl: Received SPS30 data[0m
+[0;32mI (1096111) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1096111) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1096111) DUMMY: SPS30 Data:[0m
+[0;32mI (1096111) DUMMY:   PM2.5: 1.81 µg/m³[0m
+[0;32mI (1096121) DUMMY:   PM10: 1.81 µg/m³[0m
+[0;32mI (1096121) DUMMY:   PM2.5: 13.66 particles/cm3[0m
+[0;32mI (1096131) DUMMY:   PM10: 13.66 particles/cm3[0m
+[0;32mI (1096131) DUMMY: =====================================[0m
+[0;32mI (1096131) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1096141) DUMMY: BME690 Data:[0m
+[0;32mI (1096141) DUMMY:   VOC: 0.86[0m
+[0;32mI (1096141) DUMMY:   Pressure: 100489.21 Pa[0m
+[0;32mI (1096151) DUMMY:   Humidity: 15.76 %[0m
+[0;32mI (1096151) DUMMY: =====================================[0m
+[0;32mI (1096161) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1096161) DUMMY: Temperature Data:[0m
+[0;32mI (1096161) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1096171) DUMMY: =====================================[0m
+[0;32mI (1096171) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1096181) DUMMY: BMV080 Data:[0m
+[0;32mI (1096181) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (1096181) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (1096191) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (1096191) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (1096201) DUMMY: =====================================[0m
+[0;32mI (1098911) SensorControl: Received BME690 data[0m
+[0;32mI (1101911) SensorControl: Received BME690 data[0m
+[0;32mI (1104311) SensorControl: Received BMV080 data[0m
+[0;32mI (1105011) SensorControl: Received BME690 data[0m
+[0;32mI (1108011) SensorControl: Received BME690 data[0m
+[0;32mI (1111011) SensorControl: Received BME690 data[0m
+[0;32mI (1114011) SensorControl: Received BME690 data[0m
+[0;32mI (1117011) SensorControl: Received BME690 data[0m
+[0;32mI (1120011) SensorControl: Received BME690 data[0m
+[0;32mI (1123011) SensorControl: Received BME690 data[0m
+[0;32mI (1126011) SensorControl: Received BME690 data[0m
+[0;32mI (1129011) SensorControl: Received BME690 data[0m
+[0;32mI (1132011) SensorControl: Received BME690 data[0m
+[0;32mI (1135111) SensorControl: Received BME690 data[0m
+[0;32mI (1135411) SensorControl: Received BMV080 data[0m
+[0;32mI (1138111) SensorControl: Received BME690 data[0m
+[0;32mI (1141111) SensorControl: Received BME690 data[0m
+[0;32mI (1143611) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1143711) SensorControl: Received TC74A2 data[0m
+[0;32mI (1144111) SensorControl: Received BME690 data[0m
+[0;32mI (1147111) SensorControl: Received BME690 data[0m
+[0;32mI (1150111) SensorControl: Received BME690 data[0m
+[0;32mI (1153111) SensorControl: Received BME690 data[0m
+[0;32mI (1156111) SensorControl: Received BME690 data[0m
+[0;32mI (1156111) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1156211) SensorControl: Received SPS30 data[0m
+[0;32mI (1156211) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1156211) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1156211) DUMMY: SPS30 Data:[0m
+[0;32mI (1156211) DUMMY:   PM2.5: 1.79 µg/m³[0m
+[0;32mI (1156221) DUMMY:   PM10: 1.79 µg/m³[0m
+[0;32mI (1156221) DUMMY:   PM2.5: 13.49 particles/cm3[0m
+[0;32mI (1156231) DUMMY:   PM10: 13.50 particles/cm3[0m
+[0;32mI (1156231) DUMMY: =====================================[0m
+[0;32mI (1156231) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1156241) DUMMY: BME690 Data:[0m
+[0;32mI (1156241) DUMMY:   VOC: 0.89[0m
+[0;32mI (1156241) DUMMY:   Pressure: 100489.27 Pa[0m
+[0;32mI (1156251) DUMMY:   Humidity: 15.69 %[0m
+[0;32mI (1156251) DUMMY: =====================================[0m
+[0;32mI (1156261) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1156261) DUMMY: Temperature Data:[0m
+[0;32mI (1156261) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1156271) DUMMY: =====================================[0m
+[0;32mI (1156271) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1156281) DUMMY: BMV080 Data:[0m
+[0;32mI (1156281) DUMMY: PM2.5_mass: 3.00 µg/m3[0m
+[0;32mI (1156281) DUMMY: PM10_mass: 4.00 µg/m3[0m
+[0;32mI (1156291) DUMMY: PM2.5_number: 24.00 particles/cm3[0m
+[0;32mI (1156291) DUMMY: PM10_number: 24.00 particles/cm3[0m
+[0;32mI (1156301) DUMMY: =====================================[0m
+[0;32mI (1159111) SensorControl: Received BME690 data[0m
+[0;32mI (1162111) SensorControl: Received BME690 data[0m
+[0;32mI (1165211) SensorControl: Received BME690 data[0m
+[0;32mI (1166511) SensorControl: Received BMV080 data[0m
+[0;32mI (1168211) SensorControl: Received BME690 data[0m
+[0;32mI (1171211) SensorControl: Received BME690 data[0m
+[0;32mI (1174211) SensorControl: Received BME690 data[0m
+[0;32mI (1177211) SensorControl: Received BME690 data[0m
+[0;32mI (1180211) SensorControl: Received BME690 data[0m
+[0;32mI (1183211) SensorControl: Received BME690 data[0m
+[0;32mI (1186211) SensorControl: Received BME690 data[0m
+[0;32mI (1189211) SensorControl: Received BME690 data[0m
+[0;32mI (1192211) SensorControl: Received BME690 data[0m
+[0;32mI (1195311) SensorControl: Received BME690 data[0m
+[0;32mI (1197611) SensorControl: Received BMV080 data[0m
+[0;32mI (1198311) SensorControl: Received BME690 data[0m
+[0;32mI (1201311) SensorControl: Received BME690 data[0m
+[0;32mI (1203661) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1203711) SensorControl: Received TC74A2 data[0m
+[0;32mI (1204311) SensorControl: Received BME690 data[0m
+[0;32mI (1207311) SensorControl: Received BME690 data[0m
+[0;32mI (1210311) SensorControl: Received BME690 data[0m
+[0;32mI (1213311) SensorControl: Received BME690 data[0m
+[0;32mI (1216211) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1216311) SensorControl: Received BME690 data[0m
+[0;32mI (1216311) SensorControl: Received SPS30 data[0m
+[0;32mI (1216311) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1216311) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1216321) DUMMY: SPS30 Data:[0m
+[0;32mI (1216321) DUMMY:   PM2.5: 1.28 µg/m³[0m
+[0;32mI (1216321) DUMMY:   PM10: 1.28 µg/m³[0m
+[0;32mI (1216331) DUMMY:   PM2.5: 9.62 particles/cm3[0m
+[0;32mI (1216331) DUMMY:   PM10: 9.62 particles/cm3[0m
+[0;32mI (1216331) DUMMY: =====================================[0m
+[0;32mI (1216341) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1216341) DUMMY: BME690 Data:[0m
+[0;32mI (1216351) DUMMY:   VOC: 0.84[0m
+[0;32mI (1216351) DUMMY:   Pressure: 100489.89 Pa[0m
+[0;32mI (1216351) DUMMY:   Humidity: 15.61 %[0m
+[0;32mI (1216361) DUMMY: =====================================[0m
+[0;32mI (1216361) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1216371) DUMMY: Temperature Data:[0m
+[0;32mI (1216371) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1216371) DUMMY: =====================================[0m
+[0;32mI (1216381) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1216381) DUMMY: BMV080 Data:[0m
+[0;32mI (1216381) DUMMY: PM2.5_mass: 3.00 µg/m3[0m
+[0;32mI (1216391) DUMMY: PM10_mass: 4.00 µg/m3[0m
+[0;32mI (1216391) DUMMY: PM2.5_number: 24.00 particles/cm3[0m
+[0;32mI (1216401) DUMMY: PM10_number: 24.00 particles/cm3[0m
+[0;32mI (1216401) DUMMY: =====================================[0m
+[0;32mI (1219321) SensorControl: Received BME690 data[0m
+[0;32mI (1222321) SensorControl: Received BME690 data[0m
+[0;32mI (1225321) SensorControl: Received BME690 data[0m
+[0;32mI (1228421) SensorControl: Received BME690 data[0m
+[0;32mI (1228721) SensorControl: Received BMV080 data[0m
+[0;32mI (1231421) SensorControl: Received BME690 data[0m
+[0;32mI (1234421) SensorControl: Received BME690 data[0m
+[0;32mI (1237421) SensorControl: Received BME690 data[0m
+[0;32mI (1240421) SensorControl: Received BME690 data[0m
+[0;32mI (1243421) SensorControl: Received BME690 data[0m
+[0;32mI (1246421) SensorControl: Received BME690 data[0m
+[0;32mI (1249421) SensorControl: Received BME690 data[0m
+[0;32mI (1252421) SensorControl: Received BME690 data[0m
+[0;32mI (1255421) SensorControl: Received BME690 data[0m
+[0;32mI (1258521) SensorControl: Received BME690 data[0m
+[0;32mI (1259821) SensorControl: Received BMV080 data[0m
+[0;32mI (1261521) SensorControl: Received BME690 data[0m
+[0;32mI (1263711) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1263721) SensorControl: Received TC74A2 data[0m
+[0;32mI (1264521) SensorControl: Received BME690 data[0m
+[0;32mI (1267521) SensorControl: Received BME690 data[0m
+[0;32mI (1270521) SensorControl: Received BME690 data[0m
+[0;32mI (1273521) SensorControl: Received BME690 data[0m
+[0;32mI (1276311) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1276421) SensorControl: Received SPS30 data[0m
+[0;32mI (1276421) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1276421) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1276421) DUMMY: SPS30 Data:[0m
+[0;32mI (1276421) DUMMY:   PM2.5: 1.66 µg/m³[0m
+[0;32mI (1276431) DUMMY:   PM10: 1.66 µg/m³[0m
+[0;32mI (1276431) DUMMY:   PM2.5: 12.51 particles/cm3[0m
+[0;32mI (1276441) DUMMY:   PM10: 12.51 particles/cm3[0m
+[0;32mI (1276441) DUMMY: =====================================[0m
+[0;32mI (1276441) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1276451) DUMMY: BME690 Data:[0m
+[0;32mI (1276451) DUMMY:   VOC: 0.83[0m
+[0;32mI (1276451) DUMMY:   Pressure: 100491.99 Pa[0m
+[0;32mI (1276461) DUMMY:   Humidity: 15.46 %[0m
+[0;32mI (1276461) DUMMY: =====================================[0m
+[0;32mI (1276471) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1276471) DUMMY: Temperature Data:[0m
+[0;32mI (1276471) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1276481) DUMMY: =====================================[0m
+[0;32mI (1276481) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1276491) DUMMY: BMV080 Data:[0m
+[0;32mI (1276491) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (1276491) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (1276501) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (1276501) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (1276511) DUMMY: =====================================[0m
+[0;32mI (1276521) SensorControl: Received BME690 data[0m
+[0;32mI (1279521) SensorControl: Received BME690 data[0m
+[0;32mI (1282521) SensorControl: Received BME690 data[0m
+[0;32mI (1285521) SensorControl: Received BME690 data[0m
+[0;32mI (1288621) SensorControl: Received BME690 data[0m
+[0;32mI (1290821) SensorControl: Received BMV080 data[0m
+[0;32mI (1291621) SensorControl: Received BME690 data[0m
+[0;32mI (1294621) SensorControl: Received BME690 data[0m
+[0;32mI (1297621) SensorControl: Received BME690 data[0m
+[0;32mI (1300621) SensorControl: Received BME690 data[0m
+[0;32mI (1303621) SensorControl: Received BME690 data[0m
+[0;32mI (1306621) SensorControl: Received BME690 data[0m
+[0;32mI (1309621) SensorControl: Received BME690 data[0m
+[0;32mI (1312621) SensorControl: Received BME690 data[0m
+[0;32mI (1315621) SensorControl: Received BME690 data[0m
+[0;32mI (1318721) SensorControl: Received BME690 data[0m
+[0;32mI (1321721) SensorControl: Received BME690 data[0m
+[0;32mI (1321921) SensorControl: Received BMV080 data[0m
+[0;32mI (1323761) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1323821) SensorControl: Received TC74A2 data[0m
+[0;32mI (1324721) SensorControl: Received BME690 data[0m
+[0;32mI (1327721) SensorControl: Received BME690 data[0m
+[0;32mI (1330721) SensorControl: Received BME690 data[0m
+[0;32mI (1333721) SensorControl: Received BME690 data[0m
+[0;32mI (1336411) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1336521) SensorControl: Received SPS30 data[0m
+[0;32mI (1336521) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1336521) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1336521) DUMMY: SPS30 Data:[0m
+[0;32mI (1336521) DUMMY:   PM2.5: 1.99 µg/m³[0m
+[0;32mI (1336531) DUMMY:   PM10: 1.99 µg/m³[0m
+[0;32mI (1336531) DUMMY:   PM2.5: 15.02 particles/cm3[0m
+[0;32mI (1336541) DUMMY:   PM10: 15.03 particles/cm3[0m
+[0;32mI (1336541) DUMMY: =====================================[0m
+[0;32mI (1336541) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1336551) DUMMY: BME690 Data:[0m
+[0;32mI (1336551) DUMMY:   VOC: 0.79[0m
+[0;32mI (1336551) DUMMY:   Pressure: 100489.37 Pa[0m
+[0;32mI (1336561) DUMMY:   Humidity: 15.47 %[0m
+[0;32mI (1336561) DUMMY: =====================================[0m
+[0;32mI (1336571) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1336571) DUMMY: Temperature Data:[0m
+[0;32mI (1336571) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1336581) DUMMY: =====================================[0m
+[0;32mI (1336581) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1336591) DUMMY: BMV080 Data:[0m
+[0;32mI (1336591) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (1336591) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (1336601) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (1336601) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (1336611) DUMMY: =====================================[0m
+[0;32mI (1336721) SensorControl: Received BME690 data[0m
+[0;32mI (1339721) SensorControl: Received BME690 data[0m
+[0;32mI (1342721) SensorControl: Received BME690 data[0m
+[0;32mI (1345721) SensorControl: Received BME690 data[0m
+[0;32mI (1348821) SensorControl: Received BME690 data[0m
+[0;32mI (1351821) SensorControl: Received BME690 data[0m
+[0;32mI (1353021) SensorControl: Received BMV080 data[0m
+[0;32mI (1354821) SensorControl: Received BME690 data[0m
+[0;32mI (1357821) SensorControl: Received BME690 data[0m
+[0;32mI (1360821) SensorControl: Received BME690 data[0m
+[0;32mI (1363821) SensorControl: Received BME690 data[0m
+[0;32mI (1366821) SensorControl: Received BME690 data[0m
+[0;32mI (1369821) SensorControl: Received BME690 data[0m
+[0;32mI (1372821) SensorControl: Received BME690 data[0m
+[0;32mI (1375821) SensorControl: Received BME690 data[0m
+[0;32mI (1378921) SensorControl: Received BME690 data[0m
+[0;32mI (1381921) SensorControl: Received BME690 data[0m
+[0;32mI (1383811) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (1383821) SensorControl: Received TC74A2 data[0m
+[0;32mI (1384121) SensorControl: Received BMV080 data[0m
+[0;32mI (1384921) SensorControl: Received BME690 data[0m
+[0;32mI (1387921) SensorControl: Received BME690 data[0m
+[0;32mI (1390921) SensorControl: Received BME690 data[0m
+[0;32mI (1393921) SensorControl: Received BME690 data[0m
+[0;32mI (1396511) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1396621) SensorControl: Received SPS30 data[0m
+[0;32mI (1396621) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1396621) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1396621) DUMMY: SPS30 Data:[0m
+[0;32mI (1396621) DUMMY:   PM2.5: 1.61 µg/m³[0m
+[0;32mI (1396631) DUMMY:   PM10: 1.61 µg/m³[0m
+[0;32mI (1396631) DUMMY:   PM2.5: 12.14 particles/cm3[0m
+[0;32mI (1396641) DUMMY:   PM10: 12.14 particles/cm3[0m
+[0;32mI (1396641) DUMMY: =====================================[0m
+[0;32mI (1396641) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1396651) DUMMY: BME690 Data:[0m
+[0;32mI (1396651) DUMMY:   VOC: 0.74[0m
+[0;32mI (1396651) DUMMY:   Pressure: 100487.53 Pa[0m
+[0;32mI (1396661) DUMMY:   Humidity: 15.37 %[0m
+[0;32mI (1396661) DUMMY: =====================================[0m
+[0;32mI (1396671) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1396671) DUMMY: Temperature Data:[0m
+[0;32mI (1396671) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (1396681) DUMMY: =====================================[0m
+[0;32mI (1396681) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1396691) DUMMY: BMV080 Data:[0m
+[0;32mI (1396691) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (1396691) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (1396701) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (1396701) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (1396711) DUMMY: =====================================[0m
+[0;32mI (1396921) SensorControl: Received BME690 data[0m
+[0;32mI (1399921) SensorControl: Received BME690 data[0m
+[0;32mI (1402921) SensorControl: Received BME690 data[0m
+[0;32mI (1405921) SensorControl: Received BME690 data[0m
+[0;32mI (1409021) SensorControl: Received BME690 data[0m
+[0;32mI (1412021) SensorControl: Received BME690 data[0m
+[0;32mI (1415021) SensorControl: Received BME690 data[0m
+[0;32mI (1415221) SensorControl: Received BMV080 data[0m
+[0;32mI (1418021) SensorControl: Received BME690 data[0m
+[0;32mI (1421021) SensorControl: Received BME690 data[0m
+[0;32mI (1424021) SensorControl: Received BME690 data[0m
+[0;32mI (1427021) SensorControl: Received BME690 data[0m
+[0;32mI (1430021) SensorControl: Received BME690 data[0m
+[0;32mI (1433021) SensorControl: Received BME690 data[0m
+[0;32mI (1436021) SensorControl: Received BME690 data[0m
+[0;32mI (1439121) SensorControl: Received BME690 data[0m
+[0;32mI (1442121) SensorControl: Received BME690 data[0m
+[0;32mI (1443861) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1443921) SensorControl: Received TC74A2 data[0m
+[0;32mI (1445121) SensorControl: Received BME690 data[0m
+[0;32mI (1446221) SensorControl: Received BMV080 data[0m
+[0;32mI (1448121) SensorControl: Received BME690 data[0m
+[0;32mI (1451121) SensorControl: Received BME690 data[0m
+[0;32mI (1454121) SensorControl: Received BME690 data[0m
+[0;32mI (1456611) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1456721) SensorControl: Received SPS30 data[0m
+[0;32mI (1456721) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1456721) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1456721) DUMMY: SPS30 Data:[0m
+[0;32mI (1456721) DUMMY:   PM2.5: 1.73 µg/m³[0m
+[0;32mI (1456731) DUMMY:   PM10: 1.73 µg/m³[0m
+[0;32mI (1456731) DUMMY:   PM2.5: 13.02 particles/cm3[0m
+[0;32mI (1456741) DUMMY:   PM10: 13.02 particles/cm3[0m
+[0;32mI (1456741) DUMMY: =====================================[0m
+[0;32mI (1456741) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1456751) DUMMY: BME690 Data:[0m
+[0;32mI (1456751) DUMMY:   VOC: 0.68[0m
+[0;32mI (1456751) DUMMY:   Pressure: 100489.37 Pa[0m
+[0;32mI (1456761) DUMMY:   Humidity: 15.37 %[0m
+[0;32mI (1456761) DUMMY: =====================================[0m
+[0;32mI (1456771) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1456771) DUMMY: Temperature Data:[0m
+[0;32mI (1456771) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1456781) DUMMY: =====================================[0m
+[0;32mI (1456781) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1456791) DUMMY: BMV080 Data:[0m
+[0;32mI (1456791) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (1456791) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (1456801) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (1456801) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (1456811) DUMMY: =====================================[0m
+[0;32mI (1457121) SensorControl: Received BME690 data[0m
+[0;32mI (1460121) SensorControl: Received BME690 data[0m
+[0;32mI (1463121) SensorControl: Received BME690 data[0m
+[0;32mI (1466121) SensorControl: Received BME690 data[0m
+[0;32mI (1469221) SensorControl: Received BME690 data[0m
+[0;32mI (1472221) SensorControl: Received BME690 data[0m
+[0;32mI (1475221) SensorControl: Received BME690 data[0m
+[0;32mI (1477421) SensorControl: Received BMV080 data[0m
+[0;32mI (1478221) SensorControl: Received BME690 data[0m
+[0;32mI (1481221) SensorControl: Received BME690 data[0m
+[0;32mI (1484221) SensorControl: Received BME690 data[0m
+[0;32mI (1487221) SensorControl: Received BME690 data[0m
+[0;32mI (1490221) SensorControl: Received BME690 data[0m
+[0;32mI (1493221) SensorControl: Received BME690 data[0m
+[0;32mI (1496221) SensorControl: Received BME690 data[0m
+[0;32mI (1499321) SensorControl: Received BME690 data[0m
+[0;32mI (1502321) SensorControl: Received BME690 data[0m
+[0;32mI (1503911) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1503921) SensorControl: Received TC74A2 data[0m
+[0;32mI (1505321) SensorControl: Received BME690 data[0m
+[0;32mI (1508321) SensorControl: Received BME690 data[0m
+[0;32mI (1508421) SensorControl: Received BMV080 data[0m
+[0;32mI (1511321) SensorControl: Received BME690 data[0m
+[0;32mI (1514321) SensorControl: Received BME690 data[0m
+[0;32mI (1516711) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1516821) SensorControl: Received SPS30 data[0m
+[0;32mI (1516821) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1516821) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1516821) DUMMY: SPS30 Data:[0m
+[0;32mI (1516821) DUMMY:   PM2.5: 2.00 µg/m³[0m
+[0;32mI (1516831) DUMMY:   PM10: 2.00 µg/m³[0m
+[0;32mI (1516831) DUMMY:   PM2.5: 15.04 particles/cm3[0m
+[0;32mI (1516841) DUMMY:   PM10: 15.04 particles/cm3[0m
+[0;32mI (1516841) DUMMY: =====================================[0m
+[0;32mI (1516841) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1516851) DUMMY: BME690 Data:[0m
+[0;32mI (1516851) DUMMY:   VOC: 0.67[0m
+[0;32mI (1516851) DUMMY:   Pressure: 100487.37 Pa[0m
+[0;32mI (1516861) DUMMY:   Humidity: 15.37 %[0m
+[0;32mI (1516861) DUMMY: =====================================[0m
+[0;32mI (1516871) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1516871) DUMMY: Temperature Data:[0m
+[0;32mI (1516871) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1516881) DUMMY: =====================================[0m
+[0;32mI (1516881) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1516891) DUMMY: BMV080 Data:[0m
+[0;32mI (1516891) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (1516891) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (1516901) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (1516901) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (1516911) DUMMY: =====================================[0m
+[0;32mI (1517321) SensorControl: Received BME690 data[0m
+[0;32mI (1520321) SensorControl: Received BME690 data[0m
+[0;32mI (1523321) SensorControl: Received BME690 data[0m
+[0;32mI (1526321) SensorControl: Received BME690 data[0m
+[0;32mI (1529421) SensorControl: Received BME690 data[0m
+[0;32mI (1532421) SensorControl: Received BME690 data[0m
+[0;32mI (1535421) SensorControl: Received BME690 data[0m
+[0;32mI (1538421) SensorControl: Received BME690 data[0m
+[0;32mI (1539521) SensorControl: Received BMV080 data[0m
+[0;32mI (1541421) SensorControl: Received BME690 data[0m
+[0;32mI (1544421) SensorControl: Received BME690 data[0m
+[0;32mI (1547421) SensorControl: Received BME690 data[0m
+[0;32mI (1550421) SensorControl: Received BME690 data[0m
+[0;32mI (1553421) SensorControl: Received BME690 data[0m
+[0;32mI (1556421) SensorControl: Received BME690 data[0m
+[0;32mI (1559521) SensorControl: Received BME690 data[0m
+[0;32mI (1562521) SensorControl: Received BME690 data[0m
+[0;32mI (1563961) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1564021) SensorControl: Received TC74A2 data[0m
+[0;32mI (1565521) SensorControl: Received BME690 data[0m
+[0;32mI (1568521) SensorControl: Received BME690 data[0m
+[0;32mI (1569721) SensorControl: Received BMV080 data[0m
+[0;32mI (1571521) SensorControl: Received BME690 data[0m
+[0;32mI (1574521) SensorControl: Received BME690 data[0m
+[0;32mI (1576811) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1576921) SensorControl: Received SPS30 data[0m
+[0;32mI (1576921) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1576921) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1576921) DUMMY: SPS30 Data:[0m
+[0;32mI (1576921) DUMMY:   PM2.5: 1.85 µg/m³[0m
+[0;32mI (1576931) DUMMY:   PM10: 1.85 µg/m³[0m
+[0;32mI (1576931) DUMMY:   PM2.5: 13.92 particles/cm3[0m
+[0;32mI (1576941) DUMMY:   PM10: 13.93 particles/cm3[0m
+[0;32mI (1576941) DUMMY: =====================================[0m
+[0;32mI (1576941) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1576951) DUMMY: BME690 Data:[0m
+[0;32mI (1576951) DUMMY:   VOC: 0.65[0m
+[0;32mI (1576951) DUMMY:   Pressure: 100487.43 Pa[0m
+[0;32mI (1576961) DUMMY:   Humidity: 15.42 %[0m
+[0;32mI (1576961) DUMMY: =====================================[0m
+[0;32mI (1576971) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1576971) DUMMY: Temperature Data:[0m
+[0;32mI (1576971) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1576981) DUMMY: =====================================[0m
+[0;32mI (1576981) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1576991) DUMMY: BMV080 Data:[0m
+[0;32mI (1576991) DUMMY: PM2.5_mass: 4.00 µg/m3[0m
+[0;32mI (1576991) DUMMY: PM10_mass: 5.00 µg/m3[0m
+[0;32mI (1577001) DUMMY: PM2.5_number: 33.00 particles/cm3[0m
+[0;32mI (1577001) DUMMY: PM10_number: 33.00 particles/cm3[0m
+[0;32mI (1577011) DUMMY: =====================================[0m
+[0;32mI (1577521) SensorControl: Received BME690 data[0m
+[0;32mI (1580521) SensorControl: Received BME690 data[0m
+[0;32mI (1583521) SensorControl: Received BME690 data[0m
+[0;32mI (1586521) SensorControl: Received BME690 data[0m
+[0;32mI (1589621) SensorControl: Received BME690 data[0m
+[0;32mI (1592621) SensorControl: Received BME690 data[0m
+[0;32mI (1595621) SensorControl: Received BME690 data[0m
+[0;32mI (1598621) SensorControl: Received BME690 data[0m
+[0;32mI (1600821) SensorControl: Received BMV080 data[0m
+[0;32mI (1601621) SensorControl: Received BME690 data[0m
+[0;32mI (1604621) SensorControl: Received BME690 data[0m
+[0;32mI (1607621) SensorControl: Received BME690 data[0m
+[0;32mI (1610621) SensorControl: Received BME690 data[0m
+[0;32mI (1613621) SensorControl: Received BME690 data[0m
+[0;32mI (1616621) SensorControl: Received BME690 data[0m
+[0;32mI (1619721) SensorControl: Received BME690 data[0m
+[0;32mI (1622721) SensorControl: Received BME690 data[0m
+[0;32mI (1624011) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1624021) SensorControl: Received TC74A2 data[0m
+[0;32mI (1625721) SensorControl: Received BME690 data[0m
+[0;32mI (1628721) SensorControl: Received BME690 data[0m
+[0;32mI (1631721) SensorControl: Received BME690 data[0m
+[0;32mI (1631921) SensorControl: Received BMV080 data[0m
+[0;32mI (1634721) SensorControl: Received BME690 data[0m
+[0;32mI (1636911) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1637021) SensorControl: Received SPS30 data[0m
+[0;32mI (1637021) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1637021) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1637021) DUMMY: SPS30 Data:[0m
+[0;32mI (1637021) DUMMY:   PM2.5: 1.48 µg/m³[0m
+[0;32mI (1637031) DUMMY:   PM10: 1.48 µg/m³[0m
+[0;32mI (1637031) DUMMY:   PM2.5: 11.14 particles/cm3[0m
+[0;32mI (1637041) DUMMY:   PM10: 11.14 particles/cm3[0m
+[0;32mI (1637041) DUMMY: =====================================[0m
+[0;32mI (1637041) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1637051) DUMMY: BME690 Data:[0m
+[0;32mI (1637051) DUMMY:   VOC: 0.65[0m
+[0;32mI (1637051) DUMMY:   Pressure: 100489.15 Pa[0m
+[0;32mI (1637061) DUMMY:   Humidity: 15.49 %[0m
+[0;32mI (1637061) DUMMY: =====================================[0m
+[0;32mI (1637071) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1637071) DUMMY: Temperature Data:[0m
+[0;32mI (1637071) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1637081) DUMMY: =====================================[0m
+[0;32mI (1637081) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1637091) DUMMY: BMV080 Data:[0m
+[0;32mI (1637091) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (1637091) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (1637101) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (1637101) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (1637111) DUMMY: =====================================[0m
+[0;32mI (1637721) SensorControl: Received BME690 data[0m
+[0;32mI (1640721) SensorControl: Received BME690 data[0m
+[0;32mI (1643721) SensorControl: Received BME690 data[0m
+[0;32mI (1646721) SensorControl: Received BME690 data[0m
+[0;32mI (1649821) SensorControl: Received BME690 data[0m
+[0;32mI (1652821) SensorControl: Received BME690 data[0m
+[0;32mI (1655821) SensorControl: Received BME690 data[0m
+[0;32mI (1658821) SensorControl: Received BME690 data[0m
+[0;32mI (1661821) SensorControl: Received BME690 data[0m
+[0;32mI (1663021) SensorControl: Received BMV080 data[0m
+[0;32mI (1664821) SensorControl: Received BME690 data[0m
+[0;32mI (1667821) SensorControl: Received BME690 data[0m
+[0;32mI (1670821) SensorControl: Received BME690 data[0m
+[0;32mI (1673821) SensorControl: Received BME690 data[0m
+[0;32mI (1676821) SensorControl: Received BME690 data[0m
+[0;32mI (1679921) SensorControl: Received BME690 data[0m
+[0;32mI (1682921) SensorControl: Received BME690 data[0m
+[0;32mI (1684061) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1684121) SensorControl: Received TC74A2 data[0m
+[0;32mI (1685921) SensorControl: Received BME690 data[0m
+[0;32mI (1688921) SensorControl: Received BME690 data[0m
+[0;32mI (1691921) SensorControl: Received BME690 data[0m
+[0;32mI (1694021) SensorControl: Received BMV080 data[0m
+[0;32mI (1694921) SensorControl: Received BME690 data[0m
+[0;32mI (1697011) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1697121) SensorControl: Received SPS30 data[0m
+[0;32mI (1697121) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1697121) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1697121) DUMMY: SPS30 Data:[0m
+[0;32mI (1697121) DUMMY:   PM2.5: 1.67 µg/m³[0m
+[0;32mI (1697131) DUMMY:   PM10: 1.67 µg/m³[0m
+[0;32mI (1697131) DUMMY:   PM2.5: 12.56 particles/cm3[0m
+[0;32mI (1697141) DUMMY:   PM10: 12.56 particles/cm3[0m
+[0;32mI (1697141) DUMMY: =====================================[0m
+[0;32mI (1697141) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1697151) DUMMY: BME690 Data:[0m
+[0;32mI (1697151) DUMMY:   VOC: 0.63[0m
+[0;32mI (1697151) DUMMY:   Pressure: 100488.41 Pa[0m
+[0;32mI (1697161) DUMMY:   Humidity: 15.50 %[0m
+[0;32mI (1697161) DUMMY: =====================================[0m
+[0;32mI (1697171) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1697171) DUMMY: Temperature Data:[0m
+[0;32mI (1697171) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1697181) DUMMY: =====================================[0m
+[0;32mI (1697181) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1697191) DUMMY: BMV080 Data:[0m
+[0;32mI (1697191) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (1697191) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (1697201) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (1697201) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (1697211) DUMMY: =====================================[0m
+[0;32mI (1697921) SensorControl: Received BME690 data[0m
+[0;32mI (1700921) SensorControl: Received BME690 data[0m
+[0;32mI (1703921) SensorControl: Received BME690 data[0m
+[0;32mI (1706921) SensorControl: Received BME690 data[0m
+[0;32mI (1710021) SensorControl: Received BME690 data[0m
+[0;32mI (1713021) SensorControl: Received BME690 data[0m
+[0;32mI (1716021) SensorControl: Received BME690 data[0m
+[0;32mI (1719021) SensorControl: Received BME690 data[0m
+[0;32mI (1722021) SensorControl: Received BME690 data[0m
+[0;32mI (1725021) SensorControl: Received BME690 data[0m
+[0;32mI (1725121) SensorControl: Received BMV080 data[0m
+[0;32mI (1728021) SensorControl: Received BME690 data[0m
+[0;32mI (1731021) SensorControl: Received BME690 data[0m
+[0;32mI (1734021) SensorControl: Received BME690 data[0m
+[0;32mI (1737021) SensorControl: Received BME690 data[0m
+[0;32mI (1740121) SensorControl: Received BME690 data[0m
+[0;32mI (1743121) SensorControl: Received BME690 data[0m
+[0;32mI (1744111) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1744121) SensorControl: Received TC74A2 data[0m
+[0;32mI (1746121) SensorControl: Received BME690 data[0m
+[0;32mI (1749121) SensorControl: Received BME690 data[0m
+[0;32mI (1752121) SensorControl: Received BME690 data[0m
+[0;32mI (1755121) SensorControl: Received BME690 data[0m
+[0;32mI (1755321) SensorControl: Received BMV080 data[0m
+[0;32mI (1757111) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1757221) SensorControl: Received SPS30 data[0m
+[0;32mI (1757221) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1757221) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1757221) DUMMY: SPS30 Data:[0m
+[0;32mI (1757221) DUMMY:   PM2.5: 1.58 µg/m³[0m
+[0;32mI (1757231) DUMMY:   PM10: 1.59 µg/m³[0m
+[0;32mI (1757231) DUMMY:   PM2.5: 11.92 particles/cm3[0m
+[0;32mI (1757241) DUMMY:   PM10: 11.92 particles/cm3[0m
+[0;32mI (1757241) DUMMY: =====================================[0m
+[0;32mI (1757241) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1757251) DUMMY: BME690 Data:[0m
+[0;32mI (1757251) DUMMY:   VOC: 0.57[0m
+[0;32mI (1757251) DUMMY:   Pressure: 100492.06 Pa[0m
+[0;32mI (1757261) DUMMY:   Humidity: 15.62 %[0m
+[0;32mI (1757261) DUMMY: =====================================[0m
+[0;32mI (1757271) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1757271) DUMMY: Temperature Data:[0m
+[0;32mI (1757271) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1757281) DUMMY: =====================================[0m
+[0;32mI (1757281) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1757291) DUMMY: BMV080 Data:[0m
+[0;32mI (1757291) DUMMY: PM2.5_mass: 5.00 µg/m3[0m
+[0;32mI (1757291) DUMMY: PM10_mass: 7.00 µg/m3[0m
+[0;32mI (1757301) DUMMY: PM2.5_number: 41.00 particles/cm3[0m
+[0;32mI (1757301) DUMMY: PM10_number: 41.00 particles/cm3[0m
+[0;32mI (1757311) DUMMY: =====================================[0m
+[0;32mI (1758121) SensorControl: Received BME690 data[0m
+[0;32mI (1761121) SensorControl: Received BME690 data[0m
+[0;32mI (1764121) SensorControl: Received BME690 data[0m
+[0;32mI (1767121) SensorControl: Received BME690 data[0m
+[0;32mI (1770221) SensorControl: Received BME690 data[0m
+[0;32mI (1773221) SensorControl: Received BME690 data[0m
+[0;32mI (1776221) SensorControl: Received BME690 data[0m
+[0;32mI (1779221) SensorControl: Received BME690 data[0m
+[0;32mI (1782221) SensorControl: Received BME690 data[0m
+[0;32mI (1785221) SensorControl: Received BME690 data[0m
+[0;32mI (1786321) SensorControl: Received BMV080 data[0m
+[0;32mI (1788221) SensorControl: Received BME690 data[0m
+[0;32mI (1791221) SensorControl: Received BME690 data[0m
+[0;32mI (1794221) SensorControl: Received BME690 data[0m
+[0;32mI (1797221) SensorControl: Received BME690 data[0m
+[0;32mI (1800321) SensorControl: Received BME690 data[0m
+[0;32mI (1803321) SensorControl: Received BME690 data[0m
+[0;32mI (1804161) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (1804221) SensorControl: Received TC74A2 data[0m
+[0;32mI (1806321) SensorControl: Received BME690 data[0m
+[0;32mI (1809321) SensorControl: Received BME690 data[0m
+[0;32mI (1812321) SensorControl: Received BME690 data[0m
+[0;32mI (1815321) SensorControl: Received BME690 data[0m
+[0;32mI (1817211) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1817321) SensorControl: Received SPS30 data[0m
+[0;32mI (1817321) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1817321) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1817321) DUMMY: SPS30 Data:[0m
+[0;32mI (1817321) DUMMY:   PM2.5: 1.96 µg/m³[0m
+[0;32mI (1817331) DUMMY:   PM10: 1.96 µg/m³[0m
+[0;32mI (1817331) DUMMY:   PM2.5: 14.73 particles/cm3[0m
+[0;32mI (1817341) DUMMY:   PM10: 14.73 particles/cm3[0m
+[0;32mI (1817341) DUMMY: =====================================[0m
+[0;32mI (1817341) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1817351) DUMMY: BME690 Data:[0m
+[0;32mI (1817351) DUMMY:   VOC: 0.57[0m
+[0;32mI (1817351) DUMMY:   Pressure: 100488.35 Pa[0m
+[0;32mI (1817361) DUMMY:   Humidity: 15.61 %[0m
+[0;32mI (1817361) DUMMY: =====================================[0m
+[0;32mI (1817371) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1817371) DUMMY: Temperature Data:[0m
+[0;32mI (1817371) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (1817381) DUMMY: =====================================[0m
+[0;32mI (1817381) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1817391) DUMMY: BMV080 Data:[0m
+[0;32mI (1817391) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (1817391) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (1817401) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (1817401) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (1817411) DUMMY: =====================================[0m
+[0;32mI (1817521) SensorControl: Received BMV080 data[0m
+[0;32mI (1818321) SensorControl: Received BME690 data[0m
+[0;32mI (1821321) SensorControl: Received BME690 data[0m
+[0;32mI (1824321) SensorControl: Received BME690 data[0m
+[0;32mI (1827321) SensorControl: Received BME690 data[0m
+[0;32mI (1830421) SensorControl: Received BME690 data[0m
+[0;32mI (1833421) SensorControl: Received BME690 data[0m
+[0;32mI (1836421) SensorControl: Received BME690 data[0m
+[0;32mI (1839421) SensorControl: Received BME690 data[0m
+[0;32mI (1842421) SensorControl: Received BME690 data[0m
+[0;32mI (1845421) SensorControl: Received BME690 data[0m
+[0;32mI (1848421) SensorControl: Received BME690 data[0m
+[0;32mI (1848621) SensorControl: Received BMV080 data[0m
+[0;32mI (1851421) SensorControl: Received BME690 data[0m
+[0;32mI (1854421) SensorControl: Received BME690 data[0m
+[0;32mI (1857421) SensorControl: Received BME690 data[0m
+[0;32mI (1860521) SensorControl: Received BME690 data[0m
+[0;32mI (1863521) SensorControl: Received BME690 data[0m
+[0;32mI (1864211) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (1864221) SensorControl: Received TC74A2 data[0m
+[0;32mI (1866521) SensorControl: Received BME690 data[0m
+[0;32mI (1869521) SensorControl: Received BME690 data[0m
+[0;32mI (1872521) SensorControl: Received BME690 data[0m
+[0;32mI (1875521) SensorControl: Received BME690 data[0m
+[0;32mI (1877311) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1877421) SensorControl: Received SPS30 data[0m
+[0;32mI (1877421) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1877421) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1877421) DUMMY: SPS30 Data:[0m
+[0;32mI (1877421) DUMMY:   PM2.5: 2.36 µg/m³[0m
+[0;32mI (1877431) DUMMY:   PM10: 2.37 µg/m³[0m
+[0;32mI (1877431) DUMMY:   PM2.5: 17.80 particles/cm3[0m
+[0;32mI (1877441) DUMMY:   PM10: 17.81 particles/cm3[0m
+[0;32mI (1877441) DUMMY: =====================================[0m
+[0;32mI (1877441) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1877451) DUMMY: BME690 Data:[0m
+[0;32mI (1877451) DUMMY:   VOC: 0.55[0m
+[0;32mI (1877451) DUMMY:   Pressure: 100485.95 Pa[0m
+[0;32mI (1877461) DUMMY:   Humidity: 15.63 %[0m
+[0;32mI (1877461) DUMMY: =====================================[0m
+[0;32mI (1877471) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1877471) DUMMY: Temperature Data:[0m
+[0;32mI (1877471) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (1877481) DUMMY: =====================================[0m
+[0;32mI (1877481) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1877491) DUMMY: BMV080 Data:[0m
+[0;32mI (1877491) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (1877491) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (1877501) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (1877501) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (1877511) DUMMY: =====================================[0m
+[0;32mI (1878521) SensorControl: Received BME690 data[0m
+[0;32mI (1879621) SensorControl: Received BMV080 data[0m
+[0;32mI (1881521) SensorControl: Received BME690 data[0m
+[0;32mI (1884521) SensorControl: Received BME690 data[0m
+[0;32mI (1887521) SensorControl: Received BME690 data[0m
+[0;32mI (1890621) SensorControl: Received BME690 data[0m
+[0;32mI (1893621) SensorControl: Received BME690 data[0m
+[0;32mI (1896621) SensorControl: Received BME690 data[0m
+[0;32mI (1899621) SensorControl: Received BME690 data[0m
+[0;32mI (1902621) SensorControl: Received BME690 data[0m
+[0;32mI (1905621) SensorControl: Received BME690 data[0m
+[0;32mI (1908621) SensorControl: Received BME690 data[0m
+[0;32mI (1910721) SensorControl: Received BMV080 data[0m
+[0;32mI (1911621) SensorControl: Received BME690 data[0m
+[0;32mI (1914621) SensorControl: Received BME690 data[0m
+[0;32mI (1917621) SensorControl: Received BME690 data[0m
+[0;32mI (1920721) SensorControl: Received BME690 data[0m
+[0;32mI (1923721) SensorControl: Received BME690 data[0m
+[0;32mI (1924261) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1924321) SensorControl: Received TC74A2 data[0m
+[0;32mI (1926721) SensorControl: Received BME690 data[0m
+[0;32mI (1929721) SensorControl: Received BME690 data[0m
+[0;32mI (1932721) SensorControl: Received BME690 data[0m
+[0;32mI (1935721) SensorControl: Received BME690 data[0m
+[0;32mI (1937411) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1937521) SensorControl: Received SPS30 data[0m
+[0;32mI (1937521) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1937521) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1937521) DUMMY: SPS30 Data:[0m
+[0;32mI (1937521) DUMMY:   PM2.5: 1.61 µg/m³[0m
+[0;32mI (1937531) DUMMY:   PM10: 1.61 µg/m³[0m
+[0;32mI (1937531) DUMMY:   PM2.5: 12.09 particles/cm3[0m
+[0;32mI (1937541) DUMMY:   PM10: 12.10 particles/cm3[0m
+[0;32mI (1937541) DUMMY: =====================================[0m
+[0;32mI (1937541) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1937551) DUMMY: BME690 Data:[0m
+[0;32mI (1937551) DUMMY:   VOC: 0.55[0m
+[0;32mI (1937551) DUMMY:   Pressure: 100488.18 Pa[0m
+[0;32mI (1937561) DUMMY:   Humidity: 15.62 %[0m
+[0;32mI (1937561) DUMMY: =====================================[0m
+[0;32mI (1937571) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1937571) DUMMY: Temperature Data:[0m
+[0;32mI (1937571) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1937581) DUMMY: =====================================[0m
+[0;32mI (1937581) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1937591) DUMMY: BMV080 Data:[0m
+[0;32mI (1937591) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (1937591) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (1937601) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (1937601) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (1937611) DUMMY: =====================================[0m
+[0;32mI (1938721) SensorControl: Received BME690 data[0m
+[0;32mI (1941721) SensorControl: Received BME690 data[0m
+[0;32mI (1941821) SensorControl: Received BMV080 data[0m
+[0;32mI (1944721) SensorControl: Received BME690 data[0m
+[0;32mI (1947721) SensorControl: Received BME690 data[0m
+[0;32mI (1950821) SensorControl: Received BME690 data[0m
+[0;32mI (1953821) SensorControl: Received BME690 data[0m
+[0;32mI (1956821) SensorControl: Received BME690 data[0m
+[0;32mI (1959821) SensorControl: Received BME690 data[0m
+[0;32mI (1962821) SensorControl: Received BME690 data[0m
+[0;32mI (1965821) SensorControl: Received BME690 data[0m
+[0;32mI (1968821) SensorControl: Received BME690 data[0m
+[0;32mI (1971821) SensorControl: Received BME690 data[0m
+[0;32mI (1972921) SensorControl: Received BMV080 data[0m
+[0;32mI (1974821) SensorControl: Received BME690 data[0m
+[0;32mI (1977821) SensorControl: Received BME690 data[0m
+[0;32mI (1980921) SensorControl: Received BME690 data[0m
+[0;32mI (1983921) SensorControl: Received BME690 data[0m
+[0;32mI (1984311) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (1984321) SensorControl: Received TC74A2 data[0m
+[0;32mI (1986921) SensorControl: Received BME690 data[0m
+[0;32mI (1989921) SensorControl: Received BME690 data[0m
+[0;32mI (1992921) SensorControl: Received BME690 data[0m
+[0;32mI (1995921) SensorControl: Received BME690 data[0m
+[0;32mI (1997511) SPS30: SPS30 connected and new data available[0m
+[0;32mI (1997621) SensorControl: Received SPS30 data[0m
+[0;32mI (1997621) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1997621) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (1997621) DUMMY: SPS30 Data:[0m
+[0;32mI (1997621) DUMMY:   PM2.5: 1.67 µg/m³[0m
+[0;32mI (1997631) DUMMY:   PM10: 1.67 µg/m³[0m
+[0;32mI (1997631) DUMMY:   PM2.5: 12.57 particles/cm3[0m
+[0;32mI (1997641) DUMMY:   PM10: 12.57 particles/cm3[0m
+[0;32mI (1997641) DUMMY: =====================================[0m
+[0;32mI (1997641) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1997651) DUMMY: BME690 Data:[0m
+[0;32mI (1997651) DUMMY:   VOC: 0.53[0m
+[0;32mI (1997651) DUMMY:   Pressure: 100488.07 Pa[0m
+[0;32mI (1997661) DUMMY:   Humidity: 15.63 %[0m
+[0;32mI (1997661) DUMMY: =====================================[0m
+[0;32mI (1997671) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1997671) DUMMY: Temperature Data:[0m
+[0;32mI (1997671) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (1997681) DUMMY: =====================================[0m
+[0;32mI (1997681) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (1997691) DUMMY: BMV080 Data:[0m
+[0;32mI (1997691) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (1997691) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (1997701) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (1997701) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (1997711) DUMMY: =====================================[0m
+[0;32mI (1998921) SensorControl: Received BME690 data[0m
+[0;32mI (2001921) SensorControl: Received BME690 data[0m
+[0;32mI (2004021) SensorControl: Received BMV080 data[0m
+[0;32mI (2004921) SensorControl: Received BME690 data[0m
+[0;32mI (2007921) SensorControl: Received BME690 data[0m
+[0;32mI (2011021) SensorControl: Received BME690 data[0m
+[0;32mI (2014021) SensorControl: Received BME690 data[0m
+[0;32mI (2017021) SensorControl: Received BME690 data[0m
+[0;32mI (2020021) SensorControl: Received BME690 data[0m
+[0;32mI (2023021) SensorControl: Received BME690 data[0m
+[0;32mI (2026021) SensorControl: Received BME690 data[0m
+[0;32mI (2029021) SensorControl: Received BME690 data[0m
+[0;32mI (2032021) SensorControl: Received BME690 data[0m
+[0;32mI (2035021) SensorControl: Received BME690 data[0m
+[0;32mI (2035121) SensorControl: Received BMV080 data[0m
+[0;32mI (2038021) SensorControl: Received BME690 data[0m
+[0;32mI (2041121) SensorControl: Received BME690 data[0m
+[0;32mI (2044121) SensorControl: Received BME690 data[0m
+[0;32mI (2044361) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2044421) SensorControl: Received TC74A2 data[0m
+[0;32mI (2047121) SensorControl: Received BME690 data[0m
+[0;32mI (2050121) SensorControl: Received BME690 data[0m
+[0;32mI (2053121) SensorControl: Received BME690 data[0m
+[0;32mI (2056121) SensorControl: Received BME690 data[0m
+[0;32mI (2057611) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2057721) SensorControl: Received SPS30 data[0m
+[0;32mI (2057721) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2057721) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2057721) DUMMY: SPS30 Data:[0m
+[0;32mI (2057721) DUMMY:   PM2.5: 1.69 µg/m³[0m
+[0;32mI (2057731) DUMMY:   PM10: 1.70 µg/m³[0m
+[0;32mI (2057731) DUMMY:   PM2.5: 12.74 particles/cm3[0m
+[0;32mI (2057741) DUMMY:   PM10: 12.75 particles/cm3[0m
+[0;32mI (2057741) DUMMY: =====================================[0m
+[0;32mI (2057741) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2057751) DUMMY: BME690 Data:[0m
+[0;32mI (2057751) DUMMY:   VOC: 0.51[0m
+[0;32mI (2057751) DUMMY:   Pressure: 100486.36 Pa[0m
+[0;32mI (2057761) DUMMY:   Humidity: 15.67 %[0m
+[0;32mI (2057761) DUMMY: =====================================[0m
+[0;32mI (2057771) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2057771) DUMMY: Temperature Data:[0m
+[0;32mI (2057771) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2057781) DUMMY: =====================================[0m
+[0;32mI (2057781) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2057791) DUMMY: BMV080 Data:[0m
+[0;32mI (2057791) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (2057791) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (2057801) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (2057801) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (2057811) DUMMY: =====================================[0m
+[0;32mI (2059121) SensorControl: Received BME690 data[0m
+[0;32mI (2062121) SensorControl: Received BME690 data[0m
+[0;32mI (2065121) SensorControl: Received BME690 data[0m
+[0;32mI (2066221) SensorControl: Received BMV080 data[0m
+[0;32mI (2068121) SensorControl: Received BME690 data[0m
+[0;32mI (2071221) SensorControl: Received BME690 data[0m
+[0;32mI (2074221) SensorControl: Received BME690 data[0m
+[0;32mI (2077221) SensorControl: Received BME690 data[0m
+[0;32mI (2080221) SensorControl: Received BME690 data[0m
+[0;32mI (2083221) SensorControl: Received BME690 data[0m
+[0;32mI (2086221) SensorControl: Received BME690 data[0m
+[0;32mI (2089221) SensorControl: Received BME690 data[0m
+[0;32mI (2092221) SensorControl: Received BME690 data[0m
+[0;32mI (2095221) SensorControl: Received BME690 data[0m
+[0;32mI (2097221) SensorControl: Received BMV080 data[0m
+[0;32mI (2098221) SensorControl: Received BME690 data[0m
+[0;32mI (2101321) SensorControl: Received BME690 data[0m
+[0;32mI (2104321) SensorControl: Received BME690 data[0m
+[0;32mI (2104411) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2104421) SensorControl: Received TC74A2 data[0m
+[0;32mI (2107321) SensorControl: Received BME690 data[0m
+[0;32mI (2110321) SensorControl: Received BME690 data[0m
+[0;32mI (2113321) SensorControl: Received BME690 data[0m
+[0;32mI (2116321) SensorControl: Received BME690 data[0m
+[0;32mI (2117711) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2117821) SensorControl: Received SPS30 data[0m
+[0;32mI (2117821) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2117821) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2117821) DUMMY: SPS30 Data:[0m
+[0;32mI (2117821) DUMMY:   PM2.5: 1.80 µg/m³[0m
+[0;32mI (2117831) DUMMY:   PM10: 1.81 µg/m³[0m
+[0;32mI (2117831) DUMMY:   PM2.5: 13.58 particles/cm3[0m
+[0;32mI (2117841) DUMMY:   PM10: 13.58 particles/cm3[0m
+[0;32mI (2117841) DUMMY: =====================================[0m
+[0;32mI (2117841) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2117851) DUMMY: BME690 Data:[0m
+[0;32mI (2117851) DUMMY:   VOC: 0.53[0m
+[0;32mI (2117851) DUMMY:   Pressure: 100492.46 Pa[0m
+[0;32mI (2117861) DUMMY:   Humidity: 15.62 %[0m
+[0;32mI (2117861) DUMMY: =====================================[0m
+[0;32mI (2117871) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2117871) DUMMY: Temperature Data:[0m
+[0;32mI (2117871) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2117881) DUMMY: =====================================[0m
+[0;32mI (2117881) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2117891) DUMMY: BMV080 Data:[0m
+[0;32mI (2117891) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (2117891) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (2117901) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (2117901) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (2117911) DUMMY: =====================================[0m
+[0;32mI (2119321) SensorControl: Received BME690 data[0m
+[0;32mI (2122321) SensorControl: Received BME690 data[0m
+[0;32mI (2125321) SensorControl: Received BME690 data[0m
+[0;32mI (2128421) SensorControl: Received BME690 data[0m
+[0;32mI (2128421) SensorControl: Received BMV080 data[0m
+[0;32mI (2131421) SensorControl: Received BME690 data[0m
+[0;32mI (2134421) SensorControl: Received BME690 data[0m
+[0;32mI (2137421) SensorControl: Received BME690 data[0m
+[0;32mI (2140421) SensorControl: Received BME690 data[0m
+[0;32mI (2143421) SensorControl: Received BME690 data[0m
+[0;32mI (2146421) SensorControl: Received BME690 data[0m
+[0;32mI (2149521) SensorControl: Received BME690 data[0m
+[0;32mI (2152521) SensorControl: Received BME690 data[0m
+[0;32mI (2155521) SensorControl: Received BME690 data[0m
+[0;32mI (2158521) SensorControl: Received BME690 data[0m
+[0;32mI (2159521) SensorControl: Received BMV080 data[0m
+[0;32mI (2161521) SensorControl: Received BME690 data[0m
+[0;32mI (2164461) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2164521) SensorControl: Received BME690 data[0m
+[0;32mI (2164521) SensorControl: Received TC74A2 data[0m
+[0;32mI (2167521) SensorControl: Received BME690 data[0m
+[0;32mI (2170521) SensorControl: Received BME690 data[0m
+[0;32mI (2173521) SensorControl: Received BME690 data[0m
+[0;32mI (2176621) SensorControl: Received BME690 data[0m
+[0;32mI (2177811) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2177921) SensorControl: Received SPS30 data[0m
+[0;32mI (2177921) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2177921) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2177921) DUMMY: SPS30 Data:[0m
+[0;32mI (2177921) DUMMY:   PM2.5: 1.56 µg/m³[0m
+[0;32mI (2177931) DUMMY:   PM10: 1.56 µg/m³[0m
+[0;32mI (2177931) DUMMY:   PM2.5: 11.75 particles/cm3[0m
+[0;32mI (2177941) DUMMY:   PM10: 11.75 particles/cm3[0m
+[0;32mI (2177941) DUMMY: =====================================[0m
+[0;32mI (2177941) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2177951) DUMMY: BME690 Data:[0m
+[0;32mI (2177951) DUMMY:   VOC: 0.52[0m
+[0;32mI (2177951) DUMMY:   Pressure: 100488.01 Pa[0m
+[0;32mI (2177961) DUMMY:   Humidity: 15.67 %[0m
+[0;32mI (2177961) DUMMY: =====================================[0m
+[0;32mI (2177971) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2177971) DUMMY: Temperature Data:[0m
+[0;32mI (2177971) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2177981) DUMMY: =====================================[0m
+[0;32mI (2177981) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2177991) DUMMY: BMV080 Data:[0m
+[0;32mI (2177991) DUMMY: PM2.5_mass: 6.00 µg/m3[0m
+[0;32mI (2177991) DUMMY: PM10_mass: 8.00 µg/m3[0m
+[0;32mI (2178001) DUMMY: PM2.5_number: 49.00 particles/cm3[0m
+[0;32mI (2178001) DUMMY: PM10_number: 49.00 particles/cm3[0m
+[0;32mI (2178011) DUMMY: =====================================[0m
+[0;32mI (2179621) SensorControl: Received BME690 data[0m
+[0;32mI (2182621) SensorControl: Received BME690 data[0m
+[0;32mI (2185621) SensorControl: Received BME690 data[0m
+[0;32mI (2188621) SensorControl: Received BME690 data[0m
+[0;32mI (2190621) SensorControl: Received BMV080 data[0m
+[0;32mI (2191621) SensorControl: Received BME690 data[0m
+[0;32mI (2194621) SensorControl: Received BME690 data[0m
+[0;32mI (2197621) SensorControl: Received BME690 data[0m
+[0;32mI (2200621) SensorControl: Received BME690 data[0m
+[0;32mI (2203621) SensorControl: Received BME690 data[0m
+[0;32mI (2206721) SensorControl: Received BME690 data[0m
+[0;32mI (2209721) SensorControl: Received BME690 data[0m
+[0;32mI (2212721) SensorControl: Received BME690 data[0m
+[0;32mI (2215721) SensorControl: Received BME690 data[0m
+[0;32mI (2218721) SensorControl: Received BME690 data[0m
+[0;32mI (2221621) SensorControl: Received BMV080 data[0m
+[0;32mI (2221721) SensorControl: Received BME690 data[0m
+[0;32mI (2224511) TC74: Temperature: 25.0°C[0m
+
+[0;32mI (2224521) SensorControl: Received TC74A2 data[0m
+[0;32mI (2224721) SensorControl: Received BME690 data[0m
+[0;32mI (2227721) SensorControl: Received BME690 data[0m
+[0;32mI (2230721) SensorControl: Received BME690 data[0m
+[0;32mI (2233721) SensorControl: Received BME690 data[0m
+[0;32mI (2236821) SensorControl: Received BME690 data[0m
+[0;32mI (2237911) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2238021) SensorControl: Received SPS30 data[0m
+[0;32mI (2238021) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2238021) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2238021) DUMMY: SPS30 Data:[0m
+[0;32mI (2238021) DUMMY:   PM2.5: 1.78 µg/m³[0m
+[0;32mI (2238031) DUMMY:   PM10: 1.79 µg/m³[0m
+[0;32mI (2238031) DUMMY:   PM2.5: 13.43 particles/cm3[0m
+[0;32mI (2238041) DUMMY:   PM10: 13.44 particles/cm3[0m
+[0;32mI (2238041) DUMMY: =====================================[0m
+[0;32mI (2238041) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2238051) DUMMY: BME690 Data:[0m
+[0;32mI (2238051) DUMMY:   VOC: 0.51[0m
+[0;32mI (2238051) DUMMY:   Pressure: 100486.98 Pa[0m
+[0;32mI (2238061) DUMMY:   Humidity: 15.68 %[0m
+[0;32mI (2238061) DUMMY: =====================================[0m
+[0;32mI (2238071) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2238071) DUMMY: Temperature Data:[0m
+[0;32mI (2238071) DUMMY:   Temperature: 25.00 °C[0m
+[0;32mI (2238081) DUMMY: =====================================[0m
+[0;32mI (2238081) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2238091) DUMMY: BMV080 Data:[0m
+[0;32mI (2238091) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (2238091) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (2238101) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (2238101) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (2238111) DUMMY: =====================================[0m
+[0;32mI (2239821) SensorControl: Received BME690 data[0m
+[0;32mI (2242821) SensorControl: Received BME690 data[0m
+[0;32mI (2245821) SensorControl: Received BME690 data[0m
+[0;32mI (2248821) SensorControl: Received BME690 data[0m
+[0;32mI (2251821) SensorControl: Received BME690 data[0m
+[0;32mI (2252721) SensorControl: Received BMV080 data[0m
+[0;32mI (2254821) SensorControl: Received BME690 data[0m
+[0;32mI (2257821) SensorControl: Received BME690 data[0m
+[0;32mI (2260821) SensorControl: Received BME690 data[0m
+[0;32mI (2263821) SensorControl: Received BME690 data[0m
+[0;32mI (2266921) SensorControl: Received BME690 data[0m
+[0;32mI (2269921) SensorControl: Received BME690 data[0m
+[0;32mI (2272921) SensorControl: Received BME690 data[0m
+[0;32mI (2275921) SensorControl: Received BME690 data[0m
+[0;32mI (2278921) SensorControl: Received BME690 data[0m
+[0;32mI (2281921) SensorControl: Received BME690 data[0m
+[0;32mI (2283821) SensorControl: Received BMV080 data[0m
+[0;32mI (2284561) TC74: Temperature: 23.0°C[0m
+
+[0;32mI (2284621) SensorControl: Received TC74A2 data[0m
+[0;32mI (2284921) SensorControl: Received BME690 data[0m
+[0;32mI (2287921) SensorControl: Received BME690 data[0m
+[0;32mI (2290921) SensorControl: Received BME690 data[0m
+[0;32mI (2293921) SensorControl: Received BME690 data[0m
+[0;32mI (2297021) SensorControl: Received BME690 data[0m
+[0;32mI (2298011) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2298121) SensorControl: Received SPS30 data[0m
+[0;32mI (2298121) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2298121) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2298121) DUMMY: SPS30 Data:[0m
+[0;32mI (2298121) DUMMY:   PM2.5: 1.99 µg/m³[0m
+[0;32mI (2298131) DUMMY:   PM10: 2.00 µg/m³[0m
+[0;32mI (2298131) DUMMY:   PM2.5: 14.99 particles/cm3[0m
+[0;32mI (2298141) DUMMY:   PM10: 14.99 particles/cm3[0m
+[0;32mI (2298141) DUMMY: =====================================[0m
+[0;32mI (2298141) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2298151) DUMMY: BME690 Data:[0m
+[0;32mI (2298151) DUMMY:   VOC: 0.52[0m
+[0;32mI (2298151) DUMMY:   Pressure: 100488.74 Pa[0m
+[0;32mI (2298161) DUMMY:   Humidity: 15.65 %[0m
+[0;32mI (2298161) DUMMY: =====================================[0m
+[0;32mI (2298171) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2298171) DUMMY: Temperature Data:[0m
+[0;32mI (2298171) DUMMY:   Temperature: 23.00 °C[0m
+[0;32mI (2298181) DUMMY: =====================================[0m
+[0;32mI (2298181) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2298191) DUMMY: BMV080 Data:[0m
+[0;32mI (2298191) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (2298191) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (2298201) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (2298201) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (2298211) DUMMY: =====================================[0m
+[0;32mI (2300021) SensorControl: Received BME690 data[0m
+[0;32mI (2303021) SensorControl: Received BME690 data[0m
+[0;32mI (2306021) SensorControl: Received BME690 data[0m
+[0;32mI (2309021) SensorControl: Received BME690 data[0m
+[0;32mI (2312021) SensorControl: Received BME690 data[0m
+[0;32mI (2314921) SensorControl: Received BMV080 data[0m
+[0;32mI (2315021) SensorControl: Received BME690 data[0m
+[0;32mI (2318021) SensorControl: Received BME690 data[0m
+[0;32mI (2321021) SensorControl: Received BME690 data[0m
+[0;32mI (2324021) SensorControl: Received BME690 data[0m
+[0;32mI (2327121) SensorControl: Received BME690 data[0m
+[0;32mI (2330121) SensorControl: Received BME690 data[0m
+[0;32mI (2333121) SensorControl: Received BME690 data[0m
+[0;32mI (2336121) SensorControl: Received BME690 data[0m
+[0;32mI (2339121) SensorControl: Received BME690 data[0m
+[0;32mI (2342121) SensorControl: Received BME690 data[0m
+[0;32mI (2344611) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2344621) SensorControl: Received TC74A2 data[0m
+[0;32mI (2345121) SensorControl: Received BME690 data[0m
+[0;32mI (2346021) SensorControl: Received BMV080 data[0m
+[0;32mI (2348121) SensorControl: Received BME690 data[0m
+[0;32mI (2351121) SensorControl: Received BME690 data[0m
+[0;32mI (2354121) SensorControl: Received BME690 data[0m
+[0;32mI (2357221) SensorControl: Received BME690 data[0m
+[0;32mI (2358111) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2358221) SensorControl: Received SPS30 data[0m
+[0;32mI (2358221) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2358221) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2358221) DUMMY: SPS30 Data:[0m
+[0;32mI (2358221) DUMMY:   PM2.5: 2.05 µg/m³[0m
+[0;32mI (2358231) DUMMY:   PM10: 2.06 µg/m³[0m
+[0;32mI (2358231) DUMMY:   PM2.5: 15.38 particles/cm3[0m
+[0;32mI (2358241) DUMMY:   PM10: 15.38 particles/cm3[0m
+[0;32mI (2358241) DUMMY: =====================================[0m
+[0;32mI (2358241) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2358251) DUMMY: BME690 Data:[0m
+[0;32mI (2358251) DUMMY:   VOC: 0.51[0m
+[0;32mI (2358251) DUMMY:   Pressure: 100486.30 Pa[0m
+[0;32mI (2358261) DUMMY:   Humidity: 15.72 %[0m
+[0;32mI (2358261) DUMMY: =====================================[0m
+[0;32mI (2358271) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2358271) DUMMY: Temperature Data:[0m
+[0;32mI (2358271) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2358281) DUMMY: =====================================[0m
+[0;32mI (2358281) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2358291) DUMMY: BMV080 Data:[0m
+[0;32mI (2358291) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (2358291) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (2358301) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (2358301) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (2358311) DUMMY: =====================================[0m
+[0;32mI (2360221) SensorControl: Received BME690 data[0m
+[0;32mI (2363221) SensorControl: Received BME690 data[0m
+[0;32mI (2366221) SensorControl: Received BME690 data[0m
+[0;32mI (2369221) SensorControl: Received BME690 data[0m
+[0;32mI (2372221) SensorControl: Received BME690 data[0m
+[0;32mI (2375221) SensorControl: Received BME690 data[0m
+[0;32mI (2377121) SensorControl: Received BMV080 data[0m
+[0;32mI (2378221) SensorControl: Received BME690 data[0m
+[0;32mI (2381221) SensorControl: Received BME690 data[0m
+[0;32mI (2384221) SensorControl: Received BME690 data[0m
+[0;32mI (2387321) SensorControl: Received BME690 data[0m
+[0;32mI (2390321) SensorControl: Received BME690 data[0m
+[0;32mI (2393321) SensorControl: Received BME690 data[0m
+[0;32mI (2396321) SensorControl: Received BME690 data[0m
+[0;32mI (2399321) SensorControl: Received BME690 data[0m
+[0;32mI (2402321) SensorControl: Received BME690 data[0m
+[0;32mI (2404661) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2404721) SensorControl: Received TC74A2 data[0m
+[0;32mI (2405321) SensorControl: Received BME690 data[0m
+[0;32mI (2408121) SensorControl: Received BMV080 data[0m
+[0;32mI (2408321) SensorControl: Received BME690 data[0m
+[0;32mI (2411321) SensorControl: Received BME690 data[0m
+[0;32mI (2414321) SensorControl: Received BME690 data[0m
+[0;32mI (2417421) SensorControl: Received BME690 data[0m
+[0;32mI (2418211) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2418321) SensorControl: Received SPS30 data[0m
+[0;32mI (2418321) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2418321) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2418321) DUMMY: SPS30 Data:[0m
+[0;32mI (2418321) DUMMY:   PM2.5: 2.04 µg/m³[0m
+[0;32mI (2418331) DUMMY:   PM10: 2.05 µg/m³[0m
+[0;32mI (2418331) DUMMY:   PM2.5: 15.35 particles/cm3[0m
+[0;32mI (2418341) DUMMY:   PM10: 15.35 particles/cm3[0m
+[0;32mI (2418341) DUMMY: =====================================[0m
+[0;32mI (2418341) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2418351) DUMMY: BME690 Data:[0m
+[0;32mI (2418351) DUMMY:   VOC: 0.51[0m
+[0;32mI (2418351) DUMMY:   Pressure: 100491.03 Pa[0m
+[0;32mI (2418361) DUMMY:   Humidity: 15.79 %[0m
+[0;32mI (2418361) DUMMY: =====================================[0m
+[0;32mI (2418371) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2418371) DUMMY: Temperature Data:[0m
+[0;32mI (2418371) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2418381) DUMMY: =====================================[0m
+[0;32mI (2418381) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2418391) DUMMY: BMV080 Data:[0m
+[0;32mI (2418391) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (2418391) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (2418401) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (2418401) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (2418411) DUMMY: =====================================[0m
+[0;32mI (2420421) SensorControl: Received BME690 data[0m
+[0;32mI (2423421) SensorControl: Received BME690 data[0m
+[0;32mI (2426421) SensorControl: Received BME690 data[0m
+[0;32mI (2429421) SensorControl: Received BME690 data[0m
+[0;32mI (2432421) SensorControl: Received BME690 data[0m
+[0;32mI (2435421) SensorControl: Received BME690 data[0m
+[0;32mI (2438421) SensorControl: Received BME690 data[0m
+[0;32mI (2439221) SensorControl: Received BMV080 data[0m
+[0;32mI (2441421) SensorControl: Received BME690 data[0m
+[0;32mI (2444421) SensorControl: Received BME690 data[0m
+[0;32mI (2447521) SensorControl: Received BME690 data[0m
+[0;32mI (2450521) SensorControl: Received BME690 data[0m
+[0;32mI (2453521) SensorControl: Received BME690 data[0m
+[0;32mI (2456521) SensorControl: Received BME690 data[0m
+[0;32mI (2459521) SensorControl: Received BME690 data[0m
+[0;32mI (2462521) SensorControl: Received BME690 data[0m
+[0;32mI (2464711) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2464721) SensorControl: Received TC74A2 data[0m
+[0;32mI (2465521) SensorControl: Received BME690 data[0m
+[0;32mI (2468521) SensorControl: Received BME690 data[0m
+[0;32mI (2470321) SensorControl: Received BMV080 data[0m
+[0;32mI (2471521) SensorControl: Received BME690 data[0m
+[0;32mI (2474521) SensorControl: Received BME690 data[0m
+[0;32mI (2477621) SensorControl: Received BME690 data[0m
+[0;32mI (2478311) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2478421) SensorControl: Received SPS30 data[0m
+[0;32mI (2478421) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2478421) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2478421) DUMMY: SPS30 Data:[0m
+[0;32mI (2478421) DUMMY:   PM2.5: 2.18 µg/m³[0m
+[0;32mI (2478431) DUMMY:   PM10: 2.19 µg/m³[0m
+[0;32mI (2478431) DUMMY:   PM2.5: 16.40 particles/cm3[0m
+[0;32mI (2478441) DUMMY:   PM10: 16.41 particles/cm3[0m
+[0;32mI (2478441) DUMMY: =====================================[0m
+[0;32mI (2478441) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2478451) DUMMY: BME690 Data:[0m
+[0;32mI (2478451) DUMMY:   VOC: 0.50[0m
+[0;32mI (2478451) DUMMY:   Pressure: 100489.61 Pa[0m
+[0;32mI (2478461) DUMMY:   Humidity: 15.80 %[0m
+[0;32mI (2478461) DUMMY: =====================================[0m
+[0;32mI (2478471) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2478471) DUMMY: Temperature Data:[0m
+[0;32mI (2478471) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2478481) DUMMY: =====================================[0m
+[0;32mI (2478481) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2478491) DUMMY: BMV080 Data:[0m
+[0;32mI (2478491) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (2478491) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (2478501) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (2478501) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (2478511) DUMMY: =====================================[0m
+[0;32mI (2480621) SensorControl: Received BME690 data[0m
+[0;32mI (2483621) SensorControl: Received BME690 data[0m
+[0;32mI (2486621) SensorControl: Received BME690 data[0m
+[0;32mI (2489621) SensorControl: Received BME690 data[0m
+[0;32mI (2492621) SensorControl: Received BME690 data[0m
+[0;32mI (2495621) SensorControl: Received BME690 data[0m
+[0;32mI (2498621) SensorControl: Received BME690 data[0m
+[0;32mI (2501421) SensorControl: Received BMV080 data[0m
+[0;32mI (2501621) SensorControl: Received BME690 data[0m
+[0;32mI (2504621) SensorControl: Received BME690 data[0m
+[0;32mI (2507721) SensorControl: Received BME690 data[0m
+[0;32mI (2510721) SensorControl: Received BME690 data[0m
+[0;32mI (2513721) SensorControl: Received BME690 data[0m
+[0;32mI (2516721) SensorControl: Received BME690 data[0m
+[0;32mI (2519721) SensorControl: Received BME690 data[0m
+[0;32mI (2522721) SensorControl: Received BME690 data[0m
+[0;32mI (2524761) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2524821) SensorControl: Received TC74A2 data[0m
+[0;32mI (2525721) SensorControl: Received BME690 data[0m
+[0;32mI (2528721) SensorControl: Received BME690 data[0m
+[0;32mI (2531721) SensorControl: Received BME690 data[0m
+[0;32mI (2532521) SensorControl: Received BMV080 data[0m
+[0;32mI (2534721) SensorControl: Received BME690 data[0m
+[0;32mI (2537821) SensorControl: Received BME690 data[0m
+[0;32mI (2538411) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2538521) SensorControl: Received SPS30 data[0m
+[0;32mI (2538521) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2538521) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2538521) DUMMY: SPS30 Data:[0m
+[0;32mI (2538521) DUMMY:   PM2.5: 2.03 µg/m³[0m
+[0;32mI (2538531) DUMMY:   PM10: 2.03 µg/m³[0m
+[0;32mI (2538531) DUMMY:   PM2.5: 15.25 particles/cm3[0m
+[0;32mI (2538541) DUMMY:   PM10: 15.26 particles/cm3[0m
+[0;32mI (2538541) DUMMY: =====================================[0m
+[0;32mI (2538541) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2538551) DUMMY: BME690 Data:[0m
+[0;32mI (2538551) DUMMY:   VOC: 0.50[0m
+[0;32mI (2538551) DUMMY:   Pressure: 100487.33 Pa[0m
+[0;32mI (2538561) DUMMY:   Humidity: 15.78 %[0m
+[0;32mI (2538561) DUMMY: =====================================[0m
+[0;32mI (2538571) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2538571) DUMMY: Temperature Data:[0m
+[0;32mI (2538571) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2538581) DUMMY: =====================================[0m
+[0;32mI (2538581) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2538591) DUMMY: BMV080 Data:[0m
+[0;32mI (2538591) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (2538591) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (2538601) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (2538601) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (2538611) DUMMY: =====================================[0m
+[0;32mI (2540821) SensorControl: Received BME690 data[0m
+[0;32mI (2543821) SensorControl: Received BME690 data[0m
+[0;32mI (2546821) SensorControl: Received BME690 data[0m
+[0;32mI (2549821) SensorControl: Received BME690 data[0m
+[0;32mI (2552821) SensorControl: Received BME690 data[0m
+[0;32mI (2555821) SensorControl: Received BME690 data[0m
+[0;32mI (2558821) SensorControl: Received BME690 data[0m
+[0;32mI (2561821) SensorControl: Received BME690 data[0m
+[0;32mI (2563621) SensorControl: Received BMV080 data[0m
+[0;32mI (2564821) SensorControl: Received BME690 data[0m
+[0;32mI (2567921) SensorControl: Received BME690 data[0m
+[0;32mI (2570921) SensorControl: Received BME690 data[0m
+[0;32mI (2573921) SensorControl: Received BME690 data[0m
+[0;32mI (2576921) SensorControl: Received BME690 data[0m
+[0;32mI (2579921) SensorControl: Received BME690 data[0m
+[0;32mI (2582921) SensorControl: Received BME690 data[0m
+[0;32mI (2584811) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2584821) SensorControl: Received TC74A2 data[0m
+[0;32mI (2585921) SensorControl: Received BME690 data[0m
+[0;32mI (2588921) SensorControl: Received BME690 data[0m
+[0;32mI (2591921) SensorControl: Received BME690 data[0m
+[0;32mI (2594621) SensorControl: Received BMV080 data[0m
+[0;32mI (2594921) SensorControl: Received BME690 data[0m
+[0;32mI (2598021) SensorControl: Received BME690 data[0m
+[0;32mI (2598511) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2598621) SensorControl: Received SPS30 data[0m
+[0;32mI (2598621) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2598621) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2598621) DUMMY: SPS30 Data:[0m
+[0;32mI (2598621) DUMMY:   PM2.5: 2.26 µg/m³[0m
+[0;32mI (2598631) DUMMY:   PM10: 2.27 µg/m³[0m
+[0;32mI (2598631) DUMMY:   PM2.5: 16.99 particles/cm3[0m
+[0;32mI (2598641) DUMMY:   PM10: 17.00 particles/cm3[0m
+[0;32mI (2598641) DUMMY: =====================================[0m
+[0;32mI (2598641) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2598651) DUMMY: BME690 Data:[0m
+[0;32mI (2598651) DUMMY:   VOC: 0.49[0m
+[0;32mI (2598651) DUMMY:   Pressure: 100491.55 Pa[0m
+[0;32mI (2598661) DUMMY:   Humidity: 15.94 %[0m
+[0;32mI (2598661) DUMMY: =====================================[0m
+[0;32mI (2598671) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2598671) DUMMY: Temperature Data:[0m
+[0;32mI (2598671) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2598681) DUMMY: =====================================[0m
+[0;32mI (2598681) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2598691) DUMMY: BMV080 Data:[0m
+[0;32mI (2598691) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (2598691) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (2598701) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (2598701) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (2598711) DUMMY: =====================================[0m
+[0;32mI (2601021) SensorControl: Received BME690 data[0m
+[0;32mI (2604021) SensorControl: Received BME690 data[0m
+[0;32mI (2607021) SensorControl: Received BME690 data[0m
+[0;32mI (2610021) SensorControl: Received BME690 data[0m
+[0;32mI (2613021) SensorControl: Received BME690 data[0m
+[0;32mI (2616021) SensorControl: Received BME690 data[0m
+[0;32mI (2619021) SensorControl: Received BME690 data[0m
+[0;32mI (2622021) SensorControl: Received BME690 data[0m
+[0;32mI (2625021) SensorControl: Received BME690 data[0m
+[0;32mI (2625821) SensorControl: Received BMV080 data[0m
+[0;32mI (2628121) SensorControl: Received BME690 data[0m
+[0;32mI (2631121) SensorControl: Received BME690 data[0m
+[0;32mI (2634121) SensorControl: Received BME690 data[0m
+[0;32mI (2637121) SensorControl: Received BME690 data[0m
+[0;32mI (2640121) SensorControl: Received BME690 data[0m
+[0;32mI (2643121) SensorControl: Received BME690 data[0m
+[0;32mI (2644861) TC74: Temperature: 23.0°C[0m
+
+[0;32mI (2644921) SensorControl: Received TC74A2 data[0m
+[0;32mI (2646121) SensorControl: Received BME690 data[0m
+[0;32mI (2649121) SensorControl: Received BME690 data[0m
+[0;32mI (2652121) SensorControl: Received BME690 data[0m
+[0;32mI (2655121) SensorControl: Received BME690 data[0m
+[0;32mI (2656821) SensorControl: Received BMV080 data[0m
+[0;32mI (2658221) SensorControl: Received BME690 data[0m
+[0;32mI (2658611) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2658721) SensorControl: Received SPS30 data[0m
+[0;32mI (2658721) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2658721) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2658721) DUMMY: SPS30 Data:[0m
+[0;32mI (2658721) DUMMY:   PM2.5: 2.28 µg/m³[0m
+[0;32mI (2658731) DUMMY:   PM10: 2.29 µg/m³[0m
+[0;32mI (2658731) DUMMY:   PM2.5: 17.18 particles/cm3[0m
+[0;32mI (2658741) DUMMY:   PM10: 17.19 particles/cm3[0m
+[0;32mI (2658741) DUMMY: =====================================[0m
+[0;32mI (2658741) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2658751) DUMMY: BME690 Data:[0m
+[0;32mI (2658751) DUMMY:   VOC: 0.49[0m
+[0;32mI (2658751) DUMMY:   Pressure: 100489.73 Pa[0m
+[0;32mI (2658761) DUMMY:   Humidity: 16.08 %[0m
+[0;32mI (2658761) DUMMY: =====================================[0m
+[0;32mI (2658771) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2658771) DUMMY: Temperature Data:[0m
+[0;32mI (2658771) DUMMY:   Temperature: 23.00 °C[0m
+[0;32mI (2658781) DUMMY: =====================================[0m
+[0;32mI (2658781) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2658791) DUMMY: BMV080 Data:[0m
+[0;32mI (2658791) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (2658791) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (2658801) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (2658801) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (2658811) DUMMY: =====================================[0m
+[0;32mI (2661221) SensorControl: Received BME690 data[0m
+[0;32mI (2664221) SensorControl: Received BME690 data[0m
+[0;32mI (2667221) SensorControl: Received BME690 data[0m
+[0;32mI (2670221) SensorControl: Received BME690 data[0m
+[0;32mI (2673221) SensorControl: Received BME690 data[0m
+[0;32mI (2676221) SensorControl: Received BME690 data[0m
+[0;32mI (2679221) SensorControl: Received BME690 data[0m
+[0;32mI (2682221) SensorControl: Received BME690 data[0m
+[0;32mI (2685221) SensorControl: Received BME690 data[0m
+[0;32mI (2688021) SensorControl: Received BMV080 data[0m
+[0;32mI (2688321) SensorControl: Received BME690 data[0m
+[0;32mI (2691321) SensorControl: Received BME690 data[0m
+[0;32mI (2694321) SensorControl: Received BME690 data[0m
+[0;32mI (2697321) SensorControl: Received BME690 data[0m
+[0;32mI (2700321) SensorControl: Received BME690 data[0m
+[0;32mI (2703321) SensorControl: Received BME690 data[0m
+[0;32mI (2704911) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2704921) SensorControl: Received TC74A2 data[0m
+[0;32mI (2706321) SensorControl: Received BME690 data[0m
+[0;32mI (2709321) SensorControl: Received BME690 data[0m
+[0;32mI (2712321) SensorControl: Received BME690 data[0m
+[0;32mI (2715321) SensorControl: Received BME690 data[0m
+[0;32mI (2718421) SensorControl: Received BME690 data[0m
+[0;32mI (2718711) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2718821) SensorControl: Received SPS30 data[0m
+[0;32mI (2718821) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2718821) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2718821) DUMMY: SPS30 Data:[0m
+[0;32mI (2718821) DUMMY:   PM2.5: 2.07 µg/m³[0m
+[0;32mI (2718831) DUMMY:   PM10: 2.07 µg/m³[0m
+[0;32mI (2718831) DUMMY:   PM2.5: 15.57 particles/cm3[0m
+[0;32mI (2718841) DUMMY:   PM10: 15.57 particles/cm3[0m
+[0;32mI (2718841) DUMMY: =====================================[0m
+[0;32mI (2718841) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2718851) DUMMY: BME690 Data:[0m
+[0;32mI (2718851) DUMMY:   VOC: 0.50[0m
+[0;32mI (2718851) DUMMY:   Pressure: 100490.69 Pa[0m
+[0;32mI (2718861) DUMMY:   Humidity: 16.19 %[0m
+[0;32mI (2718861) DUMMY: =====================================[0m
+[0;32mI (2718871) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2718871) DUMMY: Temperature Data:[0m
+[0;32mI (2718871) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2718881) DUMMY: =====================================[0m
+[0;32mI (2718881) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2718891) DUMMY: BMV080 Data:[0m
+[0;32mI (2718891) DUMMY: PM2.5_mass: 6.00 µg/m3[0m
+[0;32mI (2718891) DUMMY: PM10_mass: 9.00 µg/m3[0m
+[0;32mI (2718901) DUMMY: PM2.5_number: 49.00 particles/cm3[0m
+[0;32mI (2718901) DUMMY: PM10_number: 49.00 particles/cm3[0m
+[0;32mI (2718911) DUMMY: =====================================[0m
+[0;32mI (2719021) SensorControl: Received BMV080 data[0m
+[0;32mI (2721421) SensorControl: Received BME690 data[0m
+[0;32mI (2724421) SensorControl: Received BME690 data[0m
+[0;32mI (2727421) SensorControl: Received BME690 data[0m
+[0;32mI (2730421) SensorControl: Received BME690 data[0m
+[0;32mI (2733421) SensorControl: Received BME690 data[0m
+[0;32mI (2736421) SensorControl: Received BME690 data[0m
+[0;32mI (2739421) SensorControl: Received BME690 data[0m
+[0;32mI (2742421) SensorControl: Received BME690 data[0m
+[0;32mI (2745421) SensorControl: Received BME690 data[0m
+[0;32mI (2748521) SensorControl: Received BME690 data[0m
+[0;32mI (2750221) SensorControl: Received BMV080 data[0m
+[0;32mI (2751521) SensorControl: Received BME690 data[0m
+[0;32mI (2754521) SensorControl: Received BME690 data[0m
+[0;32mI (2757521) SensorControl: Received BME690 data[0m
+[0;32mI (2760521) SensorControl: Received BME690 data[0m
+[0;32mI (2763521) SensorControl: Received BME690 data[0m
+[0;32mI (2764961) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2765021) SensorControl: Received TC74A2 data[0m
+[0;32mI (2766521) SensorControl: Received BME690 data[0m
+[0;32mI (2769521) SensorControl: Received BME690 data[0m
+[0;32mI (2772521) SensorControl: Received BME690 data[0m
+[0;32mI (2775521) SensorControl: Received BME690 data[0m
+[0;32mI (2778621) SensorControl: Received BME690 data[0m
+[0;32mI (2778811) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2778921) SensorControl: Received SPS30 data[0m
+[0;32mI (2778921) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2778921) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2778921) DUMMY: SPS30 Data:[0m
+[0;32mI (2778921) DUMMY:   PM2.5: 2.08 µg/m³[0m
+[0;32mI (2778931) DUMMY:   PM10: 2.09 µg/m³[0m
+[0;32mI (2778931) DUMMY:   PM2.5: 15.65 particles/cm3[0m
+[0;32mI (2778941) DUMMY:   PM10: 15.66 particles/cm3[0m
+[0;32mI (2778941) DUMMY: =====================================[0m
+[0;32mI (2778941) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2778951) DUMMY: BME690 Data:[0m
+[0;32mI (2778951) DUMMY:   VOC: 0.49[0m
+[0;32mI (2778951) DUMMY:   Pressure: 100489.20 Pa[0m
+[0;32mI (2778961) DUMMY:   Humidity: 16.40 %[0m
+[0;32mI (2778961) DUMMY: =====================================[0m
+[0;32mI (2778971) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2778971) DUMMY: Temperature Data:[0m
+[0;32mI (2778971) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2778981) DUMMY: =====================================[0m
+[0;32mI (2778981) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2778991) DUMMY: BMV080 Data:[0m
+[0;32mI (2778991) DUMMY: PM2.5_mass: 3.00 µg/m3[0m
+[0;32mI (2778991) DUMMY: PM10_mass: 4.00 µg/m3[0m
+[0;32mI (2779001) DUMMY: PM2.5_number: 24.00 particles/cm3[0m
+[0;32mI (2779001) DUMMY: PM10_number: 24.00 particles/cm3[0m
+[0;32mI (2779011) DUMMY: =====================================[0m
+[0;32mI (2781321) SensorControl: Received BMV080 data[0m
+[0;32mI (2781621) SensorControl: Received BME690 data[0m
+[0;32mI (2784621) SensorControl: Received BME690 data[0m
+[0;32mI (2787621) SensorControl: Received BME690 data[0m
+[0;32mI (2790621) SensorControl: Received BME690 data[0m
+[0;32mI (2793621) SensorControl: Received BME690 data[0m
+[0;32mI (2796621) SensorControl: Received BME690 data[0m
+[0;32mI (2799621) SensorControl: Received BME690 data[0m
+[0;32mI (2802621) SensorControl: Received BME690 data[0m
+[0;32mI (2805621) SensorControl: Received BME690 data[0m
+[0;32mI (2808721) SensorControl: Received BME690 data[0m
+[0;32mI (2811721) SensorControl: Received BME690 data[0m
+[0;32mI (2812421) SensorControl: Received BMV080 data[0m
+[0;32mI (2814721) SensorControl: Received BME690 data[0m
+[0;32mI (2817721) SensorControl: Received BME690 data[0m
+[0;32mI (2820721) SensorControl: Received BME690 data[0m
+[0;32mI (2823721) SensorControl: Received BME690 data[0m
+[0;32mI (2825011) TC74: Temperature: 23.0°C[0m
+
+[0;32mI (2825021) SensorControl: Received TC74A2 data[0m
+[0;32mI (2826721) SensorControl: Received BME690 data[0m
+[0;32mI (2829721) SensorControl: Received BME690 data[0m
+[0;32mI (2832721) SensorControl: Received BME690 data[0m
+[0;32mI (2835721) SensorControl: Received BME690 data[0m
+[0;32mI (2838821) SensorControl: Received BME690 data[0m
+[0;32mI (2838911) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2839021) SensorControl: Received SPS30 data[0m
+[0;32mI (2839021) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2839021) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2839021) DUMMY: SPS30 Data:[0m
+[0;32mI (2839021) DUMMY:   PM2.5: 1.86 µg/m³[0m
+[0;32mI (2839031) DUMMY:   PM10: 1.86 µg/m³[0m
+[0;32mI (2839031) DUMMY:   PM2.5: 14.07 particles/cm3[0m
+[0;32mI (2839041) DUMMY:   PM10: 14.07 particles/cm3[0m
+[0;32mI (2839041) DUMMY: =====================================[0m
+[0;32mI (2839041) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2839051) DUMMY: BME690 Data:[0m
+[0;32mI (2839051) DUMMY:   VOC: 0.49[0m
+[0;32mI (2839051) DUMMY:   Pressure: 100491.48 Pa[0m
+[0;32mI (2839061) DUMMY:   Humidity: 16.41 %[0m
+[0;32mI (2839061) DUMMY: =====================================[0m
+[0;32mI (2839071) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2839071) DUMMY: Temperature Data:[0m
+[0;32mI (2839071) DUMMY:   Temperature: 23.00 °C[0m
+[0;32mI (2839081) DUMMY: =====================================[0m
+[0;32mI (2839081) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2839091) DUMMY: BMV080 Data:[0m
+[0;32mI (2839091) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (2839091) DUMMY: PM10_mass: 3.00 µg/m3[0m
+[0;32mI (2839101) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (2839101) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (2839111) DUMMY: =====================================[0m
+[0;32mI (2841821) SensorControl: Received BME690 data[0m
+[0;32mI (2843521) SensorControl: Received BMV080 data[0m
+[0;32mI (2844821) SensorControl: Received BME690 data[0m
+[0;32mI (2847821) SensorControl: Received BME690 data[0m
+[0;32mI (2850821) SensorControl: Received BME690 data[0m
+[0;32mI (2853821) SensorControl: Received BME690 data[0m
+[0;32mI (2856821) SensorControl: Received BME690 data[0m
+[0;32mI (2859821) SensorControl: Received BME690 data[0m
+[0;32mI (2862821) SensorControl: Received BME690 data[0m
+[0;32mI (2865821) SensorControl: Received BME690 data[0m
+[0;32mI (2868921) SensorControl: Received BME690 data[0m
+[0;32mI (2871921) SensorControl: Received BME690 data[0m
+[0;32mI (2874621) SensorControl: Received BMV080 data[0m
+[0;32mI (2874921) SensorControl: Received BME690 data[0m
+[0;32mI (2877921) SensorControl: Received BME690 data[0m
+[0;32mI (2880921) SensorControl: Received BME690 data[0m
+[0;32mI (2883921) SensorControl: Received BME690 data[0m
+[0;32mI (2885061) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2885121) SensorControl: Received TC74A2 data[0m
+[0;32mI (2886921) SensorControl: Received BME690 data[0m
+[0;32mI (2889921) SensorControl: Received BME690 data[0m
+[0;32mI (2892921) SensorControl: Received BME690 data[0m
+[0;32mI (2895921) SensorControl: Received BME690 data[0m
+[0;32mI (2899011) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2899021) SensorControl: Received BME690 data[0m
+[0;32mI (2899121) SensorControl: Received SPS30 data[0m
+[0;32mI (2899121) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2899121) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2899121) DUMMY: SPS30 Data:[0m
+[0;32mI (2899121) DUMMY:   PM2.5: 2.42 µg/m³[0m
+[0;32mI (2899131) DUMMY:   PM10: 2.42 µg/m³[0m
+[0;32mI (2899131) DUMMY:   PM2.5: 18.24 particles/cm3[0m
+[0;32mI (2899141) DUMMY:   PM10: 18.24 particles/cm3[0m
+[0;32mI (2899141) DUMMY: =====================================[0m
+[0;32mI (2899141) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2899151) DUMMY: BME690 Data:[0m
+[0;32mI (2899151) DUMMY:   VOC: 0.51[0m
+[0;32mI (2899151) DUMMY:   Pressure: 100495.31 Pa[0m
+[0;32mI (2899161) DUMMY:   Humidity: 16.34 %[0m
+[0;32mI (2899161) DUMMY: =====================================[0m
+[0;32mI (2899171) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2899171) DUMMY: Temperature Data:[0m
+[0;32mI (2899171) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2899181) DUMMY: =====================================[0m
+[0;32mI (2899181) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2899191) DUMMY: BMV080 Data:[0m
+[0;32mI (2899191) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (2899191) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (2899201) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (2899201) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (2899211) DUMMY: =====================================[0m
+[0;32mI (2902021) SensorControl: Received BME690 data[0m
+[0;32mI (2905021) SensorControl: Received BME690 data[0m
+[0;32mI (2905721) SensorControl: Received BMV080 data[0m
+[0;32mI (2908021) SensorControl: Received BME690 data[0m
+[0;32mI (2911021) SensorControl: Received BME690 data[0m
+[0;32mI (2914021) SensorControl: Received BME690 data[0m
+[0;32mI (2917021) SensorControl: Received BME690 data[0m
+[0;32mI (2920021) SensorControl: Received BME690 data[0m
+[0;32mI (2923021) SensorControl: Received BME690 data[0m
+[0;32mI (2926021) SensorControl: Received BME690 data[0m
+[0;32mI (2929121) SensorControl: Received BME690 data[0m
+[0;32mI (2932121) SensorControl: Received BME690 data[0m
+[0;32mI (2935121) SensorControl: Received BME690 data[0m
+[0;32mI (2936821) SensorControl: Received BMV080 data[0m
+[0;32mI (2938121) SensorControl: Received BME690 data[0m
+[0;32mI (2941121) SensorControl: Received BME690 data[0m
+[0;32mI (2944121) SensorControl: Received BME690 data[0m
+[0;32mI (2945111) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (2945121) SensorControl: Received TC74A2 data[0m
+[0;32mI (2947121) SensorControl: Received BME690 data[0m
+[0;32mI (2950121) SensorControl: Received BME690 data[0m
+[0;32mI (2953121) SensorControl: Received BME690 data[0m
+[0;32mI (2956121) SensorControl: Received BME690 data[0m
+[0;32mI (2959111) SPS30: SPS30 connected and new data available[0m
+[0;32mI (2959221) SensorControl: Received BME690 data[0m
+[0;32mI (2959221) SensorControl: Received SPS30 data[0m
+[0;32mI (2959221) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2959221) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (2959231) DUMMY: SPS30 Data:[0m
+[0;32mI (2959231) DUMMY:   PM2.5: 2.22 µg/m³[0m
+[0;32mI (2959231) DUMMY:   PM10: 2.23 µg/m³[0m
+[0;32mI (2959241) DUMMY:   PM2.5: 16.71 particles/cm3[0m
+[0;32mI (2959241) DUMMY:   PM10: 16.72 particles/cm3[0m
+[0;32mI (2959241) DUMMY: =====================================[0m
+[0;32mI (2959251) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2959251) DUMMY: BME690 Data:[0m
+[0;32mI (2959261) DUMMY:   VOC: 0.52[0m
+[0;32mI (2959261) DUMMY:   Pressure: 100497.02 Pa[0m
+[0;32mI (2959261) DUMMY:   Humidity: 16.32 %[0m
+[0;32mI (2959271) DUMMY: =====================================[0m
+[0;32mI (2959271) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2959281) DUMMY: Temperature Data:[0m
+[0;32mI (2959281) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (2959281) DUMMY: =====================================[0m
+[0;32mI (2959291) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (2959291) DUMMY: BMV080 Data:[0m
+[0;32mI (2959301) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (2959301) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (2959301) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (2959311) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (2959311) DUMMY: =====================================[0m
+[0;32mI (2962231) SensorControl: Received BME690 data[0m
+[0;32mI (2965231) SensorControl: Received BME690 data[0m
+[0;32mI (2967931) SensorControl: Received BMV080 data[0m
+[0;32mI (2968231) SensorControl: Received BME690 data[0m
+[0;32mI (2971231) SensorControl: Received BME690 data[0m
+[0;32mI (2974231) SensorControl: Received BME690 data[0m
+[0;32mI (2977231) SensorControl: Received BME690 data[0m
+[0;32mI (2980231) SensorControl: Received BME690 data[0m
+[0;32mI (2983231) SensorControl: Received BME690 data[0m
+[0;32mI (2986231) SensorControl: Received BME690 data[0m
+[0;32mI (2989231) SensorControl: Received BME690 data[0m
+[0;32mI (2992331) SensorControl: Received BME690 data[0m
+[0;32mI (2995331) SensorControl: Received BME690 data[0m
+[0;32mI (2998331) SensorControl: Received BME690 data[0m
+[0;32mI (2999031) SensorControl: Received BMV080 data[0m
+[0;32mI (3001331) SensorControl: Received BME690 data[0m
+[0;32mI (3004331) SensorControl: Received BME690 data[0m
+[0;32mI (3005161) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (3005231) SensorControl: Received TC74A2 data[0m
+[0;32mI (3007331) SensorControl: Received BME690 data[0m
+[0;32mI (3010331) SensorControl: Received BME690 data[0m
+[0;32mI (3013331) SensorControl: Received BME690 data[0m
+[0;32mI (3016331) SensorControl: Received BME690 data[0m
+[0;32mI (3019211) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3019331) SensorControl: Received BME690 data[0m
+[0;32mI (3019331) SensorControl: Received SPS30 data[0m
+[0;32mI (3019331) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3019331) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3019341) DUMMY: SPS30 Data:[0m
+[0;32mI (3019341) DUMMY:   PM2.5: 2.18 µg/m³[0m
+[0;32mI (3019341) DUMMY:   PM10: 2.20 µg/m³[0m
+[0;32mI (3019351) DUMMY:   PM2.5: 16.38 particles/cm3[0m
+[0;32mI (3019351) DUMMY:   PM10: 16.39 particles/cm3[0m
+[0;32mI (3019351) DUMMY: =====================================[0m
+[0;32mI (3019361) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3019361) DUMMY: BME690 Data:[0m
+[0;32mI (3019371) DUMMY:   VOC: 0.52[0m
+[0;32mI (3019371) DUMMY:   Pressure: 100496.12 Pa[0m
+[0;32mI (3019371) DUMMY:   Humidity: 16.28 %[0m
+[0;32mI (3019381) DUMMY: =====================================[0m
+[0;32mI (3019381) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3019391) DUMMY: Temperature Data:[0m
+[0;32mI (3019391) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (3019391) DUMMY: =====================================[0m
+[0;32mI (3019401) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3019401) DUMMY: BMV080 Data:[0m
+[0;32mI (3019411) DUMMY: PM2.5_mass: 3.00 µg/m3[0m
+[0;32mI (3019411) DUMMY: PM10_mass: 4.00 µg/m3[0m
+[0;32mI (3019411) DUMMY: PM2.5_number: 24.00 particles/cm3[0m
+[0;32mI (3019421) DUMMY: PM10_number: 24.00 particles/cm3[0m
+[0;32mI (3019421) DUMMY: =====================================[0m
+[0;32mI (3022341) SensorControl: Received BME690 data[0m
+[0;32mI (3025441) SensorControl: Received BME690 data[0m
+[0;32mI (3028441) SensorControl: Received BME690 data[0m
+[0;32mI (3030041) SensorControl: Received BMV080 data[0m
+[0;32mI (3031441) SensorControl: Received BME690 data[0m
+[0;32mI (3034441) SensorControl: Received BME690 data[0m
+[0;32mI (3037441) SensorControl: Received BME690 data[0m
+[0;32mI (3040441) SensorControl: Received BME690 data[0m
+[0;32mI (3043441) SensorControl: Received BME690 data[0m
+[0;32mI (3046441) SensorControl: Received BME690 data[0m
+[0;32mI (3049441) SensorControl: Received BME690 data[0m
+[0;32mI (3052441) SensorControl: Received BME690 data[0m
+[0;32mI (3055541) SensorControl: Received BME690 data[0m
+[0;32mI (3058541) SensorControl: Received BME690 data[0m
+[0;32mI (3061141) SensorControl: Received BMV080 data[0m
+[0;32mI (3061541) SensorControl: Received BME690 data[0m
+[0;32mI (3064541) SensorControl: Received BME690 data[0m
+[0;32mI (3065211) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (3065241) SensorControl: Received TC74A2 data[0m
+[0;32mI (3067541) SensorControl: Received BME690 data[0m
+[0;32mI (3070541) SensorControl: Received BME690 data[0m
+[0;32mI (3073541) SensorControl: Received BME690 data[0m
+[0;32mI (3076541) SensorControl: Received BME690 data[0m
+[0;32mI (3079311) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3079441) SensorControl: Received SPS30 data[0m
+[0;32mI (3079441) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3079441) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3079441) DUMMY: SPS30 Data:[0m
+[0;32mI (3079441) DUMMY:   PM2.5: 2.19 µg/m³[0m
+[0;32mI (3079451) DUMMY:   PM10: 2.20 µg/m³[0m
+[0;32mI (3079451) DUMMY:   PM2.5: 16.42 particles/cm3[0m
+[0;32mI (3079461) DUMMY:   PM10: 16.43 particles/cm3[0m
+[0;32mI (3079461) DUMMY: =====================================[0m
+[0;32mI (3079461) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3079471) DUMMY: BME690 Data:[0m
+[0;32mI (3079471) DUMMY:   VOC: 0.51[0m
+[0;32mI (3079471) DUMMY:   Pressure: 100499.20 Pa[0m
+[0;32mI (3079481) DUMMY:   Humidity: 16.19 %[0m
+[0;32mI (3079481) DUMMY: =====================================[0m
+[0;32mI (3079491) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3079491) DUMMY: Temperature Data:[0m
+[0;32mI (3079491) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (3079501) DUMMY: =====================================[0m
+[0;32mI (3079501) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3079511) DUMMY: BMV080 Data:[0m
+[0;32mI (3079511) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (3079511) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (3079521) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (3079521) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (3079531) DUMMY: =====================================[0m
+[0;32mI (3079541) SensorControl: Received BME690 data[0m
+[0;32mI (3082541) SensorControl: Received BME690 data[0m
+[0;32mI (3085641) SensorControl: Received BME690 data[0m
+[0;32mI (3088641) SensorControl: Received BME690 data[0m
+[0;32mI (3091641) SensorControl: Received BME690 data[0m
+[0;32mI (3092341) SensorControl: Received BMV080 data[0m
+[0;32mI (3094641) SensorControl: Received BME690 data[0m
+[0;32mI (3097641) SensorControl: Received BME690 data[0m
+[0;32mI (3100641) SensorControl: Received BME690 data[0m
+[0;32mI (3103641) SensorControl: Received BME690 data[0m
+[0;32mI (3106641) SensorControl: Received BME690 data[0m
+[0;32mI (3109641) SensorControl: Received BME690 data[0m
+[0;32mI (3112641) SensorControl: Received BME690 data[0m
+[0;32mI (3115741) SensorControl: Received BME690 data[0m
+[0;32mI (3118741) SensorControl: Received BME690 data[0m
+[0;32mI (3121741) SensorControl: Received BME690 data[0m
+[0;32mI (3122441) SensorControl: Received BMV080 data[0m
+[0;32mI (3124741) SensorControl: Received BME690 data[0m
+[0;32mI (3125261) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (3125341) SensorControl: Received TC74A2 data[0m
+[0;32mI (3127741) SensorControl: Received BME690 data[0m
+[0;32mI (3130741) SensorControl: Received BME690 data[0m
+[0;32mI (3133741) SensorControl: Received BME690 data[0m
+[0;32mI (3136741) SensorControl: Received BME690 data[0m
+[0;32mI (3139411) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3139541) SensorControl: Received SPS30 data[0m
+[0;32mI (3139541) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3139541) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3139541) DUMMY: SPS30 Data:[0m
+[0;32mI (3139541) DUMMY:   PM2.5: 2.62 µg/m³[0m
+[0;32mI (3139551) DUMMY:   PM10: 2.64 µg/m³[0m
+[0;32mI (3139551) DUMMY:   PM2.5: 19.64 particles/cm3[0m
+[0;32mI (3139561) DUMMY:   PM10: 19.65 particles/cm3[0m
+[0;32mI (3139561) DUMMY: =====================================[0m
+[0;32mI (3139561) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3139571) DUMMY: BME690 Data:[0m
+[0;32mI (3139571) DUMMY:   VOC: 0.52[0m
+[0;32mI (3139571) DUMMY:   Pressure: 100495.83 Pa[0m
+[0;32mI (3139581) DUMMY:   Humidity: 16.14 %[0m
+[0;32mI (3139581) DUMMY: =====================================[0m
+[0;32mI (3139591) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3139591) DUMMY: Temperature Data:[0m
+[0;32mI (3139591) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (3139601) DUMMY: =====================================[0m
+[0;32mI (3139601) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3139611) DUMMY: BMV080 Data:[0m
+[0;32mI (3139611) DUMMY: PM2.5_mass: 5.00 µg/m3[0m
+[0;32mI (3139611) DUMMY: PM10_mass: 7.00 µg/m3[0m
+[0;32mI (3139621) DUMMY: PM2.5_number: 41.00 particles/cm3[0m
+[0;32mI (3139621) DUMMY: PM10_number: 41.00 particles/cm3[0m
+[0;32mI (3139631) DUMMY: =====================================[0m
+[0;32mI (3139741) SensorControl: Received BME690 data[0m
+[0;32mI (3142741) SensorControl: Received BME690 data[0m
+[0;32mI (3145841) SensorControl: Received BME690 data[0m
+[0;32mI (3148841) SensorControl: Received BME690 data[0m
+[0;32mI (3151841) SensorControl: Received BME690 data[0m
+[0;32mI (3153541) SensorControl: Received BMV080 data[0m
+[0;32mI (3154841) SensorControl: Received BME690 data[0m
+[0;32mI (3157841) SensorControl: Received BME690 data[0m
+[0;32mI (3160841) SensorControl: Received BME690 data[0m
+[0;32mI (3163841) SensorControl: Received BME690 data[0m
+[0;32mI (3166841) SensorControl: Received BME690 data[0m
+[0;32mI (3169841) SensorControl: Received BME690 data[0m
+[0;32mI (3172841) SensorControl: Received BME690 data[0m
+[0;32mI (3175941) SensorControl: Received BME690 data[0m
+[0;32mI (3178941) SensorControl: Received BME690 data[0m
+[0;32mI (3181941) SensorControl: Received BME690 data[0m
+[0;32mI (3184641) SensorControl: Received BMV080 data[0m
+[0;32mI (3184941) SensorControl: Received BME690 data[0m
+[0;32mI (3185311) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (3185341) SensorControl: Received TC74A2 data[0m
+[0;32mI (3187941) SensorControl: Received BME690 data[0m
+[0;32mI (3190941) SensorControl: Received BME690 data[0m
+[0;32mI (3193941) SensorControl: Received BME690 data[0m
+[0;32mI (3196941) SensorControl: Received BME690 data[0m
+[0;32mI (3199511) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3199641) SensorControl: Received SPS30 data[0m
+[0;32mI (3199641) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3199641) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3199641) DUMMY: SPS30 Data:[0m
+[0;32mI (3199641) DUMMY:   PM2.5: 2.77 µg/m³[0m
+[0;32mI (3199651) DUMMY:   PM10: 2.81 µg/m³[0m
+[0;32mI (3199651) DUMMY:   PM2.5: 20.60 particles/cm3[0m
+[0;32mI (3199661) DUMMY:   PM10: 20.61 particles/cm3[0m
+[0;32mI (3199661) DUMMY: =====================================[0m
+[0;32mI (3199661) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3199671) DUMMY: BME690 Data:[0m
+[0;32mI (3199671) DUMMY:   VOC: 0.52[0m
+[0;32mI (3199671) DUMMY:   Pressure: 100495.83 Pa[0m
+[0;32mI (3199681) DUMMY:   Humidity: 16.07 %[0m
+[0;32mI (3199681) DUMMY: =====================================[0m
+[0;32mI (3199691) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3199691) DUMMY: Temperature Data:[0m
+[0;32mI (3199691) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (3199701) DUMMY: =====================================[0m
+[0;32mI (3199701) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3199711) DUMMY: BMV080 Data:[0m
+[0;32mI (3199711) DUMMY: PM2.5_mass: 3.00 µg/m3[0m
+[0;32mI (3199711) DUMMY: PM10_mass: 4.00 µg/m3[0m
+[0;32mI (3199721) DUMMY: PM2.5_number: 24.00 particles/cm3[0m
+[0;32mI (3199721) DUMMY: PM10_number: 24.00 particles/cm3[0m
+[0;32mI (3199731) DUMMY: =====================================[0m
+[0;32mI (3199941) SensorControl: Received BME690 data[0m
+[0;32mI (3202941) SensorControl: Received BME690 data[0m
+[0;32mI (3206041) SensorControl: Received BME690 data[0m
+[0;32mI (3209041) SensorControl: Received BME690 data[0m
+[0;32mI (3212041) SensorControl: Received BME690 data[0m
+[0;32mI (3215041) SensorControl: Received BME690 data[0m
+[0;32mI (3215841) SensorControl: Received BMV080 data[0m
+[0;32mI (3218041) SensorControl: Received BME690 data[0m
+[0;32mI (3221041) SensorControl: Received BME690 data[0m
+[0;32mI (3224041) SensorControl: Received BME690 data[0m
+[0;32mI (3227041) SensorControl: Received BME690 data[0m
+[0;32mI (3230041) SensorControl: Received BME690 data[0m
+[0;32mI (3233041) SensorControl: Received BME690 data[0m
+[0;32mI (3236141) SensorControl: Received BME690 data[0m
+[0;32mI (3239141) SensorControl: Received BME690 data[0m
+[0;32mI (3242141) SensorControl: Received BME690 data[0m
+[0;32mI (3245141) SensorControl: Received BME690 data[0m
+[0;32mI (3245361) TC74: Temperature: 23.0°C[0m
+
+[0;32mI (3245441) SensorControl: Received TC74A2 data[0m
+[0;32mI (3246841) SensorControl: Received BMV080 data[0m
+[0;32mI (3248141) SensorControl: Received BME690 data[0m
+[0;32mI (3251141) SensorControl: Received BME690 data[0m
+[0;32mI (3254141) SensorControl: Received BME690 data[0m
+[0;32mI (3257141) SensorControl: Received BME690 data[0m
+[0;32mI (3259611) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3259741) SensorControl: Received SPS30 data[0m
+[0;32mI (3259741) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3259741) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3259741) DUMMY: SPS30 Data:[0m
+[0;32mI (3259741) DUMMY:   PM2.5: 2.38 µg/m³[0m
+[0;32mI (3259751) DUMMY:   PM10: 2.39 µg/m³[0m
+[0;32mI (3259751) DUMMY:   PM2.5: 17.92 particles/cm3[0m
+[0;32mI (3259761) DUMMY:   PM10: 17.93 particles/cm3[0m
+[0;32mI (3259761) DUMMY: =====================================[0m
+[0;32mI (3259761) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3259771) DUMMY: BME690 Data:[0m
+[0;32mI (3259771) DUMMY:   VOC: 0.51[0m
+[0;32mI (3259771) DUMMY:   Pressure: 100499.02 Pa[0m
+[0;32mI (3259781) DUMMY:   Humidity: 16.09 %[0m
+[0;32mI (3259781) DUMMY: =====================================[0m
+[0;32mI (3259791) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3259791) DUMMY: Temperature Data:[0m
+[0;32mI (3259791) DUMMY:   Temperature: 23.00 °C[0m
+[0;32mI (3259801) DUMMY: =====================================[0m
+[0;32mI (3259801) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3259811) DUMMY: BMV080 Data:[0m
+[0;32mI (3259811) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (3259811) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (3259821) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (3259821) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (3259831) DUMMY: =====================================[0m
+[0;32mI (3260141) SensorControl: Received BME690 data[0m
+[0;32mI (3263141) SensorControl: Received BME690 data[0m
+[0;32mI (3266241) SensorControl: Received BME690 data[0m
+[0;32mI (3269241) SensorControl: Received BME690 data[0m
+[0;32mI (3272241) SensorControl: Received BME690 data[0m
+[0;32mI (3275241) SensorControl: Received BME690 data[0m
+[0;32mI (3278041) SensorControl: Received BMV080 data[0m
+[0;32mI (3278241) SensorControl: Received BME690 data[0m
+[0;32mI (3281241) SensorControl: Received BME690 data[0m
+[0;32mI (3284241) SensorControl: Received BME690 data[0m
+[0;32mI (3287241) SensorControl: Received BME690 data[0m
+[0;32mI (3290241) SensorControl: Received BME690 data[0m
+[0;32mI (3293241) SensorControl: Received BME690 data[0m
+[0;32mI (3296341) SensorControl: Received BME690 data[0m
+[0;32mI (3299341) SensorControl: Received BME690 data[0m
+[0;32mI (3302341) SensorControl: Received BME690 data[0m
+[0;32mI (3305341) SensorControl: Received BME690 data[0m
+[0;32mI (3305411) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (3305441) SensorControl: Received TC74A2 data[0m
+[0;32mI (3308341) SensorControl: Received BME690 data[0m
+[0;32mI (3309041) SensorControl: Received BMV080 data[0m
+[0;32mI (3311341) SensorControl: Received BME690 data[0m
+[0;32mI (3314341) SensorControl: Received BME690 data[0m
+[0;32mI (3317341) SensorControl: Received BME690 data[0m
+[0;32mI (3319711) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3319841) SensorControl: Received SPS30 data[0m
+[0;32mI (3319841) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3319841) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3319841) DUMMY: SPS30 Data:[0m
+[0;32mI (3319841) DUMMY:   PM2.5: 2.36 µg/m³[0m
+[0;32mI (3319851) DUMMY:   PM10: 2.36 µg/m³[0m
+[0;32mI (3319851) DUMMY:   PM2.5: 17.78 particles/cm3[0m
+[0;32mI (3319861) DUMMY:   PM10: 17.78 particles/cm3[0m
+[0;32mI (3319861) DUMMY: =====================================[0m
+[0;32mI (3319861) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3319871) DUMMY: BME690 Data:[0m
+[0;32mI (3319871) DUMMY:   VOC: 0.48[0m
+[0;32mI (3319871) DUMMY:   Pressure: 100499.48 Pa[0m
+[0;32mI (3319881) DUMMY:   Humidity: 16.17 %[0m
+[0;32mI (3319881) DUMMY: =====================================[0m
+[0;32mI (3319891) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3319891) DUMMY: Temperature Data:[0m
+[0;32mI (3319891) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (3319901) DUMMY: =====================================[0m
+[0;32mI (3319901) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3319911) DUMMY: BMV080 Data:[0m
+[0;32mI (3319911) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (3319911) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (3319921) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (3319921) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (3319931) DUMMY: =====================================[0m
+[0;32mI (3320341) SensorControl: Received BME690 data[0m
+[0;32mI (3323341) SensorControl: Received BME690 data[0m
+[0;32mI (3326441) SensorControl: Received BME690 data[0m
+[0;32mI (3329441) SensorControl: Received BME690 data[0m
+[0;32mI (3332441) SensorControl: Received BME690 data[0m
+[0;32mI (3335441) SensorControl: Received BME690 data[0m
+[0;32mI (3338441) SensorControl: Received BME690 data[0m
+[0;32mI (3340141) SensorControl: Received BMV080 data[0m
+[0;32mI (3341441) SensorControl: Received BME690 data[0m
+[0;32mI (3344441) SensorControl: Received BME690 data[0m
+[0;32mI (3347441) SensorControl: Received BME690 data[0m
+[0;32mI (3350441) SensorControl: Received BME690 data[0m
+[0;32mI (3353441) SensorControl: Received BME690 data[0m
+[0;32mI (3356541) SensorControl: Received BME690 data[0m
+[0;32mI (3359541) SensorControl: Received BME690 data[0m
+[0;32mI (3362541) SensorControl: Received BME690 data[0m
+[0;32mI (3365461) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (3365541) SensorControl: Received BME690 data[0m
+[0;32mI (3365541) SensorControl: Received TC74A2 data[0m
+[0;32mI (3368541) SensorControl: Received BME690 data[0m
+[0;32mI (3371241) SensorControl: Received BMV080 data[0m
+[0;32mI (3371541) SensorControl: Received BME690 data[0m
+[0;32mI (3374541) SensorControl: Received BME690 data[0m
+[0;32mI (3377541) SensorControl: Received BME690 data[0m
+[0;32mI (3379811) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3379941) SensorControl: Received SPS30 data[0m
+[0;32mI (3379941) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3379941) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3379941) DUMMY: SPS30 Data:[0m
+[0;32mI (3379941) DUMMY:   PM2.5: 2.74 µg/m³[0m
+[0;32mI (3379951) DUMMY:   PM10: 2.77 µg/m³[0m
+[0;32mI (3379951) DUMMY:   PM2.5: 20.53 particles/cm3[0m
+[0;32mI (3379961) DUMMY:   PM10: 20.54 particles/cm3[0m
+[0;32mI (3379961) DUMMY: =====================================[0m
+[0;32mI (3379961) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3379971) DUMMY: BME690 Data:[0m
+[0;32mI (3379971) DUMMY:   VOC: 0.50[0m
+[0;32mI (3379971) DUMMY:   Pressure: 100499.02 Pa[0m
+[0;32mI (3379981) DUMMY:   Humidity: 16.21 %[0m
+[0;32mI (3379981) DUMMY: =====================================[0m
+[0;32mI (3379991) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3379991) DUMMY: Temperature Data:[0m
+[0;32mI (3379991) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (3380001) DUMMY: =====================================[0m
+[0;32mI (3380001) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3380011) DUMMY: BMV080 Data:[0m
+[0;32mI (3380011) DUMMY: PM2.5_mass: 0.00 µg/m3[0m
+[0;32mI (3380011) DUMMY: PM10_mass: 0.00 µg/m3[0m
+[0;32mI (3380021) DUMMY: PM2.5_number: 0.00 particles/cm3[0m
+[0;32mI (3380021) DUMMY: PM10_number: 0.00 particles/cm3[0m
+[0;32mI (3380031) DUMMY: =====================================[0m
+[0;32mI (3380541) SensorControl: Received BME690 data[0m
+[0;32mI (3383541) SensorControl: Received BME690 data[0m
+[0;32mI (3386641) SensorControl: Received BME690 data[0m
+[0;32mI (3389641) SensorControl: Received BME690 data[0m
+[0;32mI (3392641) SensorControl: Received BME690 data[0m
+[0;32mI (3395641) SensorControl: Received BME690 data[0m
+[0;32mI (3398641) SensorControl: Received BME690 data[0m
+[0;32mI (3401641) SensorControl: Received BME690 data[0m
+[0;32mI (3402341) SensorControl: Received BMV080 data[0m
+[0;32mI (3404641) SensorControl: Received BME690 data[0m
+[0;32mI (3407641) SensorControl: Received BME690 data[0m
+[0;32mI (3410641) SensorControl: Received BME690 data[0m
+[0;32mI (3413641) SensorControl: Received BME690 data[0m
+[0;32mI (3416741) SensorControl: Received BME690 data[0m
+[0;32mI (3419741) SensorControl: Received BME690 data[0m
+[0;32mI (3422741) SensorControl: Received BME690 data[0m
+[0;32mI (3425511) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (3425541) SensorControl: Received TC74A2 data[0m
+[0;32mI (3425741) SensorControl: Received BME690 data[0m
+[0;32mI (3428741) SensorControl: Received BME690 data[0m
+[0;32mI (3431741) SensorControl: Received BME690 data[0m
+[0;32mI (3433441) SensorControl: Received BMV080 data[0m
+[0;32mI (3434741) SensorControl: Received BME690 data[0m
+[0;32mI (3437741) SensorControl: Received BME690 data[0m
+[0;32mI (3439911) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3440041) SensorControl: Received SPS30 data[0m
+[0;32mI (3440041) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3440041) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3440041) DUMMY: SPS30 Data:[0m
+[0;32mI (3440041) DUMMY:   PM2.5: 2.27 µg/m³[0m
+[0;32mI (3440051) DUMMY:   PM10: 2.30 µg/m³[0m
+[0;32mI (3440051) DUMMY:   PM2.5: 16.95 particles/cm3[0m
+[0;32mI (3440061) DUMMY:   PM10: 16.96 particles/cm3[0m
+[0;32mI (3440061) DUMMY: =====================================[0m
+[0;32mI (3440061) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3440071) DUMMY: BME690 Data:[0m
+[0;32mI (3440071) DUMMY:   VOC: 0.53[0m
+[0;32mI (3440071) DUMMY:   Pressure: 100497.60 Pa[0m
+[0;32mI (3440081) DUMMY:   Humidity: 16.12 %[0m
+[0;32mI (3440081) DUMMY: =====================================[0m
+[0;32mI (3440091) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3440091) DUMMY: Temperature Data:[0m
+[0;32mI (3440091) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (3440101) DUMMY: =====================================[0m
+[0;32mI (3440101) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3440111) DUMMY: BMV080 Data:[0m
+[0;32mI (3440111) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (3440111) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (3440121) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (3440121) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (3440131) DUMMY: =====================================[0m
+[0;32mI (3440741) SensorControl: Received BME690 data[0m
+[0;32mI (3443741) SensorControl: Received BME690 data[0m
+[0;32mI (3446841) SensorControl: Received BME690 data[0m
+[0;32mI (3449841) SensorControl: Received BME690 data[0m
+[0;32mI (3452841) SensorControl: Received BME690 data[0m
+[0;32mI (3455841) SensorControl: Received BME690 data[0m
+[0;32mI (3458841) SensorControl: Received BME690 data[0m
+[0;32mI (3461841) SensorControl: Received BME690 data[0m
+[0;32mI (3464541) SensorControl: Received BMV080 data[0m
+[0;32mI (3464841) SensorControl: Received BME690 data[0m
+[0;32mI (3467841) SensorControl: Received BME690 data[0m
+[0;32mI (3470841) SensorControl: Received BME690 data[0m
+[0;32mI (3473841) SensorControl: Received BME690 data[0m
+[0;32mI (3476941) SensorControl: Received BME690 data[0m
+[0;32mI (3479941) SensorControl: Received BME690 data[0m
+[0;32mI (3482941) SensorControl: Received BME690 data[0m
+[0;32mI (3485561) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (3485641) SensorControl: Received TC74A2 data[0m
+[0;32mI (3485941) SensorControl: Received BME690 data[0m
+[0;32mI (3488941) SensorControl: Received BME690 data[0m
+[0;32mI (3491941) SensorControl: Received BME690 data[0m
+[0;32mI (3494941) SensorControl: Received BME690 data[0m
+[0;32mI (3495641) SensorControl: Received BMV080 data[0m
+[0;32mI (3497941) SensorControl: Received BME690 data[0m
+[0;32mI (3500011) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3500141) SensorControl: Received SPS30 data[0m
+[0;32mI (3500141) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3500141) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3500141) DUMMY: SPS30 Data:[0m
+[0;32mI (3500141) DUMMY:   PM2.5: 1.84 µg/m³[0m
+[0;32mI (3500151) DUMMY:   PM10: 1.84 µg/m³[0m
+[0;32mI (3500151) DUMMY:   PM2.5: 13.85 particles/cm3[0m
+[0;32mI (3500161) DUMMY:   PM10: 13.86 particles/cm3[0m
+[0;32mI (3500161) DUMMY: =====================================[0m
+[0;32mI (3500161) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3500171) DUMMY: BME690 Data:[0m
+[0;32mI (3500171) DUMMY:   VOC: 0.51[0m
+[0;32mI (3500171) DUMMY:   Pressure: 100497.88 Pa[0m
+[0;32mI (3500181) DUMMY:   Humidity: 16.27 %[0m
+[0;32mI (3500181) DUMMY: =====================================[0m
+[0;32mI (3500191) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3500191) DUMMY: Temperature Data:[0m
+[0;32mI (3500191) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (3500201) DUMMY: =====================================[0m
+[0;32mI (3500201) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3500211) DUMMY: BMV080 Data:[0m
+[0;32mI (3500211) DUMMY: PM2.5_mass: 2.00 µg/m3[0m
+[0;32mI (3500211) DUMMY: PM10_mass: 2.00 µg/m3[0m
+[0;32mI (3500221) DUMMY: PM2.5_number: 16.00 particles/cm3[0m
+[0;32mI (3500221) DUMMY: PM10_number: 16.00 particles/cm3[0m
+[0;32mI (3500231) DUMMY: =====================================[0m
+[0;32mI (3500941) SensorControl: Received BME690 data[0m
+[0;32mI (3503941) SensorControl: Received BME690 data[0m
+[0;32mI (3507041) SensorControl: Received BME690 data[0m
+[0;32mI (3510041) SensorControl: Received BME690 data[0m
+[0;32mI (3513041) SensorControl: Received BME690 data[0m
+[0;32mI (3516041) SensorControl: Received BME690 data[0m
+[0;32mI (3519041) SensorControl: Received BME690 data[0m
+[0;32mI (3522041) SensorControl: Received BME690 data[0m
+[0;32mI (3525041) SensorControl: Received BME690 data[0m
+[0;32mI (3526741) SensorControl: Received BMV080 data[0m
+[0;32mI (3528041) SensorControl: Received BME690 data[0m
+[0;32mI (3531041) SensorControl: Received BME690 data[0m
+[0;32mI (3534041) SensorControl: Received BME690 data[0m
+[0;32mI (3537141) SensorControl: Received BME690 data[0m
+[0;32mI (3540141) SensorControl: Received BME690 data[0m
+[0;32mI (3543141) SensorControl: Received BME690 data[0m
+[0;32mI (3545611) TC74: Temperature: 24.0°C[0m
+
+[0;32mI (3545641) SensorControl: Received TC74A2 data[0m
+[0;32mI (3546141) SensorControl: Received BME690 data[0m
+[0;32mI (3549141) SensorControl: Received BME690 data[0m
+[0;32mI (3552141) SensorControl: Received BME690 data[0m
+[0;32mI (3555141) SensorControl: Received BME690 data[0m
+[0;32mI (3557841) SensorControl: Received BMV080 data[0m
+[0;32mI (3558141) SensorControl: Received BME690 data[0m
+[0;32mI (3560111) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3560241) SensorControl: Received SPS30 data[0m
+[0;32mI (3560241) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3560241) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3560241) DUMMY: SPS30 Data:[0m
+[0;32mI (3560241) DUMMY:   PM2.5: 2.29 µg/m³[0m
+[0;32mI (3560251) DUMMY:   PM10: 2.29 µg/m³[0m
+[0;32mI (3560251) DUMMY:   PM2.5: 17.27 particles/cm3[0m
+[0;32mI (3560261) DUMMY:   PM10: 17.28 particles/cm3[0m
+[0;32mI (3560261) DUMMY: =====================================[0m
+[0;32mI (3560261) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3560271) DUMMY: BME690 Data:[0m
+[0;32mI (3560271) DUMMY:   VOC: 0.50[0m
+[0;32mI (3560271) DUMMY:   Pressure: 100501.93 Pa[0m
+[0;32mI (3560281) DUMMY:   Humidity: 16.31 %[0m
+[0;32mI (3560281) DUMMY: =====================================[0m
+[0;32mI (3560291) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3560291) DUMMY: Temperature Data:[0m
+[0;32mI (3560291) DUMMY:   Temperature: 24.00 °C[0m
+[0;32mI (3560301) DUMMY: =====================================[0m
+[0;32mI (3560301) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3560311) DUMMY: BMV080 Data:[0m
+[0;32mI (3560311) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (3560311) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (3560321) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (3560321) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (3560331) DUMMY: =====================================[0m
+[0;32mI (3561141) SensorControl: Received BME690 data[0m
+[0;32mI (3564141) SensorControl: Received BME690 data[0m
+[0;32mI (3567241) SensorControl: Received BME690 data[0m
+[0;32mI (3570241) SensorControl: Received BME690 data[0m
+[0;32mI (3573241) SensorControl: Received BME690 data[0m
+[0;32mI (3576241) SensorControl: Received BME690 data[0m
+[0;32mI (3579241) SensorControl: Received BME690 data[0m
+[0;32mI (3582241) SensorControl: Received BME690 data[0m
+[0;32mI (3585241) SensorControl: Received BME690 data[0m
+[0;32mI (3588241) SensorControl: Received BME690 data[0m
+[0;32mI (3588941) SensorControl: Received BMV080 data[0m
+[0;32mI (3591241) SensorControl: Received BME690 data[0m
+[0;32mI (3594241) SensorControl: Received BME690 data[0m
+[0;32mI (3597341) SensorControl: Received BME690 data[0m
+[0;32mI (3600341) SensorControl: Received BME690 data[0m
+[0;32mI (3603341) SensorControl: Received BME690 data[0m
+[0;32mI (3605661) TC74: Temperature: 23.0°C[0m
+
+[0;32mI (3605741) SensorControl: Received TC74A2 data[0m
+[0;32mI (3606341) SensorControl: Received BME690 data[0m
+[0;32mI (3609341) SensorControl: Received BME690 data[0m
+[0;32mI (3612341) SensorControl: Received BME690 data[0m
+[0;32mI (3615341) SensorControl: Received BME690 data[0m
+[0;32mI (3618341) SensorControl: Received BME690 data[0m
+[0;32mI (3619941) SensorControl: Received BMV080 data[0m
+[0;32mI (3620211) SPS30: SPS30 connected and new data available[0m
+[0;32mI (3620341) SensorControl: Received SPS30 data[0m
+[0;32mI (3620341) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3620341) SensorControl: Sent sensor data - BME690:VALID SPS30:VALID TC74A2:VALID BMV080:VALID[0m
+[0;32mI (3620341) DUMMY: SPS30 Data:[0m
+[0;32mI (3620341) DUMMY:   PM2.5: 2.01 µg/m³[0m
+[0;32mI (3620351) DUMMY:   PM10: 2.01 µg/m³[0m
+[0;32mI (3620351) DUMMY:   PM2.5: 15.16 particles/cm3[0m
+[0;32mI (3620361) DUMMY:   PM10: 15.17 particles/cm3[0m
+[0;32mI (3620361) DUMMY: =====================================[0m
+[0;32mI (3620361) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3620371) DUMMY: BME690 Data:[0m
+[0;32mI (3620371) DUMMY:   VOC: 0.50[0m
+[0;32mI (3620371) DUMMY:   Pressure: 100500.49 Pa[0m
+[0;32mI (3620381) DUMMY:   Humidity: 16.69 %[0m
+[0;32mI (3620381) DUMMY: =====================================[0m
+[0;32mI (3620391) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3620391) DUMMY: Temperature Data:[0m
+[0;32mI (3620391) DUMMY:   Temperature: 23.00 °C[0m
+[0;32mI (3620401) DUMMY: =====================================[0m
+[0;32mI (3620401) DUMMY: **** RECEIVED SENSOR DATA ***[0m
+[0;32mI (3620411) DUMMY: BMV080 Data:[0m
+[0;32mI (3620411) DUMMY: PM2.5_mass: 1.00 µg/m3[0m
+[0;32mI (3620411) DUMMY: PM10_mass: 1.00 µg/m3[0m
+[0;32mI (3620421) DUMMY: PM2.5_number: 8.00 particles/cm3[0m
+[0;32mI (3620421) DUMMY: PM10_number: 8.00 particles/cm3[0m
+[0;32mI (3620431) DUMMY: =====================================[0m
+[0;32mI (3621341) SensorControl: Received BME690 data[0m
+[0;32mI (3624341) SensorControl: Received BME690 data[0m
+[0;32mI (3627441) SensorControl: Received BME690 data[0m
+[0;32mI (3630441) SensorControl: Received BME690 data[0m
+[0;32mI (3633441) SensorControl: Received BME690 data[0m
+[0;32mI (3636441) SensorControl: Received BME690 data[0m
+[0;32mI (3639441) SensorControl: Received BME690 data[0m
+[0;32mI (3642441) SensorControl: Received BME690 data[0m
+[0;32mI (3645441) S
